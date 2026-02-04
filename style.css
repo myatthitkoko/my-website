@@ -121,7 +121,7 @@ button:focus {
 
 .logo img {
 	float: left;
-	width: 15%;
+	max-height: 100%;
 }
 
 .container h1 {
@@ -134,7 +134,7 @@ button:focus {
 header {
   position: sticky;
   top: 0%;
-	background: var(-showgirlGreen);
+	background: var(--showgirlGreen);
 }
 
 header::after{
