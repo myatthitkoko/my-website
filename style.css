@@ -1,5 +1,10 @@
 /* Basic font styles */
 
+:root {
+  --showgirlGreen: rgba(44,91,43, 0.80);
+  --showgirlOrange: #e15921;
+}
+
 body {
   background-color: white;
   color: #333333;
@@ -129,7 +134,7 @@ button:focus {
 header {
   position: sticky;
   top: 0%;
-	background: red;
+	background: var(-showgirlGreen);
 }
 
 header::after{
@@ -164,4 +169,4 @@ nav a {
 }
 
 nav a:hover{
-	color: white;
+	color: var(--showgirlOrange);
