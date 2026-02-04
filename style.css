@@ -15,12 +15,12 @@ h1 {
 }
 
 h2 {
-  display: flex;
   font-size: 1.6rem;
 }
 
 h1,
 h2 {
+  display: flex;
   color: var(--showgirlOrange);
   justify-content: center;
 }
