@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Forms challenge</title>
+  <link href="style.css" rel="stylesheet" />
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+		<header>
+		<div class="container">
+			<div class="logo">
+				<img src="Logo.gif" alt="Logo">
+			</div>
+				<nav>
+					<ul>
+						<h1>WcRonald's</h1>
+						<li>
+							<a href="/home/husky/Documents/NavBar/Nav.html">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Menu
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Careers
+							</a>
+						</li>
+						<li>
+							<a href="/home/husky/Documents/feedbackForm/feedback.html">
+								Contact
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<br />
+  <h1>We want your feedback!</h1>
+
+  <p>We're very excited that you visited the 
+    <a href="#">little house in the woods</a>,
+    and we want to hear what you thought of it! 
+    Please fill in the below sections. You don't 
+    need to provide your name or contact details, 
+    but if you do, we'll enter you into a 
+    <a href="#">prize draw</a> 
+    where you'll have a chance to win prizes.
+  </p>
+  <div class="divide">
+  	<img src="https://mdn.github.io/shared-assets/images/examples/learn/woodland-strip.jpg" alt=""/>
+  </div>
+  <form>
+    
+    <div class="form-section">
+      <h2>Facilities</h2>
+      <fieldset>
+        <legend>
+          Was the porridge
+        </legend>
+        <input type="radio" id="porridgeChoice1" name="porridge" value="Too_hot" checked />
+        <label for="porridgeChoice1">Too hot?</label>
+        <input type="radio" id="porridgeChoice2" name="porridge" value="Too_cold" />
+        <label for="porridgeChoice2">Too cold?</label>
+        <input type="radio" id="porridgeChoice3" name="porridge" value="Just_right" />
+        <label for="porridgeChoice3">Just right?</label>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Were the beds
+        </legend>
+        <input type="radio" id="bedChoice1" name="bed" value="Too_hard" checked />
+        <label for="bedChoice1">Too hard?</label>
+        <input type="radio" id="bedChoice2" name="bed" value="Too_soft" />
+        <label for="bedChoice2">Too soft?</label>
+        <input type="radio" id="bedChoice3" name="bed" value="Just_right" />
+        <label for="bedChoice3">Just right?</label>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Describe the chairs (select all you agree with)
+        </legend>
+        <input type="checkbox" id="comfy" name="comfy"/>
+        <label for="comfy">Comfy</label>
+        <input type="checkbox" id="luxurious" name="luxurious"/>
+        <label for="luxurious">Luxurious</label>
+        <input type="checkbox" id="hiTech" name="hiTech"/>
+        <label for="hiTech">Hi-Tech</label>
+        <input type="checkbox" id="pretty" name="pretty"/>
+        <label for="pretty">Pretty</label>
+        <input type="checkbox" id="majestic" name="majestic"/>
+        <label for="majestic">Majestic</label>
+      </fieldset>
+    </div>
+    
+    <div class="form-section">
+      <h2>About your hosts</h2>
+      <div class="separator">
+        <label for="bear">
+          Who's your favorite bear?
+        </label>
+        <select name="bear" id="bear">
+          <option value="papa">Papa bear</option>
+          <option value="mama">Mama bear</option>
+          <option value="junior">Junior</option>
+          <option value="dozer">Dozer</option>
+        </select>
+      </div>
+      <div class="separator">
+        <label for="greeting">
+          Which greeting did you prefer?
+        </label>
+        <select name="greeting" id="greeting">
+          <option value="wave">Wave</option>
+          <option value="friendly">Friendly greeting</option>
+          <option value="growl">Growl</option>
+          <option value="clawMarks">Claw marks in the door</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="form-selection">
+      <h2>Any other feedback?</h2>
+      <label for="comments">
+        Give us your comments
+      </label>
+      <br />
+      <textarea id="comments" name="comments" row="5" column="33"></textarea>
+    </div>
+    
+    <div class="form-selection">
+    <h2>Your details</h2>
+      <div class="separator">
+        <label for="name">Name</label>
+        <input type="name" id="name" name="name" value="" />
+      </div>
+      <div class="separator">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div class="separator">
+        <label for="phone">Phone</label>
+        <input type="phone" id="phone" name="phone" />
+      </div>
+    </div>
+    
+    <div class="form-selection">
+      <button>Submit</button>
+    </div>
+    
+  </form>  
+  </body>
+</html>
+
+
