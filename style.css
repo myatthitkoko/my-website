@@ -121,7 +121,7 @@ button:focus {
 
 .logo img {
 	float: left;
-	max-height: 100%;
+	max-width: 20vw;
 }
 
 .container h1 {
