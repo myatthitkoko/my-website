@@ -1,0 +1,101 @@
+:root {
+  --showgirlGreen: rgba(44,91,43, 0.80);
+  --showgirlOrange: #e15921;
+}
+
+header {
+  background: var(--showgirlGreen);
+  position: sticky;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+.logo {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.gif {
+  margin-right: 1em;
+}
+
+.gif img {
+  max-height: 50pt;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+nav {
+  background: var(--showgirlGreen);
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: white;
+  font-size: 18pt;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--showgirlOrange);
+}
+
+nav:hover {
+  display: block;
+}
+
+.nav-toggle:checked ~ nav {
+  display: block;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label {
+  color: var(--showgirlOrange);
+}
+
+.nav-toggle:hover ~ nav {
+  display: block;
+}
+
+.nav-toggle-label {
+  margin-left: 0.4em;
+  display: flex;
+  font-size: 5em;
+}
+
+.title {
+  color: var(--showgirlOrange);
+}
+
+h1,
+.books {
+  display: flex;
+  justify-content: center;
+}
+
+.books img {
+  max-width: 30vw;
+}
