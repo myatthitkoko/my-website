@@ -126,7 +126,7 @@ button:focus {
 
 .container h1 {
 	color: white;
-	font-size: 50em;
+	font-size: 2.5em;
 	float: left;
 	margin-left: auto;
 }
@@ -161,7 +161,7 @@ nav li {
 }
 
 nav a {
-	font-size: 9em;
+	font-size: 1.9em;
 	color: white;
 	text-decoration: none;
 	font-weight: bold;
