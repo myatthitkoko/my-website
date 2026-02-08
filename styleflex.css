@@ -109,6 +109,7 @@ nav:hover {
   max-width: 30vw;
   display: flex;
   justify-content: center;
+  padding: 3em, 3em, 3em, 3em;
 }
 
 p {
@@ -116,4 +117,5 @@ p {
   font-family: "IM Fell DW Pica", serif;
   font-weight: 400;
   font-style: italic;
+  padding: 3em, 3em, 3em, 3em;
 }
