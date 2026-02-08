@@ -107,10 +107,12 @@ nav:hover {
 
 .Kura img {
   max-width: 30vw;
+  display: flex;
+  justify-content: center;
 }
 
 p {
-  font-size: 12pt;
+  font-size: 1em;
   font-family: "IM Fell DW Pica", serif;
   font-weight: 400;
   font-style: italic;
