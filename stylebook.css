@@ -97,5 +97,9 @@ h1,
 }
 
 .books img {
-  max-width: 30vw;
+  max-width: 20vw;
+}
+
+body {
+  background-color: #100c08;
 }
