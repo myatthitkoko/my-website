@@ -97,13 +97,16 @@ nav:hover {
 }
 
 .Banner img {
-  max-height: 30em;
+  width: 100%;
+}
+
+.Kura {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .Kura img {
-  max-height: 20em;
-  display: flex;
-  justify-content: flex-end;
+  max-width: 30vw;
 }
 
 p {
