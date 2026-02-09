@@ -80,3 +80,9 @@ nav:hover {
   display: flex;
   font-size: 3em;
 }
+
+h2 {
+  font-family: "Boldonse", system-ui;
+  font-weight: bold;
+  font-size: 24pt;
+}
