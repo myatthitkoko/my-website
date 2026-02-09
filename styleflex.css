@@ -84,3 +84,12 @@ h2 {
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 768px) { 
+  #.KuraText{
+   display:none;
+  }
+  #.summary{
+   display:none;
+  }
+}
