@@ -1,0 +1,82 @@
+/* ---------------------Header----------------------- */
+
+header {
+  background: var(--showgirlGreen);
+  position: sticky;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50pt;
+}
+
+.logo {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  font-family: "Boldonse", system-ui;
+  font-weight: bold;
+  font-size: 24pt;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+nav {
+  background: var(--showgirlGreen);
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 300pt;
+  display: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: white;
+  font-size: 18pt;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--showgirlOrange);
+}
+
+nav:hover {
+  display: block;
+}
+
+.nav-toggle:hover ~ nav {
+  display: block;
+}
+
+.nav-toggle:checked ~ nav {
+  display: block;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label {
+  color: var(--showgirlOrange);
+}
+
+.nav-toggle-label {
+  margin-left: 0.4em;
+  border: 100%;
+  display: flex;
+  font-size: 3em;
+}
