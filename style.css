@@ -10,16 +10,8 @@ body {
   color: #F5F5F5;
 }
 
-h1 {
-  font-size: 2rem;
-}
-
 h2 {
   font-size: 1.6rem;
-}
-
-h1,
-h2 {
   display: flex;
   color: var(--showgirlOrange);
   justify-content: center;
