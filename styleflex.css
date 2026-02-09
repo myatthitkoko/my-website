@@ -1,5 +1,6 @@
 :root {
   --showgirlGreen: rgba(44,91,43, 0.80);
+  --showgirlGreenNF: rgba(44,91,43);
   --showgirlOrange: #e15921;
 }
 
@@ -15,17 +16,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 10vh;
+  height: 50pt;
 }
 
 .logo {
   width: 100vw;
   display: flex;
   justify-content: center;
-  font-size: 4em;
-  font-family: "IM Fell DW Pica", serif;
-  font-weight: 400;
-  font-style: normal;
+  font-size: 3em;
+  font-family: "Boldonse", system-ui;
+  font-weight: bold;
+  font-size: 24pt;
 }
 
 .gif {
@@ -47,6 +48,7 @@ nav {
   top: 100%;
   left: 0;
   width: 100%;
+  height: 300pt;
   display: none;
 }
 
@@ -96,26 +98,78 @@ nav:hover {
   font-size: 3em;
 }
 
-.Banner img {
-  width: 100%;
+.Banner {
+  height: 300pt;
+  background-color: var(--showgirlGreen);
 }
 
+.Banner p,
+.Banner button {
+  font-family: "Boldonse", system-ui;
+  font-weight: bold;
+  font-style: none;
+  font-size: 14pt;
+}
+
+.Banner h4 {
+  font-family: "Boldonse", system-ui;
+  font-weight: bold;
+  font-style: none;
+  font-size: 17pt;
+}
+
+.LACC,
 .Kura {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.Kura img {
-  max-width: 30vw;
-  display: flex;
-  justify-content: center;
-  padding: 3em, 3em, 3em, 3em;
+.Kura img,
+.LACC img {
+  max-width: 100%;
 }
-
 p {
-  font-size: 1em;
+  font-size: 20px;
   font-family: "IM Fell DW Pica", serif;
   font-weight: 400;
-  font-style: italic;
-  padding: 3em, 3em, 3em, 3em;
+  font-style: none;
+}
+
+.Kura p {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 50pt;
+}
+
+.education {
+  margin-left: 17pt;
+}
+
+h2 {
+  font-family: "Boldonse", system-ui;
+  font-weight: bold;
+  font-size: 24pt;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  margin-left: 50pt;
+  text-align: center;
+}
+
+.link {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.view button {
+  background-color: var(--showgirlGreenNF);
+  color: var(--showgirlOrange);
+}
+
+.Kura h2 {
+  display: flex;
+  justify-content: center;
 }
