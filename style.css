@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: ;
+  background-color: #100c08;
   color: #333333;
 }
 
@@ -116,57 +116,3 @@ button:focus {
   background-color: #eeeeee;
   cursor: pointer;
 }
-
-/* Header */
-
-.logo img {
-	float: left;
-	max-width: 7vw;
-}
-
-.container h1 {
-	color: white;
-	font-size: 2.5em;
-	float: left;
-	margin-left: auto;
-}
-
-header {
-  position: sticky;
-  top: 0%;
-	background: var(--showgirlGreen);
-}
-
-header::after{
-	content:"";
-	display: table;
-	clear: both;
-}
-
-nav {
-	float: right;
-	padding-right: 130px;
-}
-
-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-nav li {
-	display: inline-block;
-	margin-left: 130px;
-	padding-top: 80px;
-}
-
-nav a {
-	font-size: 1.9em;
-	color: white;
-	text-decoration: none;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-nav a:hover{
-	color: var(--showgirlOrange);
