@@ -1,10 +1,10 @@
-//---------------------Header-----------------------
-
 :root {
   --showgirlGreen: rgba(44,91,43, 0.80);
   --showgirlGreenNF: rgba(44,91,43);
   --showgirlOrange: #e15921;
 }
+
+/* ---------------------Header----------------------- */
 
 header {
   background: var(--showgirlGreen);
@@ -87,7 +87,7 @@ nav:hover {
   font-size: 3em;
 }
 
-//---------------------Banner-----------------------
+/* ---------------------Banner----------------------- */
 
 .Banner {
   height: 300pt;
@@ -126,7 +126,7 @@ nav:hover {
   color: var(--showgirlOrange);
 }
 
-//---------------------Body-----------------------
+/* ---------------------Body----------------------- */
 
 .LACC,
 .Kura {
