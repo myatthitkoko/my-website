@@ -1,3 +1,9 @@
+:root {
+  --showgirlGreen: rgba(44,91,43, 0.80);
+  --showgirlGreenNF: rgba(44,91,43);
+  --showgirlOrange: #e15921;
+}
+
 /* ---------------------Header----------------------- */
 
 header {
