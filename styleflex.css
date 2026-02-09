@@ -1,12 +1,9 @@
+//---------------------Header-----------------------
+
 :root {
   --showgirlGreen: rgba(44,91,43, 0.80);
   --showgirlGreenNF: rgba(44,91,43);
   --showgirlOrange: #e15921;
-}
-
-.content {
-  background-image: url(https://images.unsplash.com/photo-1766767673683-168676b97f4c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  display: flex;
 }
 
 header {
@@ -27,14 +24,6 @@ header {
   font-family: "Boldonse", system-ui;
   font-weight: bold;
   font-size: 24pt;
-}
-
-.gif {
-  margin-right: 1em;
-}
-
-.gif img {
-  max-height: 50pt;
 }
 
 .nav-toggle {
@@ -79,6 +68,10 @@ nav:hover {
   display: block;
 }
 
+.nav-toggle:hover ~ nav {
+  display: block;
+}
+
 .nav-toggle:checked ~ nav {
   display: block;
 }
@@ -87,16 +80,14 @@ nav:hover {
   color: var(--showgirlOrange);
 }
 
-.nav-toggle:hover ~ nav {
-  display: block;
-}
-
 .nav-toggle-label {
   margin-left: 0.4em;
   border: 100%;
   display: flex;
   font-size: 3em;
 }
+
+//---------------------Banner-----------------------
 
 .Banner {
   height: 300pt;
@@ -117,6 +108,25 @@ nav:hover {
   font-style: none;
   font-size: 17pt;
 }
+
+.description {
+  display: flex;
+  justify-content: center;
+  margin-left: 50pt;
+  text-align: center;
+}
+
+.link {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.view button {
+  background-color: var(--showgirlGreenNF);
+  color: var(--showgirlOrange);
+}
+
+//---------------------Body-----------------------
 
 .LACC,
 .Kura {
@@ -150,23 +160,6 @@ h2 {
   font-family: "Boldonse", system-ui;
   font-weight: bold;
   font-size: 24pt;
-}
-
-.description {
-  display: flex;
-  justify-content: center;
-  margin-left: 50pt;
-  text-align: center;
-}
-
-.link {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.view button {
-  background-color: var(--showgirlGreenNF);
-  color: var(--showgirlOrange);
 }
 
 .Kura h2 {
