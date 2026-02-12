@@ -9,7 +9,8 @@
   background-color: #100c08;
 }
 
-.content {
+legend,
+label {
   color: #F5F5F5;
 }
 
