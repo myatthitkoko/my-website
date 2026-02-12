@@ -20,10 +20,9 @@ header {
   width: 100vw;
   display: flex;
   justify-content: center;
-  font-size: 3em;
   font-family: "Boldonse", system-ui;
   font-weight: bold;
-  font-size: 20pt;
+  font-size: 2em;
   margin-right: 50pt;
 }
 
@@ -85,7 +84,11 @@ nav:hover {
   margin-left: 0.4em;
   border: 100%;
   display: flex;
-  font-size: 3em;
+  font-size: 2em;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  background-color: #80EF80;
 }
 
 h2 {
