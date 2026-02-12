@@ -5,8 +5,11 @@
   --showgirlOrange: #e15921;
 }
 
-.content {
+.body {
   background-color: #100c08;
+}
+
+.content {
   color: #F5F5F5;
 }
 
