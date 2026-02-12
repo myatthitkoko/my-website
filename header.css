@@ -89,6 +89,7 @@ nav:hover {
   padding-right: 15px;
   padding-top: 5px;
   background-color: #80EF80;
+  cursor: pointer;
 }
 
 h2 {
