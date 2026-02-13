@@ -9,7 +9,7 @@
 /* ---------------------Banner----------------------- */
 
 .Banner {
-  height: 300pt;
+  height: 500pt;
   background-color: var(--showgirlGreen);
   display: flex;
   align-items: space-between;
