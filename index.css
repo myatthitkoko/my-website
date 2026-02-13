@@ -11,38 +11,23 @@
 .Banner {
   height: 300pt;
   background-color: var(--showgirlGreen);
-}
-
-.Banner p,
-.Banner button {
-  font-family: "Boldonse", system-ui;
-  font-weight: bold;
-  font-style: none;
-  font-size: 0.8em;
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
 }
 
 .Banner h4 {
   font-family: "Boldonse", system-ui;
   font-weight: bold;
   font-style: none;
-  font-size: 1em;
-}
-
-.description {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.link {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.view button {
-  background-color: var(--showgirlGreenNF);
+  font-size: 2em;
   color: var(--showgirlOrange);
 }
+
+.Banner img {
+  max-wdith: 100%;
+}
+
 
 /* ---------------------Body----------------------- */
 
@@ -52,10 +37,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.Kura img,
-.LACC img {
-  max-width: 100%;
-}
 p {
   font-size: 1em;
   font-family: "IM Fell DW Pica", serif;
@@ -63,33 +44,8 @@ p {
   font-style: none;
 }
 
-.Kura p {
-  display: flex;
-  align-items: center;
-  text-align: justify;
-  padding: 50pt;
-}
-
-.education {
-  margin-left: 17pt;
-}
-
 h2 {
   font-family: "Boldonse", system-ui;
   font-weight: bold;
   font-size: 24pt;
-}
-
-.Kura h2 {
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 768px) { 
-  #.KuraText{
-   display:none;
-  }
-  #.summary{
-   display:none;
-  }
 }
