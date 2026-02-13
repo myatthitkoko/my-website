@@ -12,7 +12,7 @@
   height: 490pt;
   background-color: var(--showgirlGreen);
   display: flex;
-  align-items: space-between;
+  align-items: center;
   justify-content: center;
 }
 
