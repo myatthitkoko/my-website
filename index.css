@@ -9,10 +9,9 @@
 /* ---------------------Banner----------------------- */
 
 .Banner {
-  height: 490pt;
+  height: 500pt;
   background-color: var(--showgirlGreen);
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
