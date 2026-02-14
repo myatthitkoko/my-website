@@ -11,8 +11,6 @@
 .Banner {
   height: 500pt;
   background-color: var(--showgirlGreen);
-  display: flex;
-  justify-content: center;
 }
 
 .Banner h4 {
@@ -21,10 +19,14 @@
   font-style: none;
   font-size: 2em;
   color: var(--showgirlOrange);
+  display: flex;
+  flex-direction: flex-end;
 }
 
 .Banner img {
   max-width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 
