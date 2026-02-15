@@ -50,7 +50,7 @@
 
 .Kura img,
 .LACC img {
-  max-width: 100%;
+  width: 100%;
 }
 p {
   font-size: 1em;
@@ -73,7 +73,7 @@ p {
 h2 {
   font-family: "Boldonse", system-ui;
   font-weight: bold;
-  font-size: 24pt;
+  font-size: 16em;
 }
 
 .Kura h2 {
