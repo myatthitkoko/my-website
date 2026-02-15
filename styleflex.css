@@ -9,16 +9,13 @@
 /* ---------------------Banner----------------------- */
 
 .Banner {
-  height: 300pt;
+  height: 160pt;
   background-color: var(--showgirlGreen);
 }
 
-.Banner p,
-.Banner button {
-  font-family: "Boldonse", system-ui;
-  font-weight: bold;
-  font-style: none;
-  font-size: 0.8em;
+.Banner hr {
+  max-width: 88%;
+  
 }
 
 .Banner h4 {
@@ -35,8 +32,7 @@
 }
 
 .link {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  margin-left: 50pt;
 }
 
 .view button {
@@ -92,4 +88,8 @@ h2 {
   #.summary{
    display:none;
   }
+}
+
+li {
+  font-size: 1em;
 }
