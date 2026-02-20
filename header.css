@@ -54,7 +54,7 @@ nav li {
 
 nav a {
   color: white;
-  font-size: 18pt;
+  font-size: 0.3em;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -84,9 +84,7 @@ nav:hover {
   border: 100%;
   display: flex;
   font-size: 2.1em;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 5px;
+  padding: 15px;
   background-color: var(--showgirlGreen);
   cursor: pointer;
 }
