@@ -5,6 +5,7 @@
 
 .title {
   color: var(--showgirlOrange);
+  max-width: 50%;
 }
 
 h1,
