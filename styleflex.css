@@ -4,7 +4,7 @@
   --showgirlOrange: #e15921;
 }
 
-
+@media (min-width: 768px) {
 
 /* ---------------------Banner----------------------- */
 
@@ -82,15 +82,8 @@ h2 {
   justify-content: center;
 }
 
-@media (max-width: 768px) { 
-  #.KuraText{
-   display:none;
-  }
-  #.summary{
-   display:none;
-  }
-}
-
 li {
   font-size: 1em;
+}
+
 }
