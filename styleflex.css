@@ -94,10 +94,6 @@ li {
   font-size: 7pt;
 }
 
-.container li {
-  font-size: 14pt;
-}
-
 @media (min-width: 800px) {
 
 p {
