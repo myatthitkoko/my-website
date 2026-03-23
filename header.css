@@ -50,13 +50,7 @@ nav ul {
 nav li {
   margin-bottom: 1em;
   margin-left: 1em;
-  font-size: 16pt;
-}
-
-@media (min-width: 800px) {
-nav li {
   font-size: 15pt;
-}
 }
 
 nav a {
