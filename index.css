@@ -9,7 +9,9 @@
 /* ---------------------Banner----------------------- */
 
 .Banner {
-  height: 500pt;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  align-items: center;
   background-color: var(--showgirlGreen);
 }
 
@@ -18,15 +20,16 @@
   font-weight: bold;
   font-style: none;
   font-size: 2em;
+  line-height: 0.4;
+  letter-spacing: 1px;
   color: var(--showgirlOrange);
   display: flex;
-  flex-direction: flex-end;
+  justify-content: center;
+  
 }
 
 .Banner img {
   max-width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 
