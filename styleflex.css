@@ -94,32 +94,24 @@ p {
 h2 {
   font-family: "Boldonse", system-ui;
   font-weight: bold;
-  font-size: 14pt;
+  margin-left: 15pt;
 }
 
 li {
   font-size: 10pt;
 }
 
-.education {
-  margin-left: -10pt;
-}
 
 @media (min-width: 800px) {
 
 .LACC,
 .Kura {
   display: grid;
+  grid-template-rows: none;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  align-content: center;
 }
 
-.LACC {
-  display: flex;
-  flex-direction: row-reverse;
-}
-  
 p {
   font-size: 12pt;
   font-family: "IM Fell DW Pica", serif;
@@ -127,12 +119,25 @@ p {
   font-style: none;
 }
 
-.Kura p {
+.KuraText {
   display: flex;
-  align-items: center;
   text-align: justify;
+}
+
+.Kura p {
   padding: 50pt;
   font-size: 12pt;
+}
+
+
+.LACC  {
+  direction: rtl;
+}
+
+.education {
+  display: flex;
+  align-items: center;
+  direction: ltr;
 }
 
 h2 {
