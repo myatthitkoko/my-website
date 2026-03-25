@@ -67,6 +67,7 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   align-content: center;
+  direction: rtl;
 }
 
 .Kura img,
