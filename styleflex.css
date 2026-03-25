@@ -31,8 +31,8 @@
 }
 
 .link {
-  margin-left: 10pt;
-  margin-right: 10pt;
+  margin-left: 15pt;
+  margin-right: 15pt;
 }
 
 
@@ -99,6 +99,10 @@ li {
   font-size: 7pt;
 }
 
+.education {
+  margin-left: 5pt;
+}
+
 @media (min-width: 800px) {
 
 p {
@@ -114,10 +118,6 @@ p {
   text-align: justify;
   padding: 50pt;
   font-size: 12pt;
-}
-
-.education {
-  margin-left: 5pt;
 }
 
 h2 {
