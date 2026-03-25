@@ -67,7 +67,6 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   align-content: center;
-  direction: rtl;
 }
 
 .Kura img,
@@ -114,6 +113,10 @@ li {
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   align-content: center;
+}
+
+.LACC {
+  direction: rtl;
 }
   
 p {
