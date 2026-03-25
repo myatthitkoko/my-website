@@ -38,6 +38,7 @@
 
 .link p {
   font-size: 10pt;
+  text-align: justify;
 }
 
 
@@ -64,7 +65,9 @@
 .LACC,
 .Kura {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .Kura img,
@@ -75,7 +78,7 @@
 }
 
 p {
-  font-size: 5pt;
+  font-size: 9pt;
   font-family: "IM Fell DW Pica", serif;
   font-weight: 400;
   font-style: none;
@@ -86,7 +89,7 @@ p {
   align-items: center;
   text-align: justify;
   padding: 10pt;
-  font-size: 8pt;
+  font-size: 9pt;
 }
 
 h2 {
@@ -96,11 +99,11 @@ h2 {
 }
 
 li {
-  font-size: 7pt;
+  font-size: 10pt;
 }
 
 .education {
-  margin-left: 5pt;
+  margin-left: -10pt;
 }
 
 @media (min-width: 800px) {
