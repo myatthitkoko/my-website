@@ -116,7 +116,8 @@ li {
 }
 
 .LACC {
-  direction: rtl;
+  display: flex;
+  flex-direction: column-reverse;
 }
   
 p {
