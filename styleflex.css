@@ -31,8 +31,8 @@
 }
 
 .link {
-  margin-left: 50pt;
-  margin-right: 50pt;
+  margin-left: 10pt;
+  margin-right: 10pt;
 }
 
 
@@ -47,6 +47,11 @@
   font-size: 14pt;
 }
 
+.link {
+  margin-left: 50pt;
+  margin-right: 50pt;
+}
+  
 }
 
 .view button {
