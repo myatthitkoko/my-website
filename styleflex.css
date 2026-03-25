@@ -66,7 +66,6 @@
 .Kura {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  justify-content: space-between;
   align-content: center;
 }
 
@@ -108,6 +107,14 @@ li {
 
 @media (min-width: 800px) {
 
+.LACC,
+.Kura {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-content: center;
+}
+  
 p {
   font-size: 12pt;
   font-family: "IM Fell DW Pica", serif;
