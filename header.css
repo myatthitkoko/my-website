@@ -29,7 +29,8 @@ header {
   font-family: "Boldonse", system-ui;
   font-weight: bold;
   font-size: 1.3em;
-  margin-right: 50pt;
+  margin-right: 2em;
+  padding-right: 27px;
 }
 
 .nav-toggle {
