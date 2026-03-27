@@ -2,9 +2,14 @@
 
 p {
   color: gray;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: justify;
+}
+
+.content {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 input[type="checkbox"] {
@@ -14,10 +19,18 @@ input[type="checkbox"] {
 @media (min-width: 768px) {
 
 .content {
-  padding-left: 180px;
-  padding-right: 180px;
+  margin-left: 180px;
+  margin-right: 180px;
 }
 
+input[type="checkbox"] {
+  margin-top: 20px;
+}
+  
+p {
+  padding-left: 75px;
+  padding-right: 75px;
+  
 }
 
 legend,
