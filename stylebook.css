@@ -1,7 +1,3 @@
-:root {
-  --showgirlGreen: rgba(44,91,43, 0.80);
-  --showgirlOrange: #e15921;
-}
 
 .title {
   color: var(--showgirlOrange);
