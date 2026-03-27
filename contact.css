@@ -1,16 +1,5 @@
 /* Basic font styles */
 
-:root {
-  --showgirlGreen: rgba(44,91,43, 0.80);
-  --showgirlOrange: #e15921;
-}
-
-/*
-body {
-  background-color: #100c08;
-}
-*/
-
 p {
   color: gray;
   padding-left: 10px;
@@ -104,6 +93,7 @@ label {
   margin-right: 0px;
 }
 
+
 textarea {
   margin-top: 10px;
   padding: 5px;
@@ -135,8 +125,15 @@ button {
   display: block;
 }
 
-button:hover,
-button:focus {
-  background-color: #eeeeee;
+.form-selection button {
+  background: var(--orangeGradient);
+  border: var(--showgirlOrange) solid 1px;
+  font-size: 16px;
+  color: #eeeeee;
+}
+
+button:hover {
+  color: black;
   cursor: pointer;
+  border: none;
 }
