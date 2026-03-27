@@ -73,24 +73,150 @@
 /* ---------------------Body----------------------- */
 
 body {
-  background-color:  color: var(--showgirlGreen);
+  background-color: var(--showgirlGreen);
 }
 
-.LACC,
-.Kura {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-p {
-  font-size: 1em;
-  font-family: "IM Fell DW Pica", serif;
+.card h1 {
+  color: black;
+  font-family: "Italiana", sans-serif;
   font-weight: 400;
-  font-style: none;
+  font-size: 40pt;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-h2 {
-  font-family: "Boldonse", system-ui;
-  font-weight: bold;
-  font-size: 24pt;
+.card button {
+  color: black;
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-size: 20pt;
+  padding: 10px;
+  background: none;
+  border: none;
+}
+
+.glass1 {
+  background: rgba(255, 255, 255, 0.1);      /* semi-transparent white */
+  backdrop-filter: blur(10px);                /* blur the background behind */
+  -webkit-backdrop-filter: blur(10px);        /* Safari support */
+  border-radius: 50px;                         /* rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* subtle shadow */
+  width: 100%;
+  height: 50vh;
+}
+
+.card {
+  margin-top: 100px;
+  margin-right: 50px;
+  display: flex;
+}
+
+.glass1,
+.glass2,
+.glass3 {
+  background: rgba(255, 255, 255, 0.1);      /* semi-transparent white */
+  backdrop-filter: blur(10px);                /* blur the background behind */
+  -webkit-backdrop-filter: blur(10px);        /* Safari support */
+  border-radius: 30px;                         /* rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* subtle shadow */
+}
+
+.glass1 {
+  width: 70%;
+  height: 60vh;
+  margin-left: 150px;
+  margin-right: 50px;
+  border-radius: 50px;
+}
+
+.glass2,
+.glass3 {
+  width: 200px;
+  height: 80px;
+  background: var(--showgirlGreenF);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button:hover {
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 1100px) {
+
+.card h1 {
+  font-size: 36pt;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+}
+
+
+@media (max-width: 860px) {
+
+.card h1 {
+  font-size: 30pt;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+}
+
+
+@media (max-width: 768px) {
+
+.glass2,
+.glass3 {
+  width: 130px;
+  height: 40px;
+  border-radius: 15px;
+}
+
+.glass3 {
+  margin-left: 15px;
+}
+
+.glass1 {
+  width: 100%;
+  height: 300px;
+  margin-left: 30px;
+  border-radius: 30px;
+}
+
+.card {
+  margin-top: 100px;
+  flex-direction: column;
+}
+
+.card h1 {
+  font-size: 22pt;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card button {
+  font-size:13pt;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  width: 100%;
+}
+
 }
