@@ -11,11 +11,22 @@ body {
 }
 */
 
+p {
+  color: gray;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+input[type="checkbox"] {
+  margin-top: 10px;
+}
+
 @media (min-width: 768px) {
 
 .content {
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 180px;
+  padding-right: 180px;
 }
 
 }
@@ -34,12 +45,6 @@ h2 {
 
 * {
   box-sizing: border-box;
-}
-
-p {
-  color: gray;
-  margin: 0.5em 0;
-  text-align: justify;
 }
 
 /* Form structure */
