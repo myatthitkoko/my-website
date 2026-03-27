@@ -9,7 +9,8 @@
 }
 
 h1,
-.books {
+.books,
+.currentBooks {
   display: flex;
   justify-content: center;
 }
