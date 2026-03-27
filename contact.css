@@ -154,4 +154,5 @@ button:hover {
   color: black;
   cursor: pointer;
   border: none;
+  text-decoration: underline;
 }
