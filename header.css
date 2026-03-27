@@ -102,6 +102,10 @@ h2 {
   font-size: 24pt;
 }
 
+.nav-toggle-label:hover {
+  color: #eeeeee;
+}
+
 body {
   background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
 }
