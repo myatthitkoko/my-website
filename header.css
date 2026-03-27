@@ -102,6 +102,13 @@ h2 {
   font-size: 24pt;
 }
 
+@media (max-width: 800px) {
+
+.nav-toggle:not(:checked) ~ nav {
+  display: none;
+}
+
+}
 .nav-toggle-label:hover {
   color: #eeeeee;
 }
