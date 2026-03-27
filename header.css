@@ -120,7 +120,7 @@ body {
 }
 
 .Footer {
-  height: 160pt;
+  height: 100pt;
   background-color: var(--showgirlGreenF);
 }
 
@@ -133,7 +133,7 @@ body {
   font-family: "Boldonse", system-ui;
   font-weight: bold;
   font-style: none;
-  font-size: 1em;
+  font-size: 0.7em;
 }
 
 .footNote {
@@ -156,8 +156,7 @@ body {
 }
 
 .socials img {
-  max-width: 50px;
-  border: black solid 1px;
+  max-width: 30px;
   margin-left: 5px;
   margin-right: 5px;
 }
