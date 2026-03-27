@@ -85,9 +85,16 @@ fieldset input {
 }
 
 label {
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+
+label {
   margin-right: 40px;
 }
 
+}
 .container label {
   margin-right: 0px;
 }
