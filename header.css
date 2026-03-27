@@ -118,3 +118,46 @@ body {
   padding: 0;
   background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
 }
+
+.Footer {
+  height: 160pt;
+  background-color: var(--showgirlGreenF);
+}
+
+.Footer hr {
+  max-width: 88%;
+  
+}
+
+.Footer h4 {
+  font-family: "Boldonse", system-ui;
+  font-weight: bold;
+  font-style: none;
+  font-size: 1em;
+}
+
+.footNotes {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contactLinks {
+  margin-left: 15pt;
+  margin-right: 15pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.socials img {
+  max-width: 50px;
+  border: black solid 1px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
