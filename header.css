@@ -2,18 +2,24 @@
   --showgirlGreen: rgba(44,91,43, 0.80);
   --showgirlGreenNF: rgba(44,91,43);
   --showgirlOrange: #e15921;
+  --showgirlBrick: linear-gradient(135deg, rgba(225, 89, 33, 0.80), rgba(215, 63, 0, 0.80), rgba(233, 139, 91, 0.80), rgba(141, 211, 198, 0.80));
+  --showgirlOrange: #e15921;
+  --orangeGradient: linear-gradient(to right, #e15921, #FF9966, #ffe566 100%);
+  --opalite: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  --trueshowgirl: linear-gradient(135deg, #8dd3c6 0%, #3f816c 100%);
 }
 
 /* ---------------------Header----------------------- */
 
 header {
-  background: var(--showgirlGreen);
+  background: var(--showgirlBrick);
   position: sticky;
   top: 0%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 50pt;
+  width: 100%;
 }
 
 .logo {
@@ -31,7 +37,7 @@ header {
 }
 
 nav {
-  background: var(--showgirlGreen);
+  background: var(--showgirlBrick);
   position: absolute;
   text-align: left;
   top: 100%;
@@ -62,7 +68,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--showgirlOrange);
+  color: var(--showgirlGreen);
 }
 
 nav:hover {
@@ -78,7 +84,7 @@ nav:hover {
 }
 
 .nav-toggle:checked ~ .nav-toggle-label {
-  color: var(--showgirlOrange);
+  color: var(--showgirlGreen);
 }
 
 .nav-toggle-label {
@@ -86,7 +92,7 @@ nav:hover {
   display: flex;
   font-size: 2em;
   padding: 10px 20px 14px 20px;
-  background-color: var(--showgirlGreen);
+  background-color: var(--showgirlBrick);
   cursor: pointer;
 }
 
