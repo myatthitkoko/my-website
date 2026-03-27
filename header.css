@@ -95,3 +95,7 @@ h2 {
   font-weight: bold;
   font-size: 24pt;
 }
+
+body {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
