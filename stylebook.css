@@ -14,9 +14,14 @@ h1,
   justify-content: center;
 }
 
+.currentBooks img {
+  max-width: 50vw;
+}
+
 .books img {
   max-width: 20vw;
 }
+
 /*
 body {
   background-color: #100c08;
