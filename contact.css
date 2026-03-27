@@ -12,6 +12,11 @@ p {
   margin-right: 20px;
 }
 
+.checks {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 input[type="checkbox"] {
   margin-top: 10px;
 }
