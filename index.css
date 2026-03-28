@@ -72,9 +72,6 @@
 
 /* ---------------------Body----------------------- */
 
-body {
-  background-color: var(--showgirlGreen);
-}
 
 .card h1 {
   color: black;
