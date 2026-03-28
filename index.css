@@ -150,6 +150,13 @@
 
 button:hover {
   cursor: pointer;
+}
+
+.glass2 button:hover {
+  color: var(--showgirlGreen);
+}
+
+.glass3 button:hover {
   color: white;
 }
 
