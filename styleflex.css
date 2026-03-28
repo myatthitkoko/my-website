@@ -1,97 +1,156 @@
-:root {
-  --showgirlGreen: rgba(44,91,43, 0.80);
-  --showgirlOrange: #e15921;
+
+
+/* ---------------------Banner----------------------- */
+
+.Banner {
+  height: 160pt;
+  background: var(--showgirlBrick);
 }
 
-.content {
-  background-image: url(https://images.unsplash.com/photo-1766767673683-168676b97f4c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  display: flex;
+.Banner hr {
+  max-width: 88%;
+  
 }
 
-header {
-  background: var(--showgirlGreen);
-  position: sticky;
-  top: 0%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 10vh;
+.Banner h4 {
+  font-family: "Boldonse", system-ui;
+  font-weight: bold;
+  font-style: none;
+  font-size: 1em;
 }
 
-.logo {
-  width: 100vw;
+.description {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
-.gif {
-  margin-right: 1em;
+.link {
+  margin-left: 15pt;
+  margin-right: 15pt;
 }
 
-.gif img {
-  max-height: 50pt;
+
+.link p {
+  font-size: 10pt;
+  text-align: justify;
 }
 
-.nav-toggle {
-  display: none;
+
+@media (min-width: 800px) {
+
+.link p {
+  font-size: 14pt;
 }
 
-nav {
-  background: var(--showgirlGreen);
-  position: absolute;
-  text-align: left;
-  top: 100%;
-  left: 0;
+.link {
+  margin-left: 50pt;
+  margin-right: 50pt;
+}
+  
+}
+
+.view button {
+  background-color: var(--showgirlGreenNF);
+  color: var(--showgirlOrange);
+}
+
+/* ---------------------Body----------------------- */
+
+.LACC,
+.Kura {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.Kura img,
+.LACC img {
   width: 100%;
-  display: none;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  margin-bottom: 1em;
-  margin-left: 1em;
-}
-
-nav a {
-  color: white;
-  font-size: 18pt;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: var(--showgirlOrange);
-}
-
-nav:hover {
-  display: block;
-}
-
-.nav-toggle:checked ~ nav {
-  display: block;
-}
-
-.nav-toggle:checked ~ .nav-toggle-label {
-  color: var(--showgirlOrange);
-}
-
-.nav-toggle:hover ~ nav {
-  display: block;
-}
-
-.nav-toggle-label {
-  margin-left: 0.5em;
-  border: 100%;
   display: flex;
-  font-size: 50pt;
+  align-self: center;
+  border-radius: 30px;
 }
 
-.content img {
-  max-width: 25vw;
+p {
+  font-size: 9pt;
+  font-family: "IM Fell DW Pica", serif;
+  font-weight: 400;
+  font-style: none;
+}
+
+.Kura p {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 10pt;
+  font-size: 9pt;
+}
+
+h2 {
+  font-family: "Boldonse", system-ui;
+  font-weight: bold;
+  font-size: 16pt;
+  margin-left: 25px;
+}
+
+li {
+  font-size: 10pt;
+}
+
+
+@media (min-width: 800px) {
+
+.LACC,
+.Kura {
+  display: grid;
+  grid-template-rows: none;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+p {
+  font-size: 12pt;
+  font-family: "IM Fell DW Pica", serif;
+  font-weight: 400;
+  font-style: none;
+}
+
+.KuraText {
+  display: flex;
+  text-align: justify;
+}
+
+.Kura p {
+  padding: 50pt;
+  font-size: 12pt;
+}
+
+
+.LACC  {
+  direction: rtl;
+}
+
+.education {
+  display: flex;
+  align-items: center;
+  direction: ltr;
+}
+
+h2 {
+  font-family: "Boldonse", system-ui;
+  font-weight: bold;
+  font-size: 24pt;
+  margin-left: 40pt;
+}
+
+li {
+  font-size: 14pt;
+}
+
+
 }

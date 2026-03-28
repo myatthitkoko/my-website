@@ -1,0 +1,163 @@
+:root {
+  --showgirlGreen: rgba(44,91,43);
+  --showgirlGreenF: rgba(44,91,43, 0.80);
+  --showgirlOrange: #e15921;
+  --showgirlBrick: linear-gradient(135deg, rgba(225, 89, 33, 0.80), rgba(215, 63, 0, 0.80), rgba(233, 139, 91, 0.80), rgba(141, 211, 198, 0.80));
+  --showgirlOrange: #e15921;
+  --orangeGradient: linear-gradient(to right, #e15921, #FF9966, #ffe566 100%);
+  --opalite: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  --trueshowgirl: linear-gradient(135deg, #8dd3c6 0%, #3f816c 100%);
+}
+
+/* ---------------------Header----------------------- */
+
+header {
+  background: var(--showgirlBrick);
+  position: sticky;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50pt;
+  width: 100%;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Boldonse", system-ui;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-right: 2em;
+  padding-right: 27px;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+nav {
+  background: var(--showgirlBrick);
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 160pt;
+  display: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+  font-size: 15pt;
+}
+
+nav a {
+  color: white;
+  font-size: 0.9em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--showgirlGreen);
+}
+
+nav:hover {
+  display: block;
+}
+
+.nav-toggle:hover ~ nav {
+  display: block;
+}
+
+.nav-toggle:checked ~ nav {
+  display: block;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label {
+  color: var(--showgirlGreen);
+}
+
+.nav-toggle-label {
+  border: 100%;
+  display: flex;
+  font-size: 2em;
+  padding: 10px 20px 14px 20px;
+  background-color: var(--showgirlBrick);
+  cursor: pointer;
+}
+
+h2 {
+  font-family: "Boldonse", system-ui;
+  font-weight: bold;
+  font-size: 24pt;
+}
+
+@media (max-width: 800px) {
+
+.nav-toggle:not(:checked) ~ nav {
+  display: none;
+}
+
+}
+.nav-toggle-label:hover {
+  color: #eeeeee;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.Footer {
+  height: 100pt;
+  background-color: var(--showgirlGreenF);
+}
+
+.Footer hr {
+  max-width: 88%;
+  
+}
+
+.Footer h4 {
+  font-family: "Boldonse", system-ui;
+  font-weight: bold;
+  font-style: none;
+  font-size: 0.8em;
+}
+
+.footNote {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contactLinks {
+  margin-left: 15pt;
+  margin-right: 15pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.socials img {
+  max-width: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
