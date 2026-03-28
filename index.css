@@ -135,10 +135,14 @@ body {
 .glass3 {
   width: 200px;
   height: 80px;
-  background: var(--showgirlGreenF);
   display: flex;
   justify-content: center;
   align-items: center;
+  border: var(--showgirlGreenF) solid 1px;
+}
+
+.glass3 {
+  background: linear-gradient(to right, #2f5f50, #8dd3c6);
 }
 
 .buttons {
