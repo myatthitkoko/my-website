@@ -9,7 +9,7 @@
 
 .Banner hr {
   max-width: 88%;
-  
+  background: linear-gradient(to right, transparent, white, transparent)
 }
 
 .Banner h1 {
