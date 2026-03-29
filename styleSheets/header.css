@@ -1,6 +1,7 @@
 :root {
   --showgirlGreen: rgba(44,91,43);
   --showgirlGreenF: rgba(44,91,43, 0.80);
+  --deepGreen: #234822;
   --showgirlOrange: #e15921;
   --showgirlBrick: linear-gradient(135deg, rgba(225, 89, 33, 0.80), rgba(215, 63, 0, 0.80), rgba(233, 139, 91, 0.80), rgba(141, 211, 198, 0.80));
   --showgirlOrange: #e15921;
