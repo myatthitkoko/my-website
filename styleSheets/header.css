@@ -28,9 +28,9 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  font-family: "Boldonse", system-ui;
+  font-family: "italiana", system-ui;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 24pt;
   margin-right: 2em;
   padding-right: 27px;
 }
@@ -60,6 +60,7 @@ nav li {
   margin-bottom: 1em;
   margin-left: 1em;
   font-size: 15pt;
+  font-family: "italiana";
 }
 
 nav a {
