@@ -14,7 +14,6 @@
 
 .Banner h1 {
   font-family: "italiana", system-ui;
-  font-weight: bold;
   font-style: none;
 }
 
@@ -87,7 +86,7 @@ p {
   padding: 10pt;
 }
 
-h2 {
+h1 {
   font-family: "italiana", system-ui;
   font-weight: bold;
   font-size: 16pt;
@@ -97,6 +96,7 @@ h2 {
 li {
   font-size: 10pt;
   font-family: "italiana";
+  font-weight: bold;
 }
 
 
@@ -189,7 +189,7 @@ p {
   direction: ltr;
 }
 
-h2 {
+h1 {
   margin-left: 40pt;
 }
 
