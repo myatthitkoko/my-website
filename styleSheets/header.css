@@ -39,9 +39,17 @@ header {
 /*scroll bar for centering*/
 
 html {
-  overflow-y: scroll;
   scrollbar-gutter: stable;
 }
+
+@supports not (scrollbar-gutter: stable) {
+
+html {
+  overflow-y: scroll;
+}
+  
+}
+
 
 .nav-toggle {
   display: none;
