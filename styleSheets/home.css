@@ -82,8 +82,8 @@
   padding-right: 20px;
 }
 
-button .glass2,
-button .glass3 {
+.glass2 button,
+.glass3 button {
   font-family: "Italiana", sans-serif;
   font-weight: 400;
   font-size: 20pt;
@@ -140,10 +140,13 @@ button .glass3 {
 
 .glass3 {
   background: var(--showgirlBrick);
+}
+
+.glass3 button {
   color: white;
 }
 
-.glass2 {
+.glass2 button {
   color: var(--showgirlOrange);
 }
 
