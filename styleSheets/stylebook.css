@@ -124,7 +124,7 @@ textarea {
 
 .separator input {
   flex: 6;
-  height: 30px;
+  height: 40px;
 }
 
 fieldset input {
@@ -143,6 +143,7 @@ input, text, textarea {
   backdrop-filter: blur(5px);
   margin-bottom: 20px;
   font-family: "IM FELL DW PICA"; 
+  font-size: 12pt;
 }
 
 .separator, .form-section {
