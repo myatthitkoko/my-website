@@ -135,7 +135,7 @@ li {
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 800px) and (hover:hover){
 
 .LACC,
 .Kura {
