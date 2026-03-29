@@ -34,7 +34,12 @@ header {
   margin: 0;
   position: absolute;
   z-index: 1;
-  width: 100vw;
+}
+
+/*scroll bar*/
+
+html {
+  overflow-y: scroll;
 }
 
 .nav-toggle {
