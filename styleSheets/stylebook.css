@@ -21,13 +21,15 @@ h1, h2,
   max-width: 50vw;
 }
 
-.library {
+.shelf {
   overflow: hidden;
+}
+
+.library {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 65px;
   background-image: url("/images/infiniteBookShelf.png");
-  
 }
 
 .books {
@@ -181,8 +183,14 @@ p {
   transition: transform 0.5s ease;
 }
 
+/*
+removed because only modern browsers support this
+kept because I may use it later
+
 .library:has(img:hover) {
   overflow: visible;
 }
+  
+*/
 
 }
