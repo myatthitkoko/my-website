@@ -36,10 +36,11 @@ header {
   z-index: 1;
 }
 
-/*scroll bar*/
+/*scroll bar for centering*/
 
 html {
   overflow-y: scroll;
+  scrollbar-gutter: stable;
 }
 
 .nav-toggle {
