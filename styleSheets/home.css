@@ -1,4 +1,4 @@
-
+/*green gradient: linear-gradient(to right, #2f5f50, #8dd3c6) */
 
 
 /* ---------------------Banner----------------------- */
@@ -74,16 +74,16 @@
 
 
 .card h1 {
-  color: black;
+  color: var(--showgirlGreen);
   font-family: "Italiana", sans-serif;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 40pt;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.card button {
-  color: black;
+button .glass2,
+button .glass3 {
   font-family: "Italiana", sans-serif;
   font-weight: 400;
   font-size: 20pt;
@@ -135,11 +135,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: var(--showgirlGreenF) solid 1px;
+  border: var(--showgirlOrange) solid 1px;
 }
 
 .glass3 {
-  background: linear-gradient(to right, #2f5f50, #8dd3c6);
+  background: var(--showgirlBrick);
+  color: white;
+}
+
+.glass2 {
+  color: var(--showgirlOrange);
 }
 
 .buttons {
@@ -148,16 +153,10 @@
   justify-content: center;
 }
 
-button:hover {
+.glass2:hover,
+.glass3:hover {
   cursor: pointer;
-}
-
-.glass2 button:hover {
-  color: var(--showgirlGreen);
-}
-
-.glass3 button:hover {
-  color: white;
+  transform: scale(1.1);
 }
 
 @media (max-width: 1100px) {
