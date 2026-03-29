@@ -104,7 +104,7 @@ h2 {
   font-size: 24pt;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (hover: none) {
 
 .nav-toggle:not(:checked) ~ nav {
   display: none;
