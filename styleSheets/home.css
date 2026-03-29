@@ -1,82 +1,12 @@
 /*green gradient: linear-gradient(to right, #2f5f50, #8dd3c6) */
 
-
-/* ---------------------Banner----------------------- */
-
-/*.Banner {
-  display: grid;
-  grid-template-rows: 1fr 5fr;
-  align-items: center;
-  background-color: var(--showgirlGreen);
-}
-
-.Banner h4 {
-  font-family: "Boldonse", system-ui;
-  font-weight: bold;
-  font-style: none;
-  font-size: 2em;
-  line-height: 0.4;
-  letter-spacing: 1px;
-  color: var(--showgirlOrange);
-  display: flex;
-  justify-content: center;
-  
-}
-
-.Banner img {
-  max-width: 100%;
-}*/
-
-/* test */
-
-.Banner {
-  display: grid;
-  grid-template-rows: auto auto;
-  background-color: var(--showgirlGreen);
-}
-
-.Banner h4 {
-  font-family: "Boldonse", system-ui;
-  font-size: 2em;
-  line-height: 1.3;
-  letter-spacing: 1px;
-  color: var(--showgirlOrange);
-
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-/* IMAGE */
-.Banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-@media (min-width: 768px) {
-  .Banner {
-    height: 100vh;
-  }
-
-  .Banner h4 {
-    font-size: 3rem;
-    line-height: 0.1;
-  }
-
-  .Banner img {
-    height: 70vh;
-    object-fit: cover;
-  }
-}
-
-
 /* ---------------------Body----------------------- */
 
 
 .card h1 {
   color: var(--showgirlGreen);
   font-family: "Italiana", sans-serif;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 40pt;
   padding-left: 20px;
   padding-right: 20px;
