@@ -4,6 +4,10 @@
   font-size: 16pt;
 }
 
+p, h1 {
+  font-family: "italiana";
+}
+
 h1,
 .currentBooks {
   display: flex;
