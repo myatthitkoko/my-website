@@ -31,8 +31,9 @@ header {
   font-family: "italiana", system-ui;
   font-weight: bold;
   font-size: 24pt;
-  margin-right: 2em;
-  padding-right: 27px;
+  margin: 0;
+  position: absolute;
+  z-index: 1;
 }
 
 .nav-toggle {
@@ -94,10 +95,12 @@ nav:hover {
 .nav-toggle-label {
   border: 100%;
   display: flex;
-  font-size: 2em;
+  font-size: 24pt;
   padding: 10px 20px 14px 20px;
   background-color: var(--showgirlBrick);
   cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 
 h2 {
