@@ -15,6 +15,7 @@
 .Banner h1 {
   font-family: "italiana", system-ui;
   font-style: none;
+  margin: 0;
 }
 
 .description {
