@@ -4,6 +4,7 @@
   --deepGreen: #234822;
   --showgirlOrange: #e15921;
   --showgirlBrick: linear-gradient(135deg, rgba(225, 89, 33, 0.80), rgba(215, 63, 0, 0.80), rgba(233, 139, 91, 0.80), rgba(141, 211, 198, 0.80));
+  --showgirlOrange: #e15921;
   --orangeGradient: linear-gradient(to right, #e15921, #FF9966, #ffe566 100%);
   --opalite: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
   --trueshowgirl: linear-gradient(135deg, #8dd3c6 0%, #3f816c 100%);
@@ -144,7 +145,14 @@ nav {
   left: 0;
   width: 100%;
   height: 160pt;
-  display: none;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 0.5s ease-in-out;
+}
+
+@keyframes drop-down {
+  0% {transform: translateY(-10px);}
+  100% {transform: translateY(0);}
 }
 
 nav ul,
@@ -174,15 +182,15 @@ nav a:hover {
 }
 
 nav:hover {
-  display: block;
+  transform: scale(1,1);
 }
 
 .nav-toggle:hover ~ nav {
-  display: block;
+  transform: scale(1,1);
 }
 
 .nav-toggle:checked ~ nav {
-  display: block;
+  transform: scale(1,1);
 }
 
 .nav-toggle:checked ~ .nav-toggle-label {
@@ -203,13 +211,13 @@ nav:hover {
 @media (max-width: 800px) and (hover: none) {
 
 .nav-toggle:not(:checked) ~ nav {
-  display: none;
+  transform: scale(1,0);
 }
 
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
 }
 
-.nav-toggle-label:hover {
-  color: #eeeeee;
 }
 
 body {
@@ -332,6 +340,10 @@ body {
 
 }
 
+.jump h4 {
+  overflow: hidden;
+}
+
 .jump a::before {
   content: '';
   display: block;
@@ -352,11 +364,6 @@ body {
   padding-top: 15pt;
   padding-bottom: 15pt;
 }
-
-.jump a:hover {
-  color: white;
-}
-
 
 .jump a:hover::before {
   width: 100%;
