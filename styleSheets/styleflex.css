@@ -5,6 +5,9 @@
   scroll-margin-top: 50pt;
 }
 
+section {
+  margin-bottom: 40px;
+}
 
 /* ---------------------Banner----------------------- */
 
@@ -157,13 +160,8 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-.educationText {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 .KuraText {
-  padding: 30px;
+  padding: 25px;
 }
 
 }
