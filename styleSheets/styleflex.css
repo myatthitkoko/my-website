@@ -21,7 +21,7 @@ section {
 
 .Banner {
   height: 160pt;
-  background: var(--showgirlBrick);
+  background: var(--showgirlBrickNav);
   padding-left: 24px;
   padding-right: 24px;
   display: flex;
