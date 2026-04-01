@@ -11,8 +11,14 @@
 }
 
 .accent {
-  color: var(--showgirlOrange);
   font-weight: bold;
+  animation: accentAnimate 4s ease-in-out infinite;
+}
+
+@keyframes accentAnimate {
+  0% {color: var(--showgirlGreen);}
+  50% {color: var(--showgirlOrange);}
+  100% {color: var(--showgirlGreen);}
 }
 
 .centered {
@@ -95,7 +101,6 @@ header {
   top: 0%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 50pt;
   width: 100%;
   z-index: 999;
@@ -143,7 +148,8 @@ nav {
   display: none;
 }
 
-nav ul {
+nav ul,
+.nullifyList {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -218,6 +224,9 @@ body {
 .Footer {
   height: 100pt;
   background-color: var(--showgirlGreenF);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .Footer hr {
@@ -266,11 +275,89 @@ body {
 }
 
 .enlarge {
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transition: transform 0.7s ease, box-shadow 0.7s ease;
 }
 
 .enlarge:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+}
+
+.shine {
+  overflow: hidden;
+}
+
+.shine::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  left: -300px;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.7), transparent);
+  transform: skewX(-20deg);
+}
+
+
+@media (hover:hover) {
+
+.shine:hover::before {
+  animation: light 0.5s ease-in-out;
+}
+@keyframes light {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+}
+@media (hover:none) {
+.shine::before {
+  animation: light 5s ease-in-out 3s infinite;
+}
+
+@keyframes light {
+  0% {
+    left: -10%;
+  }
+  10% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+}
+
+.jump h4 {
+  overflow: hidden;
+}
+
+.jump a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: var(--showgirlGreen);
+
+  position: absolute;
+  top: 0px;
+  width: 0%;
+  transition: all ease-in-out 0.25s;
+}
+
+.jump a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--showgirlGreen);
+  padding-top: 15pt;
+  padding-bottom: 15pt;
+}
+
+.jump a:hover::before {
+  width: 100%;
 }
