@@ -13,7 +13,7 @@ section {
 
 .LACC span{
   display: block;
-  font-family: "IM Fell Dw Pica", serif;
+  font-family: var(--roboto);
   font-weight: 400;
   font-size: 11pt;
   padding: 10px 0px 15px 0px;
@@ -35,7 +35,6 @@ section {
 }
 
 .Banner h1, h4 {
-  font-family: "italiana", system-ui;
   font-style: none;
   margin: 0;
 }
@@ -87,7 +86,7 @@ section {
 
 .LACC li {
   font-size: 10pt;
-  font-family: "italiana";
+  font-family: var(--roboto);
   font-weight: bold;
 }
 
