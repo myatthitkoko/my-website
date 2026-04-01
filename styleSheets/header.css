@@ -333,10 +333,6 @@ body {
 
 }
 
-.jump h4 {
-  overflow: hidden;
-}
-
 .jump a::before {
   content: '';
   display: block;
@@ -357,6 +353,11 @@ body {
   padding-top: 15pt;
   padding-bottom: 15pt;
 }
+
+.jump a:hover {
+  color: white;
+}
+
 
 .jump a:hover::before {
   width: 100%;
