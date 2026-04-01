@@ -8,6 +8,9 @@
   --orangeGradient: linear-gradient(to right, #e15921, #FF9966, #ffe566 100%);
   --opalite: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
   --trueshowgirl: linear-gradient(135deg, #8dd3c6 0%, #3f816c 100%);
+  --showgirlBrickNav: linear-gradient(to right, rgba(225, 89, 33, 0.80), rgba(215, 63, 0, 0.80), rgba(233, 139, 91, 0.80), rgba(141, 211, 198, 0.80));
+  --roboto:   font-family: "Roboto Condensed", sans-serif;
+  
 }
 
 .accent {
@@ -32,8 +35,7 @@
 /*-------------------font sizes-----------------------*/
 
 h1, h2, h3, h4 {
-  font-family: "italiana";
-  font-weight: bold;
+  font-family: var(--roboto);
 }
 
 h1 {
@@ -53,9 +55,7 @@ h4 {
 }
 
 p {
-  font-family: "IM Fell DW Pica", serif;
-  font-weight: 400;
-  font-style: none;
+  font-family: var(--roboto);
   font-size: 11pt;
 }
 
@@ -138,7 +138,7 @@ html {
 }
 
 nav {
-  background: var(--showgirlBrick);
+  background: var(--showgirlBrickNav);
   position: absolute;
   text-align: left;
   top: 100%;
@@ -166,7 +166,7 @@ nav li {
   margin-bottom: 1em;
   margin-left: 1em;
   font-size: 15pt;
-  font-family: "italiana";
+  font-family: var(--roboto);
 }
 
 nav a {
