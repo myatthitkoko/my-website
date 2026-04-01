@@ -366,3 +366,7 @@ body {
 .jump a:hover::before {
   width: 100%;
 }
+
+.jump a:hover {
+  color: white;
+}
