@@ -98,6 +98,7 @@ fieldset input {
 
 label {
   margin-right: 10px;
+  font-family: "roboto condensed", san-serif;
 }
 
 @media (min-width: 768px) {
