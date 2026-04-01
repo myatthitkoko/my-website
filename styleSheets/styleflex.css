@@ -136,7 +136,6 @@
   position: absolute;
   display: none;
 }
-}
 
 @media (max-width: 768px) and (hover:none) {
 
@@ -159,11 +158,11 @@
 }
 
 .educationText {
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.KuraText{
+.KuraText {
   padding: 30px;
 }
 
@@ -238,7 +237,6 @@
   border-radius: 50px;                         
   border: 1px solid rgba(255, 255, 255, 0.3); 
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
 }
 
 .LACCimg,
