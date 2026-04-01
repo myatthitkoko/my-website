@@ -148,6 +148,7 @@ button {
   border: var(--showgirlOrange) solid 1px;
   font-size: 16px;
   color: #eeeeee;
+  transition: transform 0.5s ease;
 }
 
 button:hover {
@@ -155,6 +156,7 @@ button:hover {
   cursor: pointer;
   border: none;
   text-decoration: underline;
+  transform: scale(0.95);
 }
 
 }
