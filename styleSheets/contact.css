@@ -40,7 +40,7 @@ p {
 
 legend,
 label {
-  color: #0A0A0A;
+    font-family: "roboto condensed", san-serif;
 }
 
 h2 {
@@ -98,7 +98,6 @@ fieldset input {
 
 label {
   margin-right: 10px;
-  font-family: "roboto condensed", san-serif;
 }
 
 @media (min-width: 768px) {
