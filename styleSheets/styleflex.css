@@ -1,3 +1,9 @@
+#education, 
+#courses, 
+#work-experience, 
+#feedback {
+  scroll-margin-top: 50pt;
+}
 
 
 /* ---------------------Banner----------------------- */
@@ -5,17 +11,26 @@
 .Banner {
   height: 160pt;
   background: var(--showgirlBrick);
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .Banner hr {
-  max-width: 88%;
+  max-width: 100%;
   background: linear-gradient(to right, transparent, white, transparent)
 }
 
-.Banner h1 {
+.Banner h1, h4 {
   font-family: "italiana", system-ui;
   font-style: none;
   margin: 0;
+}
+
+.Banner h4 {
+  padding-top: 20px;
 }
 
 .description {
@@ -25,24 +40,13 @@
   padding-top: 20px;
 }
 
-.view {
-  margin-left: 24px;
-  margin-right: 24px;
-}
-
-
 @media (min-width: 800px) {
 
-.view {
-  margin-left: 60pt;
-  margin-right: 60pt;
+.Banner {
+  padding-left: 60pt;
+  padding-right: 60pt;
 }
   
-}
-
-.view button {
-  background-color: var(--showgirlGreenNF);
-  color: var(--showgirlOrange);
 }
 
 /* ---------------------Body----------------------- */
@@ -88,7 +92,7 @@
   margin: 50px 0 50px 0;
 }
 
-.reviews div {
+.reviews article {
   width: 100%;
 }
 
@@ -106,11 +110,15 @@
   margin: 50px 0 50px 0;
 }
 
-#tech-skills li {
+#tech-skills li,
+#courses li {
   line-height: 1.6;
   letter-spacing: 0.2;
-  font-family: "IM FELL DW Pica", serif;
   font-size: 10pt;
+}
+
+#courses li span:nth-child(3){
+  display: none;
 }
 
 .row-flip {
@@ -118,10 +126,25 @@
   flex-direction: column-reverse;
 }
 
+.item {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  margin: 0px 10px 0px 10px;
+}
+
+.jump {
+  opacity: 0;
+  position: absolute;
+}
+
 @media (max-width: 768px) and (hover:none) {
 
 .reviews {
   gap: 30px;
+}
+
+.reviews article {
+  height: 300px;
 }
 
 .educationText,
@@ -148,8 +171,22 @@
 
 @media (min-width: 768px) and (hover:hover){
 
-.enlarge:hover {
-  border: var(--showgirlGreen) solid 1px;
+#courses li span:nth-child(3){
+  display: block;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 10% 1fr 25%;
+  margin: 0px 50px 0px 50px;
+}
+
+.reviews .enlarge:hover {
+  border: white solid 2px;
+}
+
+.logo {
+  position: relative;
 }
 
 .row-flip {
@@ -160,11 +197,22 @@
   margin: 0px 0 50px 0;
 }
 
-#tech-skills li {
+#tech-skills li,
+#courses li {
   font-size: 16pt;
 }
 
-.reviews {
+.jump {
+  opacity: 1;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+
+}
+
+.reviews, .jump {
   flex-direction: row;
   justify-content: space-between;
 }
