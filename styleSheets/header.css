@@ -10,6 +10,83 @@
   --trueshowgirl: linear-gradient(135deg, #8dd3c6 0%, #3f816c 100%);
 }
 
+.accent {
+  color: var(--showgirlOrange);
+  font-weight: bold;
+}
+
+.centered {
+  text-align: center;
+}
+
+.justified {
+  text-align: justify;
+}
+
+/*-------------------font sizes-----------------------*/
+
+h1, h2, h3, h4 {
+  font-family: "italiana";
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 20pt;
+}
+
+h2 {
+  font-size: 18pt;
+}
+
+h3 {
+  font-size: 16pt;
+}
+
+h4 {
+  font-size: 14pt;
+}
+
+p {
+  font-family: "IM Fell DW Pica", serif;
+  font-weight: 400;
+  font-style: none;
+  font-size: 10pt;
+}
+
+.content {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+@media (min-width: 768px) and (hover:hover) {
+h1 {
+  font-size: 30pt;
+}
+
+h2 {
+  font-size: 25pt;
+}
+
+h3 {
+  font-size: 20pt;
+}
+
+h4 {
+  font-size: 16pt;
+}
+
+p {
+  font-size: 14pt;
+}
+
+.content {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+}
+
+
 /* ---------------------Header----------------------- */
 
 header {
@@ -40,6 +117,7 @@ header {
 
 html {
   scrollbar-gutter: stable;
+  scroll-behavior: smooth; 
 }
 
 @supports not (scrollbar-gutter: stable) {
@@ -49,7 +127,6 @@ html {
 }
   
 }
-
 
 .nav-toggle {
   display: none;
@@ -118,12 +195,6 @@ nav:hover {
   z-index: 2;
 }
 
-h2 {
-  font-family: "Boldonse", system-ui;
-  font-weight: bold;
-  font-size: 24pt;
-}
-
 @media (max-width: 800px) and (hover: none) {
 
 .nav-toggle:not(:checked) ~ nav {
@@ -131,6 +202,7 @@ h2 {
 }
 
 }
+
 .nav-toggle-label:hover {
   color: #eeeeee;
 }
@@ -141,6 +213,8 @@ body {
   background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
 }
 
+/*---------------Footer--------------*/
+
 .Footer {
   height: 100pt;
   background-color: var(--showgirlGreenF);
@@ -149,13 +223,6 @@ body {
 .Footer hr {
   max-width: 88%;
   
-}
-
-.Footer h4 {
-  font-family: "Boldonse", system-ui;
-  font-weight: bold;
-  font-style: none;
-  font-size: 0.8em;
 }
 
 .footNote {
@@ -196,6 +263,14 @@ body {
   border-radius: 50px;                         
   border: 1px solid rgba(255, 255, 255, 0.3); 
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  margin-left: 30px;
-  margin-right: 30px;
+}
+
+.enlarge {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.enlarge:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
