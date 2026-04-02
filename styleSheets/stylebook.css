@@ -10,11 +10,6 @@ h1,
   justify-content: center;
 }
 
-.currentBooks {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
 .currentBooks img {
   max-width: 50vw;
 }
@@ -149,11 +144,10 @@ input, text, textarea {
   font-size: 12pt;
 }
 
-.separator, .form-section {
+.separator, .form-section, .featured {
   margin-left: 30px;
   margin-right: 30px;
 }
-
 
 @media (min-width: 768px) and (hover: hover) {
 
