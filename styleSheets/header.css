@@ -227,7 +227,7 @@ body {
 /*---------------Footer--------------*/
 
 .Footer {
-  height: 100pt;
+  min-height: 100pt;
   background-color: var(--showgirlGreenF);
   display: flex;
   flex-direction: column;
