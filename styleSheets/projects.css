@@ -1,327 +1,50 @@
-
-.title {
-  color: var(--showgirlOrange);
-  font-size: 16pt;
-}
-
-h1,
-.currentBooks {
+.content h1 {
   display: flex;
   justify-content: center;
-}
-
-.currentBooks img {
-  max-width: 50vw;
-}
-
-.shelf {
-  overflow: hidden;
-}
-
-.library {
-  width: 100%;
-  padding-top: 30px;
-  padding-bottom: 65px;
-  background-image: url("/images/infiniteBookShelf.png");
-}
-
-.books {
-  display: flex;
-  width: max-content;
-  animation: scroll 40s linear infinite;
-}
-
-header {
-  z-index: 9999;
-}
-
-.books img {
-  width: 140px;
-  margin-right: 20px;
-}
-
-.books:hover {
-  animation-play-state: paused;
-}
-
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-p {
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: justify;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-form {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-legend {
-  display: flex;
-  flex-direction: flex-end;
-  padding-bottom: 10px;
-  font-weight: bold;
-}
-
-.form-section {
-  margin-bottom: 20px;
-}
-
-button {
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: 1px solid grey;
-  background-color: #dddddd;
-  width: 30%;
-  margin: 0 auto;
-  display: block;
-}
-
-.form-selection button {
-  background: var(--orangeGradient);
-  border: var(--showgirlOrange) solid 1px;
-  font-size: 16px;
-  color: #eeeeee;
-  transition: transform 0.5s ease;
-}
-
-button:hover {
-  color: black;
-  cursor: pointer;
-  border: none;
-  text-decoration: underline;
-  transform: scale(0.95);
-}
-
-
-textarea {
-  width: 100%;
-  height: 200px;
-}
-
-.separator {
-  display: flex;
-  align-items: center;
-}
-
-.separator label {
-  flex: 2;
-}
-
-.separator input {
-  flex: 6;
-  height: 40px;
-}
-
-fieldset input {
-  margin: 0 10px 0 0;
-}
-
-.wholeForm {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-input, text, textarea {
-  border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.3);
-  background: rgba(255,255,255,0.15);
-  backdrop-filter: blur(5px);
-  margin-bottom: 20px;
-  font-family: "IM FELL DW PICA"; 
-  font-size: 12pt;
-}
-
-.separator, .form-section, .featured {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-@media (min-width: 768px) and (hover: hover) {
-
-.structure {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.title {
-  font-size: 24pt;
-}
-
-p {
-  font-size: 14pt;
-}
-
-.wholeForm, .featured {
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-p {
-  padding-left: 200px;
-  padding-right: 200px;
-}
-
-.books img:hover {
-  transform: scale(2);
-}
-
-.books img {
-  transition: transform 0.5s ease;
-}
-
-input, text, textarea {
-  font-size: 14pt;
-}
-
-  #education, 
-#courses, 
-#work-experience, 
-#feedback {
-  scroll-margin-top: 50pt;
+  color: var(--showgirlOrange);
 }
 
 section {
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-/* ---------------------Banner----------------------- */
-
-.LACC span{
-  display: block;
-  font-family: var(--roboto);
-  font-weight: 400;
-  font-size: 11pt;
-  padding: 10px 0px 15px 0px;
-}
-
-.Banner {
-  height: 160pt;
-  background: var(--showgirlBrickNav);
-  padding-left: 24px;
-  padding-right: 24px;
+#Featured {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 30px;
 }
 
-.Banner hr {
-  max-width: 100%;
-  background: linear-gradient(to right, transparent, white, transparent)
-}
-
-.Banner h1, h4 {
-  font-style: none;
-  margin: 0;
-}
-
-.Banner h4 {
-  padding-top: 20px;
-}
-
-.description {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding-top: 20px;
-}
-
-@media (min-width: 800px) {
-
-.Banner {
-  padding-left: 60pt;
-  padding-right: 60pt;
-}
-  
-}
-
-/* ---------------------Body----------------------- */
-
-.LACC,
-.Kura {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  align-content: center;
-}
-
-.Kura img,
-.LACC img {
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  align-self: center;
-  border-radius: 30px;
-}
-
-.Kura p {
-  display: flex;
-  align-items: center;
-  text-align: justify;
-  padding: 10pt;
-}
-
-.LACC li {
-  font-size: 10pt;
-  font-family: var(--roboto);
-  font-weight: bold;
-}
-
-
-.KuraText {
-  display: flex;
-  text-align: justify;
-}
-
-.reviews {
-  display: flex;
-  flex-direction: column;
-  margin: 50px 0 50px 0;
-}
-
-.reviews article {
+.project1 img {
   width: 100%;
 }
 
-.reviews footer {
-  padding: 20px;
-}
-
-.reviews p {
-  padding: 15px;
-  line-height: 1.6;
-  letter-spacing: 0.2;
-}
-
-#tech-skills {
-  margin: 50px 0 50px 0;
-}
-
-#tech-skills li,
-#courses li {
-  line-height: 1.6;
-  letter-spacing: 0.2;
-  font-size: 10pt;
-}
-
-#courses li span:nth-child(3){
-  display: none;
-}
-
-.row-flip {
+figcaption {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14pt;
+  color: white;
+  background: var(--showgirlGreen);
+  min-height: 40px;
   display: flex;
-  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+#Featured p {
+  padding: 10px;
+  margin-top: 0px;
+}
+
+.project1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+li {
+  font-size: 11pt;
+  font-family:"Roboto Condensed", san-serif;
 }
 
 .item {
@@ -331,149 +54,40 @@ section {
   padding: 5px;
 }
 
-.jump {
-  position: absolute;
-  display: none;
+.content {
+  margin-left: 30px;
+  margin-right: 30px;
 }
-
-@media (max-width: 768px) and (hover:none) {
-
-.reviews {
-  gap: 30px;
-}
-
-.reviews article {
-  height: 300px;
-}
-
-.educationText,
-.KuraText {
-  background: rgba(255, 255, 255, 0.1);      
-  backdrop-filter: blur(10px);                
-  -webkit-backdrop-filter: blur(10px);        
-  border-radius: 50px;                         
-  border: 1px solid rgba(255, 255, 255, 0.3); 
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-}
-
-.KuraText {
-  padding: 25px;
-}
-
-}
-
 
 @media (min-width: 768px) and (hover:hover){
 
-.LACC span {
+.project1 {
+  width: 300px;
+}
+
+#Featured {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+li {
   font-size: 14pt;
 }
 
-#courses li span:nth-child(3){
-  display: block;
+.content {
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .item {
   grid-template-columns: 5fr 0.75fr;
   margin: 0px 50px 0px 50px;
 }
-
-.reviews .enlarge:hover {
-  border: white solid 2px;
-}
-
-.logo {
-  position: relative;
-}
-
-.row-flip {
-  flex-direction: column;
-}
-
-#tech-skills {
-  margin: 0px 0 50px 0;
-}
-
-#tech-skills li,
-#courses li {
-  font-size: 16pt;
-}
-
-.jump {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-
-}
-
-.reviews, .jump {
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.reviews article {
-  width: 30%;
-}
-
-.reviews p {
-  padding: 30px;
-}
-
-
-.LACC,
-.Kura {
-  display: grid;
-  grid-template-rows: none;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
-  background: rgba(255, 255, 255, 0.1);      
-  backdrop-filter: blur(10px);                
-  -webkit-backdrop-filter: blur(10px);        
-  border-radius: 50px;                         
-  border: 1px solid rgba(255, 255, 255, 0.3); 
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-}
-
-.LACCimg,
-.KuraImg {
-  padding: 30px;
-}
-
-.KuraText {
-  display: flex;
-  text-align: justify;
-  padding: 50pt;
-}
-
-
-.LACC  {
-  direction: rtl;
-}
-
-.educationText {
-  display: flex;
-  align-items: center;
-  direction: ltr;
-}
-
-.LACC li {
-  font-size: 14pt;
-}
-
-
-}
-
-
-/*
-removed because only modern browsers support this
-kept because I may use it later
-
-.library:has(img:hover) {
-  overflow: visible;
-}
-  
-*/
 
 }
