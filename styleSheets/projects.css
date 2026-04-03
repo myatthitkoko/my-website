@@ -326,7 +326,7 @@ section {
 
 .item {
   display: grid;
-  grid-template-columns: 1fr 30%;
+  grid-template-columns: 1fr 1fr;
   margin: 0px 10px 0px 10px;
 }
 
