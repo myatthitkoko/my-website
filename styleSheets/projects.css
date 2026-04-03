@@ -326,8 +326,9 @@ section {
 
 .item {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1.5fr;
   margin: 0px 10px 0px 10px;
+  padding: 5px;
 }
 
 .jump {
@@ -373,8 +374,7 @@ section {
 }
 
 .item {
-  display: grid;
-  grid-template-columns: 10% 1fr 25%;
+  grid-template-columns: 5fr 0.75fr;
   margin: 0px 50px 0px 50px;
 }
 
