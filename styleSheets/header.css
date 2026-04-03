@@ -33,7 +33,7 @@
 /*-------------------font sizes-----------------------*/
 
 h1, h2, h3, h4 {
-  font-family:"italiana", san-serif;
+  font-family:"italiana", sans-serif;
 }
 
 h1 {
@@ -53,7 +53,7 @@ h4 {
 }
 
 p {
-  font-family:"Roboto Condensed", san-serif;
+  font-family:"Roboto Condensed", sans-serif;
   font-size: 11pt;
 }
 
@@ -164,7 +164,7 @@ nav li {
   margin-bottom: 1em;
   margin-left: 1em;
   font-size: 15pt;
-  font-family:"Roboto Condensed", san-serif;
+  font-family:"Roboto Condensed", sans-serif;
 }
 
 nav a {
