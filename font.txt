@@ -1,0 +1,5 @@
+Font considerations
+
+Inter
+Poppins
+DM Sans
