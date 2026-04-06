@@ -61,6 +61,11 @@ li {
   margin-right: 30px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (min-width: 768px) and (hover:hover){
 
 .project1 {
