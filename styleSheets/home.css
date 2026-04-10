@@ -2,6 +2,9 @@
 
 /* ---------------------Body----------------------- */
 
+.body {
+  height: 100vh;
+}
 
 .card h1 {
   color: var(--deepGreen);
