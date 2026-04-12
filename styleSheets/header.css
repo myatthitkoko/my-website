@@ -216,7 +216,7 @@ nav:hover {
   z-index: 2;
 }
 
-@media (max-width: 800px) and (hover: none) {
+@media (max-width: 800px) or (hover: none) {
 
 .nav-toggle:not(:checked) ~ nav {
   transform: scale(1,0);
