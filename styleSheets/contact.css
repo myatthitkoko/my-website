@@ -29,6 +29,7 @@ input[type="checkbox"] {
 .Banner {
   position: relative;
   overflow: hidden;
+  width: 100vw;
 }
 
 .Banner img {
