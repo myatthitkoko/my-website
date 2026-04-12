@@ -11,6 +11,8 @@ section {
 
 /* ---------------------Banner----------------------- */
 
+
+
 .LACC span{
   display: block;
   font-family: var(--roboto);
@@ -239,7 +241,6 @@ section {
   display: grid;
   grid-template-rows: none;
   grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
   background: rgba(255, 255, 255, 0.1);      
   backdrop-filter: blur(10px);                
   -webkit-backdrop-filter: blur(10px);        
@@ -248,7 +249,7 @@ section {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-.LACCimg,
+.LACCImg,
 .KuraImg {
   padding: 30px;
 }
@@ -259,9 +260,8 @@ section {
   padding: 50pt;
 }
 
-
-.LACC  {
-  direction: rtl;
+.flippedImg {
+  order: 2;
 }
 
 .educationText {
