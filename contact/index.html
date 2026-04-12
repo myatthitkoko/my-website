@@ -53,21 +53,24 @@
 				</div>
 				<h1 class="logo">Myat Thit Ko Ko</h1>
 			</header>
-			<br />
-		  <h2>I want your contact!</h2>
-		
-		  <p>I am very excited that you visited  
-		    <a href="/">my website</a>,
-		    and I want to hear what you thought of it! 
-		    Please fill in the below sections. You don't 
-		    need to provide your name or contact details, 
-		    but if you do, I will be glad to reach out to you.
+			<div class="Banner">
+				<img src="/images/soCal.jpeg" alt="picture of palm trees">
+				<div class="glass circle">
+					<h2>I want your contact!</h2>
+				</div>
+			</div>	
+		  <p class="justified">Thank you for visiting  
+		    <a href="/">my website</a>. 
+		    I’d love to hear your feedback, so feel free to fill out the form below. Providing your name or contact details is optional, but if you do, I’d be happy to follow up with you.
+		  </p>
+		  <p>
+		    For business inquiries, please email me at <a href="mailto:example@email.com">contact@myatthitkoko.com</a>
 		  </p>
 		<div class="content">
 		  <form action="https://formspree.io/f/xeepoppd" method="POST">
 		    <div class="form-section">
-		      <h2>Colors</h2>
-			  <div class="checks">
+		      <h2>Design</h2>
+			  <div class="checks glass">
 		      	<fieldset>
 			        <legend>
 			          Were the colors
@@ -116,9 +119,9 @@
 		      <h2>About your interest</h2>
 		      <div class="separator">
 		        <label for="best page">
-		          What was your favourite section?
+		          What was your favourite page?
 		        </label>
-		        <select name="best page" id="best page">
+		        <select name="best page" id="best page" class="glass">
 		          <option value="home">Home</option>
 		          <option value="books">Books</option>
 		          <option value="projects">Projects</option>
@@ -130,26 +133,22 @@
 		    
 		    <div class="form-selection">
 		      <h2>Any other feedback?</h2>
-		      <label for="comments">
-		        Leave a comment!
-		      </label>
-		      <br />
-		      <textarea id="comments" name="comments" row="5" column="33"></textarea>
+		      <textarea class="glass" id="comments" name="comments" row="5" column="33" placeholder="Leave a comment!" style="padding: 30px"></textarea>
 		    </div>
-		    
-		    <div class="form-selection">
+		    <br>
 		    <h2>Your details</h2>
+		    <div class="form-selection credentials glass">
 		      <div class="separator">
 		        <label for="name">Name</label>
-		        <input type="name" id="name" name="name" value="" />
+		        <input type="name" id="name" name="name" value="" class="glass" />
 		      </div>
 		      <div class="separator">
 		        <label for="email">Email</label>
-		        <input type="email" id="email" name="email" />
+		        <input type="email" id="email" name="email" class="glass" />
 		      </div>
 		      <div class="separator">
 		        <label for="phone">Phone</label>
-		        <input type="phone" id="phone" name="phone" />
+		        <input type="phone" id="phone" name="phone" class="glass"/>
 		      </div>
 		    </div>
 		    
@@ -159,9 +158,6 @@
 			  
 		  </form>
 		</div>
-		<br>
-		<br>
-		<br>
 		<div class="Footer">
 		  <div>
 		    <div class="footNote">

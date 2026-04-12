@@ -1,10 +1,9 @@
 /* Basic font styles */
 
 p {
-  color: gray;
+  color: var(--deepGreen);
   padding-left: 20px;
   padding-right: 20px;
-  text-align: justify;
 }
 
 .content {
@@ -15,17 +14,67 @@ p {
 .checks {
   margin-left: -10px;
   margin-right: -10px;
+  padding: 30px 5px;
 }
 
 input[type="checkbox"] {
   margin-top: 10px;
 }
 
+.credentials {
+  padding: 30px;
+  padding-bottom: 10px;
+}
+
+.Banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.Banner img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.circle {
+  position: absolute;
+  bottom: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.circle h2 {
+  color: white;
+  text-align: center;
+  font-size: 24pt;
+  margin-top: 20px;
+}
+
 @media (min-width: 768px) {
+
+.circle {
+  bottom: -800px;
+  width: 1000px;
+  height: 1000px;
+}
+
+.circle h2 {
+  font-size: 40pt;
+  margin-top: 80px;
+}
 
 .content {
   margin-left: 180px;
   margin-right: 180px;
+}
+
+.checks {
+  padding: 30px;
 }
 
 input[type="checkbox"] {
@@ -141,6 +190,8 @@ button {
   background-color: #dddddd;
   width: 50%;
   margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: block;
 }
 
