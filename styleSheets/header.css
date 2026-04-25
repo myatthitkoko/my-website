@@ -112,6 +112,7 @@ header {
   height: 50pt;
   width: 100%;
   z-index: 999;
+  backdrop-filter: blur(3px);
 }
 
 .logo {
@@ -156,6 +157,7 @@ nav {
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 0.5s ease-in-out;
+  backdrop-filter: blur(3px);
 }
 
 @keyframes drop-down {
