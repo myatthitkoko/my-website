@@ -6,6 +6,13 @@ body {
   height: 100vh;
 }
 
+.line {
+  height: 3px; 
+  background: var(--opalite); 
+  border: none; 
+  width: 70%;
+}
+
 .card h1 {
   color: var(--deepGreen);
   font-family: "italiana";
