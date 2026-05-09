@@ -16,13 +16,14 @@
 			@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap');
 			@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 			@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
-			.card { margin: 0; background: url('/images/skylineLA-stock.png'); width: 100vw; height: 100vh; background-repeat: no-repeat; background-size: cover; display: flex; justify-content: space-evenly; align-items: center;}
+			.card { margin: 0; background: url('images/skylineLA-stock.png'); width: 100vw; height: 100vh; background-repeat: no-repeat; background-size: cover; display: flex; justify-content: space-evenly; align-items: center;}
 			.glass1 {backdrop-filter: blur(4px);}
 			header {position: absolute;}
-			@media (max-width: 768px), (hover: none) { .card { background: url('/images/skylineLA-stock-mobile.png'); background-repeat: no-repeat; background-size: cover; flex-direction: column; } }
+			@media (max-width: 768px), (hover: none) { .card { background: url('images/skylineLA-stock-mobile.png'); background-repeat: no-repeat; background-size: cover; flex-direction: column; } } 
 		</style>
 	</head>
 	<body>
+		<div class="header-wrapper">
 		<header>
 		<div class="container">
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
@@ -67,23 +68,39 @@
 			<h4><a href="/contact/">Contact</a></h4>
 		  </div>
 		</header>
+		</div>
 		<div class="card">
+			<div class="glass-wrapper">
 			<div class="glass1">
-				<h1>Hi. </h1>
-				<h1>I am a Computer Science student in Los Angeles.</h1>
+				<div>
+					<h1>Hi. </h1>
+					<h1>I am a Computer Science student in Los Angeles.</h1>
+				</div>
+				<div class="buttons">
+					<div class="glass2 shine">
+						<a href="/contact/">
+							<button>Contact</button>
+						</a>
+					</div>
+					<div class="glass3 shine">
+						<a href="/projects/">
+							<button>View Projects</button>
+						</a>
+					</div>
+					<hr style="height: 5px; background-color: white; border: none; width: 80%;">
+
+				</div>
+
+			<div class="socials">
+				<a href="https://www.linkedin.com/in/myatthitkoko"><img src="/images/linkedin.png" alt="li"></a>
+				<a href="https://www.facebook.com/MyatThitKoKo"><img src="/images/facebook.png" alt="fb"></a>
+				<a href="https://www.youtube.com/@myatthitkoko"><img src="/images/youtube.png" alt="yt"></a>
 			</div>
-			<div class="buttons">
-				<div class="glass2 shine">
-					<a href="/contact/">
-						<button>Contact</button>
-					</a>
-				</div>
-				<br>
-				<div class="glass3 shine">
-					<a href="/projects/">
-						<button>View Projects</button>
-					</a>
-				</div>
+				
+			</div>
+			<div class="glass">
+					<h1>Not a lot going on at the moment</h1>
+			</div>
 			</div>
 		</div>
 	</body>
