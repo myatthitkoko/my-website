@@ -48,12 +48,12 @@ body {
 }
 
 .glass1 {
-  background: rgba(255, 255, 255, 0.1);      /* semi-transparent white */
-  backdrop-filter: blur(10px);                /* blur the background behind */
-  -webkit-backdrop-filter: blur(10px);        /* Safari support */
-  border-radius: 50px;                         /* rounded corners */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* subtle shadow */
+  background: rgba(255, 255, 255, 0.1);      
+  backdrop-filter: blur(10px);                
+  -webkit-backdrop-filter: blur(10px);        
+  border-radius: 50px;                         
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  
   width: 100%;
   height: 50vh;
   display: flex;
@@ -88,12 +88,12 @@ body {
 .glass1,
 .glass2,
 .glass3 {
-  background: rgba(255, 255, 255, 0.1);      /* semi-transparent white */
-  backdrop-filter: blur(10px);                /* blur the background behind */
-  -webkit-backdrop-filter: blur(10px);        /* Safari support */
-  border-radius: 30px;                         /* rounded corners */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* subtle shadow */
+  background: rgba(255, 255, 255, 0.1);      
+  backdrop-filter: blur(10px);                
+  -webkit-backdrop-filter: blur(10px);        
+  border-radius: 30px;                        
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
 }
 
 .glass1 {
@@ -209,7 +209,6 @@ body {
 .glass-wrapper {
   flex-direction: column;
   padding: 100px 30px;
-  border: red solid 1px;
   height: 100%;
 }
 
