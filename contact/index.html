@@ -15,44 +15,51 @@
 			</style>
 	</head>
 	<body>
-			<header>
-			<div class="container">
-	        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-					<nav>
-						<ul>
-							<li>
-								<a href="/">
-									Home
-								</a>
-							</li>
-							<li>
-								<a href="/books/">
-									Books
-								</a>
-							</li>
-							<li>
-								<a href="/projects/">
-									Projects
-								</a>
-							</li>
-							<li>
-								<a href="/about/">
-									About
-								</a>
-							</li>
-							<li>
-								<a href="/contact/">
-									Contact
-								</a>
-							</li>
-						</ul>
-					</nav>
-	        <label for="nav-toggle" class="nav-toggle-label">
-	          <span>☰</span>
-	        </label>
-				</div>
-				<h1 class="logo">Myat Thit Ko Ko</h1>
-			</header>
+			<div class="header-wrapper">
+		<header>
+		<div class="container">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+				<nav data-nosnippet>
+					<ul>
+						<li>
+							<a href="/">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="/books/">
+								Books
+							</a>
+						</li>
+						<li>
+							<a href="/projects/">
+								Projects
+							</a>
+						</li>
+						<li>
+							<a href="/about/">
+								About
+							</a>
+						</li>
+						<li>
+							<a href="/contact/">
+								Contact
+							</a>
+						</li>
+					</ul>
+				</nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span>☰</span>
+        </label>
+			</div>
+			<a href="/" class="logo"><h1>Myat Thit Ko Ko</h1></a>
+			<div class="jump">
+				<h4><a href="mailto:contact@myatthitkoko.com">Email</a></h4>
+				<h4><a href="#feedback">Feedback Form</a></h4>
+				<h4><a href="#socials">Socials</a></h4>
+		  	</div>
+		</header>
+		</div>
 			<div class="Banner">
 				<img src="/images/soCal.jpeg" alt="picture of palm trees">
 				<div class="glass circle">
@@ -67,7 +74,7 @@
 		    For business inquiries, please email me at <a href="mailto:contact@myatthitkoko.com">contact@myatthitkoko.com</a>
 		  </p>
 		<div class="content">
-		  <form action="https://formspree.io/f/xeepoppd" method="POST">
+		  <form action="https://formspree.io/f/xeepoppd" method="POST" id="feedback">
 		    <div class="form-section">
 		      <h2>Design</h2>
 			  <div class="checks glass">
@@ -166,7 +173,7 @@
         <hr>
 		  </div>
 		  <div class="contactLinks">
-		    <div class="socials">
+		    <div class="socials" id="socials">
 		   	<a href="https://www.linkedin.com/in/myatthitkoko"><img src="/images/linkedin.png" alt="insta"></a>
 			<a href="https://www.facebook.com/MyatThitKoKo"><img src="/images/facebook.png" alt="fb"></a>
 			<a href="https://www.youtube.com/@myatthitkoko"><img src="/images/youtube.png" alt="yt"></a>

@@ -4,7 +4,6 @@
 	<head>
 		<link href="/styleSheets/header.css" rel="stylesheet" type="text/css">
 		<link href="/styleSheets/stylebook.css" rel="stylesheet" type="text/css">
-		<link href="/styleSheets/projects.css" rel="stylesheet" type="text/css">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>
@@ -14,13 +13,17 @@
 			@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap');
 			@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 			@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+			.library {
+			  background-image: url("images/infiniteBookShelf.png");
+			}
 		</style>
 	</head>
 	<body>
+		<div class="header-wrapper">
 		<header>
 		<div class="container">
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
-				<nav>
+				<nav data-nosnippet>
 					<ul>
 						<li>
 							<a href="/">
@@ -53,11 +56,16 @@
           <span>☰</span>
         </label>
 			</div>
-			<h1 class="logo">Myat Thit Ko Ko</h1>
+			<a href="/" class="logo"><h1>Myat Thit Ko Ko</h1></a>
+			<div class="jump">
+				<h4><a href="#featured">Featured Books</a></h4>
+				<h4><a href="#essays">Essays</a></h4>
+				<h4><a href="#recommend">Book Recommendation</a></h4>
+		  	</div>
 		</header>
-		<br>
-		<div class="structure">
-			<div class="featured glass">
+		</div>
+		<section class="structure">
+			<div class="featured glass" id="featured">
 					<h1 class="title">Featured Book(s)</h1>
 					<div class="currentBooks">
 						<img src="/images/knownCitizen.jpg" alt="KnownCitizen">
@@ -97,8 +105,8 @@
 				</div>
 				<br><br>
 			</div>
-		</div>
-		<section id="Essays" class="glass wholeForm">
+		</section>
+		<section id="essays" class="glass wholeForm">
   		  <h3 style="margin-left: 20px">Essays</h3>
   		    <ul class="nullifyList" style="margin-bottom: 30px;">
     			<li class="glass enlarge shine item"><a href="Ko_essay02_EngC1000.pdf"><span>Homophobia and Sexism</span></a><span>English C1000</span></li>
@@ -108,7 +116,7 @@
 				<li class="glass enlarge shine item"><span>Privacy</span><span>English C1001</span></li>
   		    </ul>
 		</section>
-		<br><br><br>
+		<section id="recommend">
 		<form action="https://formspree.io/f/xeepoppd" method="POST" class="wholeForm glass">	
 		<h1 class="title">Book Recommendation</h1>
 		  <p style="text-align: center">Suggest something to read next.</p>
@@ -129,6 +137,6 @@
 		    </div>
 		    <br><br>
 		  </form>
-		    <br><br><br>
+		</section>
 	</body>
 </html>

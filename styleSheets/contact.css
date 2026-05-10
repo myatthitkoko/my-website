@@ -1,5 +1,10 @@
 /* Basic font styles */
 
+#socials, 
+#feedback {
+  scroll-margin-top: 50pt;
+}
+
 p {
   color: var(--deepGreen);
   padding-left: 20px;
@@ -7,8 +12,8 @@ p {
 }
 
 .content {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 auto;
+  max-width: 400px;
 }
 
 .checks {
@@ -29,7 +34,7 @@ input[type="checkbox"] {
 .Banner {
   position: relative;
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
 }
 
 .Banner img {
@@ -56,7 +61,20 @@ input[type="checkbox"] {
   margin-top: 20px;
 }
 
+.jump {
+  display: none;
+}
+
+header {
+  position: absolute;
+}
+
 @media (min-width: 768px) {
+
+.content {
+  max-width: 1000px;
+  font-size: 14pt;
+}
 
 .circle {
   bottom: -800px;
@@ -67,11 +85,6 @@ input[type="checkbox"] {
 .circle h2 {
   font-size: 40pt;
   margin-top: 80px;
-}
-
-.content {
-  margin-left: 180px;
-  margin-right: 180px;
 }
 
 .checks {
@@ -86,6 +99,30 @@ p {
   padding-left: 75px;
   padding-right: 75px;
 }
+
+.logo {
+  position: relative;
+}
+
+.jump {
+  display: flex;
+  flex-direction: row;
+  margin:0; 
+  width: 80%; 
+  padding-right: 20px; 
+  position: relative;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.jump a:hover {
+  color: var(--showgirlOrange);
+}
+
+.jump a::before {
+  background-color: var(--showgirlOrange);
+}
+
 }
 
 legend,
