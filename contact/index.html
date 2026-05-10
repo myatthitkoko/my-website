@@ -1,8 +1,8 @@
-<!doctype html>
+<!doctype html> <!-- This page, as one of the earliest pages of my web, was built on the template provided by https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Forms_challenge -->
 <html lang="en">
 	<head>
-			<link href="/styleSheets/header.css" rel="stylesheet" type="text/css">
-			<link href="/styleSheets/contact.css" rel="stylesheet" type="text/css">
+			<link href="styleSheets/header.css" rel="stylesheet" type="text/css">
+			<link href="styleSheets/contact.css" rel="stylesheet" type="text/css">
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<title>
@@ -15,46 +15,53 @@
 			</style>
 	</head>
 	<body>
-			<header>
-			<div class="container">
-	        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-					<nav>
-						<ul>
-							<li>
-								<a href="/">
-									Home
-								</a>
-							</li>
-							<li>
-								<a href="/books/">
-									Books
-								</a>
-							</li>
-							<li>
-								<a href="/projects/">
-									Projects
-								</a>
-							</li>
-							<li>
-								<a href="/about/">
-									About
-								</a>
-							</li>
-							<li>
-								<a href="/contact/">
-									Contact
-								</a>
-							</li>
-						</ul>
-					</nav>
-	        <label for="nav-toggle" class="nav-toggle-label">
-	          <span>☰</span>
-	        </label>
-				</div>
-				<h1 class="logo">Myat Thit Ko Ko</h1>
-			</header>
+			<div class="header-wrapper">
+		<header>
+		<div class="container">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+				<nav data-nosnippet>
+					<ul>
+						<li>
+							<a href="/">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="/books/">
+								Books
+							</a>
+						</li>
+						<li>
+							<a href="/projects/">
+								Projects
+							</a>
+						</li>
+						<li>
+							<a href="/about/">
+								About
+							</a>
+						</li>
+						<li>
+							<a href="/contact/">
+								Contact
+							</a>
+						</li>
+					</ul>
+				</nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span>☰</span>
+        </label>
+			</div>
+			<a href="/" class="logo"><h1>Myat Thit Ko Ko</h1></a>
+			<div class="jump">
+				<h4><a href="mailto:contact@myatthitkoko.com">Email</a></h4>
+				<h4><a href="/contact/#feedback">Feedback Form</a></h4>
+				<h4><a href="/contact/#socials">Socials</a></h4>
+		  	</div>
+		</header>
+		</div>
 			<div class="Banner">
-				<img src="/images/soCal.jpeg" alt="picture of palm trees">
+				<img src="images/soCal.jpeg" alt="picture of palm trees">
 				<div class="glass circle">
 					<h2>I want your contact!</h2>
 				</div>
