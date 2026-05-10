@@ -223,12 +223,12 @@ body {
   display: flex;
   flex-direction: row;
   margin:0; 
+  width: 80%; 
+  padding-right: 20px; 
   color: var(--showgirlGreen);
   position: relative;
+  justify-content: space-between;
   list-style: none;
-  margin-right: 30px;
-  gap: 150px;
-  justify-content: flex-end;
 }
 
 }
