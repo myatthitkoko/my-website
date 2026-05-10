@@ -17,10 +17,18 @@
 			@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 			@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 			.card { margin: 0; background: url('images/skylineLA-stock.png'); width: 100vw; height: 100vh; background-repeat: no-repeat; background-size: cover; display: flex; justify-content: space-evenly; align-items: center;}
-			.glass1 {backdrop-filter: blur(4px);}
 			header {position: absolute;}
 			@media (max-width: 768px), (hover: none) { .card { background: url('images/skylineLA-stock-mobile.png'); background-repeat: no-repeat; background-size: cover; flex-direction: column; } } 
 		</style>
+		<script>
+			const images = ["/images/24C.jpeg", "/images/Kura.png", "/images/graduationKBTC.jpg"];
+			let i = 0;
+
+			setInterval(() => {
+  				i = (i + 1) % images.length;
+  				document.getElementById("slide").src = images[i];
+			}, 5000);
+		</script>
 	</head>
 	<body>
 		<div class="header-wrapper">
@@ -60,12 +68,40 @@
           <span>☰</span>
         </label>
 			</div>
-			<h1 class="logo">Myat Thit Ko Ko</h1>
+			<a href="/" class="logo"><h1>Myat Thit Ko Ko</h1></a>
 		<div class="jump">
-			<h4><a href="/books/">Books</a></h4>
-			<h4><a href="/projects/">Projects</a></h4>
-			<h4><a href="/about/">About</a></h4>
-			<h4><a href="/contact/">Contact</a></h4>
+			<div class="dropdown">
+				<h4><a href="/books/">Books</a></h4>
+				<div class="dropdown-menu">
+					<a href="/books/#featured">Featured</a>
+					<a href="/books/#essays">Essays</a>
+					<a href="/books/#recommend">Form</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<h4><a href="/projects/">Projects</a></h4>
+				<div class="dropdown-menu">
+					<a href="/projects/#featured">Featured</a>
+					<a href="/projects/#blogs">Blogs</a>
+					<a href="/projects/#labs">Labs</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<h4><a href="/about/">About</a></h4>
+				<div class="dropdown-menu">
+					<a href="/about/#education">Education</a>
+					<a href="/about/#work-experience">Experience</a>
+					<a href="/about/#feedback">Reviews</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<h4><a href="/contact/">Contact</a></h4>
+				<div class="dropdown-menu">
+					<a href="/about/#email">Inquiry</a>
+					<a href="/about/#form">Feedback</a>
+					<a href="/about/#socials">Socials</a>
+				</div>
+			</div>
 		  </div>
 		</header>
 		</div>
@@ -98,7 +134,9 @@
 				
 			</div>
 			<div class="glass">
-					<h1>Not a lot going on at the moment</h1>
+					<div class="slideshow">
+  						<a href="/about/#work-experience"><img id="slide" src="/images/24C.jpeg" width="400"></a>
+					</div>
 			</div>
 			</div>
 		</div>
