@@ -1,3 +1,9 @@
+#recommend, 
+#essay, 
+#featured {
+  scroll-margin-top: 50pt;
+}
+
 
 .title {
   color: var(--showgirlOrange);
