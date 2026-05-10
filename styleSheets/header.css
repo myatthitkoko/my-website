@@ -205,7 +205,6 @@ nav a {
   text-transform: uppercase;
   font-weight: bold;
   border: solid white 1px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 nav a:hover {
