@@ -119,12 +119,15 @@ a {
   color: white;
 }
 
-
-@media (min-width: 768px) and (hover:hover){
+@media (max-width: 768px), (hover:none){
 
 body {
   overflow-x: hidden;
 }
+  
+}
+
+@media (min-width: 768px) and (hover:hover){
   
 figcaption {
   font-size: 24pt;
