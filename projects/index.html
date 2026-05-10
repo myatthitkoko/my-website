@@ -3,8 +3,8 @@
 
 <html lang="en">
 	<head>
-		<link href="/styleSheets/header.css" rel="stylesheet" type="text/css">
-		<link href="/styleSheets/projects.css" rel="stylesheet" type="text/css">
+		<link href="styleSheets/header.css" rel="stylesheet" type="text/css">
+		<link href="styleSheets/projects.css" rel="stylesheet" type="text/css">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>
@@ -17,10 +17,11 @@
 		</style>
 	</head>
 	<body>
+		<div class="header-wrapper">
 		<header>
 		<div class="container">
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
-				<nav>
+				<nav data-nosnippet>
 					<ul>
 						<li>
 							<a href="/">
@@ -53,16 +54,91 @@
           <span>☰</span>
         </label>
 			</div>
-			<h1 class="logo">Myat Thit Ko Ko</h1>
+			<a href="/" class="logo"><h1>Myat Thit Ko Ko</h1></a>
+			<div class="jump">
+				<h4><a href="#featured">Featured Projects</a></h4>
+				<h4><a href="#blogs">Blogs</a></h4>
+				<h4><a href="#labs">Labs</a></h4>
+		  	</div>
 		</header>
+		</div>
 		<div class="content">
-					<h1>Featured Projects</h1>
-	<section id="Featured">
+					<h1 id="recent">Recent Projects</h1>
+	<section class="cards">
 					<div class="project1 glass enlarge">
-						<a href="https://myatthitkoko.github.io/SEA2026-mtkk/">
+						<a href="https://github.com/myatthitkoko/linux">
+							<img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A stock image of linux terminal">
+							<figcaption>Linux System Monitoring</figcaption>
+							<p>A system report of performance and memory usage</p>
+							<div class="languages">
+								<p class="glass">Bash</p>
+							</div>
+						</a>
+					</div>
+					<div class="project1 glass enlarge">
+						<a href="https://github.com/myatthitkoko/robotics-club">
+							<img src="images/arduino.jpeg" alt="Arduino Uno Circuit">
+							<figcaption>Stair-Climbing Robot</figcaption>
+							<p>The latest project of Robotics Club in college</p>
+							<div class="languages">
+								<p class="glass">C++</p>
+							</div>
+						</a>
+					</div>
+					<div class="project1 glass enlarge" onclick="">
+						<a href="/projects/blogs/SEA2026.html">
+							<img src="images/snap-blog-preview.png" alt="A text saying Blogs">
+							<figcaption>Blogs</figcaption>
+							<p>Read my latest blog about Snap Academies</p>
+							<div class="languages">
+								<p class="glass">HTML</p><p class="glass">CSS</p>
+							</div>
+						</a>
+					</div>
+	</section>
+	<section class="cards">
+					<div class="project1 glass enlarge">
+						<a href="https://myatthitkoko.github.io/beyondProject/">
 							<img src="/images/kura-web-preview.png" alt="A screenshot of website">
 							<figcaption>Kura Menu</figcaption>
 							<p>Project Assessment for an internship application</p>
+							<div class="languages">
+								<p class="glass">HTML</p><p class="glass">CSS</p><p class="glass">JAVASCRIPT</p>
+							</div>
+						</a>
+					</div>
+					<div class="project1 glass enlarge" onclick="">
+						<a href="https://scratch.mit.edu/projects/1172813195/fullscreen/">
+							<img src="https://images.unsplash.com/photo-1647427017067-8f33ccbae493?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A stock photo of POS">
+							<figcaption>Happy Lemon | POS</figcaption>
+							<p>A Point-of-Sale interface of Happy Lemon Boba Shop</p>
+							<div class="languages">
+								<p class="glass">Scratch</p>
+							</div>
+						</a>
+					</div>
+					<div class="project1 glass enlarge" onclick="">
+						<a href="https://colab.research.google.com/drive/1tv0glxjDXIsSf5cnjKkE93P4HdB1HUBi#scrollTo=l85A3b3S-4PM">
+							<img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Math Equation">
+							<figcaption>Numerical Integration</figcaption>
+							<p>Try out Simpson's Rule calculator!</p>
+							<div class="languages">
+								<p class="glass">Python</p>
+							</div>
+						</a>
+					</div>
+					
+	</section>
+					<h1 id="featured">Featured Projects</h1>
+	<section class="cards">
+					<div class="project1 glass enlarge">
+						<a href="https://myatthitkoko.github.io/beyondProject/">
+							<img src="/images/kura-web-preview.png" alt="A screenshot of website">
+							<figcaption>Kura Menu</figcaption>
+							<p>Project Assessment for an internship application</p>
+							<div class="languages">
+								<p class="glass">HTML</p><p class="glass">CSS</p><p class="glass">JAVASCRIPT</p>
+							</div>
 						</a>
 					</div>
 					<div class="project1 glass enlarge">
@@ -70,6 +146,9 @@
 							<img src="/images/midnights-preview.png" alt="A clock">
 							<figcaption>Midnights | A Clock</figcaption>
 							<p>Taylor Swift themed clock made from Scratch</p>
+							<div class="languages">
+								<p class="glass">Scratch</p>
+							</div>
 						</a>
 					</div>
 					<div class="project1 glass enlarge" onclick="">
@@ -77,42 +156,24 @@
 							<img src="/images/snap-blog-preview.png" alt="A text saying Blogs">
 							<figcaption>Blogs</figcaption>
 							<p>Read my latest blog about Snap Academies</p>
+							<div class="languages">
+								<p class="glass">HTML</p><p class="glass">CSS</p>
+							</div>
 						</a>
 					</div>
 	</section>
-		<section class="glass">
-			<h3 style="margin-left: 20px">Kura Menu Webpage</h3>
+		<section id="blogs" class="glass">
+			<h3 style="margin-left: 20px">My First Blog</h3>
 			<ul class="nullifyList" style="margin-bottom: 30px;">
-				<li class="glass enlarge shine item"><a href="https://myatthitkoko.github.io/SEA2026-mtkk/">Navigate the menu catalog of Kura Sushi</a></li>
-				<li class="glass enlarge shine item"><a href="https://github.com/myatthitkoko/SEA2026-mtkk">View my repository</a></li>
-				<li class="glass enlarge shine item"><a href="https://www.loom.com/share/759f90ab08e342dbb3c321d88fab5d97">View a video of my guided tour</a></li>
-				<li class="glass enlarge shine item"><a href="/projects/blogs/SEA2026.html">Learn more about the history of this site</a></li>
-			</ul>
+    				<li class="glass enlarge shine item"><a href="/projects/blogs/SEA2026.html">Snap Engineering Academy Applicant</a></li>
+				<br>
+				<li class="item" style="grid-template-columns: 1fr">More Blogs Coming Soon</li>
+  		    	</ul>
 		</section>
-		<section class="glass">
-			<h3 style="margin-left: 20px">Numerical Integration</h3>
-			<ul class="nullifyList" style="margin-bottom: 30px;">
-				<li class="glass enlarge shine item"><a href="https://colab.research.google.com/drive/1tv0glxjDXIsSf5cnjKkE93P4HdB1HUBi#scrollTo=l85A3b3S-4PM">Try out Simpson's Rule calculator! (Google Sign-In required)</a></li>
-				<li class="glass enlarge shine item"><a href="https://github.com/myatthitkoko/python_projects/blob/main/notebook.ipynb">View example file in repository</a></li>
-			</ul>
-		</section>
-		<section class="glass">
-			<h3 style="margin-left: 20px">Midnights</h3>
-			<ul class="nullifyList" style="margin-bottom: 30px;">
-				<li class="glass enlarge shine item"><a href="/projects/midnights/">Meet Me @ Midnight - Taylor Swift themed clock</a></li>
-				<li class="glass enlarge shine item"><a href="https://scratch.mit.edu/projects/754714921/">View how I made this clock in 2022</a></li>
-			</ul>
-		</section>
-		<section class="glass">
-			<h3 style="margin-left: 20px">Ordering System</h3>
-			<ul class="nullifyList" style="margin-bottom: 30px;">
-				<li class="glass enlarge shine item"><a href="https://scratch.mit.edu/projects/1172813195/fullscreen/">Happy Lemon - POS</a></li>
-			</ul>
-		</section>
-    	<section id="Labs" class="glass">
+    		<section id="labs" class="glass">
   		  <h3 style="margin-left: 20px">Remarkable Physics labs</h3>
   		    <ul class="nullifyList" style="margin-bottom: 30px;">
-    			<li class="glass enlarge shine item"><a href="Ko_lab07_Physics101.pdf"><span>Conservation of Energy</span></a><span>Physics 101</span></li>
+    				<li class="glass enlarge shine item"><a href="Ko_lab07_Physics101.pdf"><span>Conservation of Energy</span></a><span>Physics 101</span></li>
 				<li class="glass enlarge shine item"><a href="Ko_lab08_Physics101.pdf"><span>Conservation of Momentum</span></a><span>Physics 101</span></li>
 				<li class="glass enlarge shine item"><a href="Ko_lab10_Physics101.pdf"><span>Equilibrium</span></a><span>Physics 101</span></li>
 				<li class="glass enlarge shine item"><a href="Ko_lab11_Physics101.pdf"><span>Archimedes' principle</span></a><span>Physics 101</span></li>
