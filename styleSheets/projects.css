@@ -23,7 +23,6 @@
 body {
   background: linear-gradient(135deg,#0f172a,#1e293b,#312e81);
   color: white;
-  overflow-x: hidden;
 }
 
     body::before,
@@ -123,6 +122,10 @@ a {
 
 @media (min-width: 768px) and (hover:hover){
 
+body {
+  overflow-x: hidden;
+}
+  
 figcaption {
   font-size: 24pt;
 }
