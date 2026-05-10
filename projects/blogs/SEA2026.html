@@ -15,13 +15,34 @@
 		margin:  0px 30px;
 	  }
 
+	header {
+  position: sticky;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  height: 50pt;
+  width: 100%;
+  z-index: 999;
+  backdrop-filter: blur(3px);
+}
+
 	  body {
 	    background: #FFFFBF;
 	  }
 
 	  header, nav {
 	    background: #FFFC00;
+		  width: 100%;
 	  }
+
+		nav a {
+  color: white;
+  font-size: 0.9em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+			background: none;
+}
 
 	  .Footer {
 	    background-color: #F5F5F5;
