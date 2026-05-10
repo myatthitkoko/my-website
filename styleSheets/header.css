@@ -11,6 +11,15 @@
   --showgirlBrickNav: linear-gradient(to right, rgba(225, 89, 33, 0.80), rgba(215, 63, 0, 0.80), rgba(233, 139, 91, 0.80), rgba(141, 211, 198, 0.80));
 }
 
+.glass {
+  background: rgba(255, 255, 255, 0.1);      
+  backdrop-filter: blur(3px);                
+  -webkit-backdrop-filter: blur(3px);                               
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;  
+}
+
 .accent {
   font-weight: bold;
   animation: accentAnimate 4s ease-in-out infinite;
@@ -62,6 +71,19 @@ p {
   margin-right: 24px;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  height: 50pt;
+  width: 100%;
+  margin: 0px;
+  background: rgba(255, 255, 255, 0.1);      
+  backdrop-filter: blur(5px);                
+  -webkit-backdrop-filter: blur(3px);                               
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
 @media (min-width: 768px) and (hover:hover) {
 h1 {
   font-size: 30pt;
@@ -97,22 +119,24 @@ p {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-  
+
+header {
+  width: 97%;
+  margin: 15px 0px;
+  border-radius: 50px;
+}
+
 }
 
 
 /* ---------------------Header----------------------- */
 
-header {
-  background: var(--showgirlBrick);
+.header-wrapper {
   position: sticky;
   top: 0%;
   display: flex;
-  align-items: center;
-  height: 50pt;
-  width: 100%;
+  justify-content: center;
   z-index: 999;
-  backdrop-filter: blur(3px);
 }
 
 .logo {
@@ -125,21 +149,16 @@ header {
   margin: 0;
   position: absolute;
   z-index: 1;
+  text-decoration: none;
+  color: black;
 }
 
 /*scroll bar for centering*/
 
 html {
   scrollbar-gutter: stable;
-  scroll-behavior: smooth; 
-}
-
-@supports not (scrollbar-gutter: stable) {
-
-html {
-  overflow-y: scroll;
-}
-  
+  scroll-behavior: smooth;
+  overflow-y: scroll; 
 }
 
 .nav-toggle {
@@ -147,17 +166,14 @@ html {
 }
 
 nav {
-  background: var(--showgirlBrickNav);
   position: absolute;
   text-align: left;
   top: 100%;
   left: 0;
-  width: 100%;
   height: 160pt;
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 0.5s ease-in-out;
-  backdrop-filter: blur(3px);
 }
 
 @keyframes drop-down {
@@ -167,28 +183,33 @@ nav {
 
 nav ul,
 .nullifyList {
-  margin: 0;
+  margin: 30px 0px;
   padding: 0;
   list-style: none;
 }
 
 nav li {
-  margin-bottom: 1em;
-  margin-left: 1em;
+  margin: 30px 0px;
   font-size: 15pt;
   font-family:"Roboto Condensed", sans-serif;
 }
 
 nav a {
-  color: white;
+  color: var(--showgirlGreen);
+  background: var(--opalite);   
+  padding: 10px;
+  border-radius: 30px;
+  margin: 30px 10px;
   font-size: 0.9em;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  border: solid white 1px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 nav a:hover {
-  color: var(--showgirlGreen);
+  color: var(--showgirlOrange);
 }
 
 nav:hover {
@@ -240,15 +261,16 @@ body {
 
 .Footer {
   min-height: 100pt;
-  background-color: var(--showgirlGreenF);
+  background-color: #343434;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: gray;
 }
 
 .Footer hr {
   max-width: 88%;
-  
+  background: gray;
 }
 
 .footNote {
@@ -271,7 +293,7 @@ body {
 }
 
 .socials img {
-  max-width: 30px;
+  max-width: 40px;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -280,15 +302,6 @@ body {
   background-color: white;
   transform: scale(1.1);
   transition: transform 0.5s ease
-}
-
-.glass {
-  background: rgba(255, 255, 255, 0.1);      
-  backdrop-filter: blur(5px);                
-  -webkit-backdrop-filter: blur(5px);        
-  border-radius: 50px;                         
-  border: 1px solid rgba(255, 255, 255, 0.3); 
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .shine {
@@ -349,7 +362,6 @@ body {
   display: block;
   height: 5px;
   background-color: var(--showgirlGreen);
-
   position: absolute;
   top: 0px;
   width: 0%;
@@ -360,7 +372,7 @@ body {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  color: var(--showgirlGreen);
+  color: white;
   padding-top: 15pt;
   padding-bottom: 15pt;
 }
@@ -370,5 +382,5 @@ body {
 }
 
 .jump a:hover {
-  color: white;
+  color: var(--showgirlGreen);
 }
