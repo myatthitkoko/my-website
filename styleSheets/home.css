@@ -138,11 +138,6 @@ body {
 .slideshow img {
   border-radius: 30px;
   margin: 0px 20px;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slideshow img:hover {
-  transform: scale(2.3) translateX(-115px);
 }
 
 .glass1,
@@ -300,7 +295,16 @@ body {
 }
 
 .slideshow img {
-  width: 85%;
+  width: 85%:
+  transition: transform 0.5s ease-in-out;
 }
+
+.slideshow img:hover {
+  transform: scale(2.3) translateX(-115px);
+}
+
+}
+
+
 
 }
