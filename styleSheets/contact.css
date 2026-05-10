@@ -1,5 +1,10 @@
 /* Basic font styles */
 
+#socials, 
+#feedback {
+  scroll-margin-top: 50pt;
+}
+
 p {
   color: var(--deepGreen);
   padding-left: 20px;
