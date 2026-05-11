@@ -20,11 +20,6 @@
   margin: 10px;
 }
 
-.languages p:hover {
-  background: var(--opalite);
-  color: var(--showgirlGreen);
-}
-
 body {
   background: linear-gradient(135deg,#0f172a,#1e293b,#312e81);
   color: white;
@@ -128,6 +123,11 @@ a {
 
 @media (min-width: 768px) and (hover:hover){
 
+.languages p:hover {
+  background: var(--opalite);
+  color: var(--showgirlGreen);
+}
+  
 figcaption {
   font-size: 24pt;
 }
