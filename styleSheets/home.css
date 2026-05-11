@@ -253,7 +253,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (hover: none) {
 
 .glass2,
 .glass3 {
