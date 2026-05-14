@@ -138,11 +138,6 @@ body {
 .slideshow img {
   border-radius: 30px;
   margin: 0px 20px;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slideshow img:hover {
-  transform: scale(2.3) translateX(-115px);
 }
 
 .glass1,
@@ -231,6 +226,14 @@ body {
   list-style: none;
 }
 
+.slideshow img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.slideshow img:hover {
+  transform: scale(2.3) translateX(-115px);
+}
+
 }
 
 @media (max-width: 1100px) {
@@ -250,7 +253,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (hover: none) {
 
 .glass2,
 .glass3 {
