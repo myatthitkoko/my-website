@@ -44,8 +44,8 @@ body::before{
 }
 
 body::after{
-  background: var(--showgirlOrange);
-  bottom:-100px;
+  background: var(--opalite);
+  bottom:-400px;
   right:0px;
 }
 
