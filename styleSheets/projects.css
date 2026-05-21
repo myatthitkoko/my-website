@@ -21,7 +21,7 @@
 }
 
 body {
-  background: linear-gradient(135deg,#0f172a,#1e293b,#312e81);
+  background: linear-gradient(135deg, #123B2D, #081B14, #030806);
   color: white;
 
 }
@@ -44,7 +44,7 @@ body::before{
 }
 
 body::after{
-  background: var(--opalite);
+  background: radial-gradient(circle,    #00FFAAE6 0%,    #00C87899 30%,    #0078FF40 55%,    #00000000 55%);
   bottom:-400px;
   right:0px;
 }
