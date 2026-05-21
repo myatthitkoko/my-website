@@ -44,8 +44,8 @@ body::before{
 }
 
 body::after{
-  background: radial-gradient(circle,    #00FFAAE6 0%,    #00C87899 30%,    #0078FF40 55%,    #00000000 55%);
-  bottom:-400px;
+  background: radial-gradient(circle,    #00FFAAE6 0%,    #00C87899 30%,    #0078FF40 55%,    #00000000 90%);
+  bottom:0px;
   right:0px;
 }
 
