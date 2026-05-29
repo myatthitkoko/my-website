@@ -224,7 +224,7 @@ nav:hover {
 }
 
 .nav-toggle:checked ~ .nav-toggle-label {
-  color: var(--showgirlGreen);
+  color: var(--showgirlOrange);
 }
 
 .nav-toggle-label {
