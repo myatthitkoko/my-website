@@ -101,21 +101,20 @@ section {
 .reviews {
   display: flex;
   flex-direction: column;
-  margin: 50px 0 50px 0;
+  margin: 50px 0;
+  gap: 50px;
 }
 
 .reviews article {
-  width: 100%;
-}
-
-.reviews footer {
-  padding: 20px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
 }
 
 .reviews p {
-  padding: 15px;
   line-height: 1.6;
-  letter-spacing: 0.2;
 }
 
 #tech-skills {
@@ -151,12 +150,8 @@ section {
 
 @media (max-width: 768px) and (hover:none) {
 
-.reviews {
-  gap: 30px;
-}
-
 .reviews article {
-  height: 300px;
+  min-height: 250px;
 }
 
 .educationText,
@@ -240,10 +235,6 @@ section {
 
 .reviews article {
   width: 30%;
-}
-
-.reviews p {
-  padding: 30px;
 }
 
 
