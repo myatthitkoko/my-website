@@ -424,7 +424,7 @@ p {
 
 .content {
   margin: 0 auto;
-  max-width: 380px;
+  max-width: 400px;
 }
 
 .checks {
@@ -467,7 +467,7 @@ input[type="checkbox"] {
   color: white;
   text-align: center;
   font-size: 16pt;
-  padding: 10px;
+  padding: 12px;
   margin-top: 20px;
 }
 
