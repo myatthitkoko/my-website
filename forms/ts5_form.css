@@ -28,9 +28,9 @@
 }
 
 @keyframes accentAnimate {
-  0% {color: var(--showgirlGreen);}
+  0% {color: #ffd800;}
   50% {color: var(--showgirlOrange);}
-  100% {color: var(--showgirlGreen);}
+  100% {color: #ffd800;}
 }
 
 .centered {
@@ -417,7 +417,7 @@ body {
 }
 
 p {
-  color: var(--deepGreen);
+  color: #033a6c;
   padding-left: 20px;
   padding-right: 20px;
 }
