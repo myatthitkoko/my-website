@@ -139,9 +139,7 @@ header {
 .seating {
   width: 80%;
   height: 1000px;
-  object-fit: cover;
   object-position: 0px -710px;
-  margin: 0 auto;
 }
 
 }
