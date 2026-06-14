@@ -26,7 +26,7 @@
 				</div>
 			</div>	
 		  <p class="justified"> <span class="accent">Yeehaw!</span> Thanks for visiting this form. 
-		    Please fill out the following questions to RSVP to this event.
+		    Please fill out the following questions to RSVP to this event. <span style="color:red;">*</span> indicates required field(s).
 		  </p>
 		  <p>Check the footer for latest information regarding the plan.</p>
 		  <p>
@@ -38,7 +38,7 @@
 		    		    <h2>Your details</h2>
 		    <div class="form-selection credentials glass">
 		      <div class="separator">
-		        <label for="name">Name</label>
+		        <label for="name">Name <span style="color:red;">*</span></label>
 		        <input type="name" id="name" name="name" value="" class="glass" required/>
 		      </div>
 		      <div class="separator">
@@ -47,7 +47,7 @@
 		      </div>
 		      <div class="separator">
 		        <label for="phone">Phone</label>
-		        <input type="phone" id="phone" name="phone" class="glass"/>
+		        <input type="tel" id="phone" name="phone" class="glass" placeholder="123-456-7690" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
 		      </div>
 		    </div>
 		      <h2>Show Time</h2>
