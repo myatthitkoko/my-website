@@ -60,7 +60,7 @@ section {
   gap: 30px;
 }
 
-.project1 img {
+.project img {
   width: 100%;
   object-fit: cover;
   height: 150px;
@@ -82,7 +82,7 @@ figcaption {
   margin-top: 0px;
 }
 
-.project1 {
+.project {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -132,7 +132,7 @@ figcaption {
   font-size: 24pt;
 }
 
-.project1 {
+.project {
   width: 400px;
 }
 
