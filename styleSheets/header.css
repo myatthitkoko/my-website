@@ -249,6 +249,10 @@ nav:hover {
   transform: scale(1,1);
 }
 
+.nav-toggle:checked ~ .nav-toggle-label {
+  color: var(--showgirlGreen);
+}
+
 nav a {
   background: none;
   border: none;
@@ -265,12 +269,12 @@ nav ul {
 }
 
 nav {
-  background: rgba(255, 255, 255, 0.1);      
-  backdrop-filter: blur(3px);                
-  -webkit-backdrop-filter: blur(3px);                               
-  border: 1px solid rgba(255, 255, 255, 0.2); 
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: var(--showgirlBrickNav);
   width: 100%;
+}
+
+header {
+  background: var(--showgirlBrickNav);
 }
 
 }
