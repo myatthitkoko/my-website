@@ -57,7 +57,7 @@ section {
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
 }
 
 .project img {
@@ -127,6 +127,10 @@ a {
   background: var(--opalite);
   color: var(--showgirlGreen);
 }
+
+.project img {
+  height: 180px;
+}
   
 figcaption {
   font-size: 24pt;
@@ -134,6 +138,7 @@ figcaption {
 
 .project {
   box-sizing: border-box;
+  min-height: 400px;
 }
 
 .logo {
@@ -167,7 +172,6 @@ figcaption {
 .cards {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  min-height: 400px;
 }
 
 section {
