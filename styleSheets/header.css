@@ -249,6 +249,30 @@ nav:hover {
   transform: scale(1,1);
 }
 
+nav a {
+  background: none;
+  border: none;
+  margin: 0;
+  color: black;
+}
+
+nav li {
+  margin: 15px;
+}
+
+nav ul {
+  margin: 0px;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.1);      
+  backdrop-filter: blur(3px);                
+  -webkit-backdrop-filter: blur(3px);                               
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
 }
 
 body {
