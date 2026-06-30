@@ -63,6 +63,10 @@ section {
 
 /* ---------------------Body----------------------- */
 
+.EmbeddedMediaImage {
+  object-fit: cover !important;
+}
+
 .LACC,
 .Kura {
   display: grid;
