@@ -3,6 +3,7 @@
 
 <html>
 	<head lang="en">
+		<link rel="canonical" href="https://myatthitkoko.com">
 		<link href="/styleSheets/header.css" rel="stylesheet" type="text/css">
 		<link href="/styleSheets/home.css" rel="stylesheet" type="text/css">
 		<meta charset="UTF-8">
@@ -28,6 +29,32 @@
   				i = (i + 1) % images.length;
   				document.getElementById("slide").src = images[i];
 			}, 3000);
+		</script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@graph": 
+				[
+					{
+					"@type": "Person",
+					"name": "Myat Thit Ko Ko",
+					"url": "https://myatthitkoko.com",
+					"image": "https://myatthitkoko.com/images/profile.jpg",
+					"description": "Computer Science student in Los Angeles building projects in web development, robotics, and blogs.",
+					"sameAs": 
+						[
+						"https://www.instagram.com/not_ur_myat_thit",
+						"https://github.com/myatthitkoko",
+						"https://www.linkedin.com/in/myatthitkoko"
+						]
+					},
+					{
+					"@type": "WebSite",
+					"name": "Myat Thit Ko Ko",
+					"url": "https://myatthitkoko.com"
+					}
+				]
+			}
 		</script>
 	</head>
 	<body>
@@ -105,40 +132,42 @@
 		  </div>
 		</header>
 		</div>
-		<div class="card">
-			<div class="glass-wrapper">
-			<div class="glass1">
-				<div>
-					<h1>Hi. </h1>
-					<h1>I am a Computer Science student in Los Angeles.</h1>
-				</div>
-				<div class="buttons">
-					<div class="glass2 shine">
-						<a href="/contact/">
-							<button>Contact</button>
-						</a>
+		<main>
+			<div class="card">
+				<div class="glass-wrapper">
+				<div class="glass1">
+					<div>
+						<h1>Hi. </h1>
+						<h1>I am a Computer Science student in Los Angeles.</h1>
 					</div>
-					<div class="glass3 shine">
-						<a href="/projects/">
-							<button>View Projects</button>
-						</a>
+					<div class="buttons">
+						<div class="glass2 shine">
+							<a href="/contact/">
+								<button>Contact</button>
+							</a>
+						</div>
+						<div class="glass3 shine">
+							<a href="/projects/">
+								<button>View Projects</button>
+							</a>
+						</div>
+						<hr class="line">
 					</div>
-					<hr class="line">
-				</div>
 
-			<div class="socials">
-				<a href="https://www.linkedin.com/in/myatthitkoko"><img src="/images/linkedin.png" alt="LinkedIn icon"></a>
-				<a href="https://github.com/myatthitkoko"><img src="/images/github.png" alt="GitHub icon"></a>
-				<a href="https://www.youtube.com/@myatthitkoko"><img src="/images/youtube.png" alt="YouTube icon"></a>
+				<div class="socials">
+					<a href="https://www.linkedin.com/in/myatthitkoko"><img src="/images/linkedin.png" alt="LinkedIn icon"></a>
+					<a href="https://github.com/myatthitkoko"><img src="/images/github.png" alt="GitHub icon"></a>
+					<a href="https://www.youtube.com/@myatthitkoko"><img src="/images/youtube.png" alt="YouTube icon"></a>
+				</div>
+					
+				</div>
+				<div class="glass">
+						<div class="slideshow">
+							<a href="/about/#work-experience"><img id="slide" src="/images/24C.jpeg" width="400"></a>
+						</div>
+				</div>
+				</div>
 			</div>
-				
-			</div>
-			<div class="glass">
-					<div class="slideshow">
-  						<a href="/about/#work-experience"><img id="slide" src="/images/24C.jpeg" width="400"></a>
-					</div>
-			</div>
-			</div>
-		</div>
+		</main>
 	</body>
 </html>

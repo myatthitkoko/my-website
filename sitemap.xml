@@ -1,23 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://myatthitkoko.com/home/</loc>
-    <lastmod>2026-05-05</lastmod>
-  </url>
-  <url>
-    <loc>https://myatthitkoko.com/books/</loc>
-    <lastmod>2026-05-05</lastmod>
-  </url>
-  <url>
-    <loc>https://myatthitkoko.com/projects/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <loc>https://myatthitkoko.com/</loc>
+    <lastmod>2026-07-02</lastmod>
   </url>
   <url>
     <loc>https://myatthitkoko.com/about/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-07-02</lastmod>
+  </url>
+  <url>
+    <loc>https://myatthitkoko.com/projects/</loc>
+    <lastmod>2026-07-02</lastmod>
+  </url>
+  <url>
+    <loc>https://myatthitkoko.com/books/</loc>
+    <lastmod>2026-07-02</lastmod>
   </url>
   <url>
     <loc>https://myatthitkoko.com/contact/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-07-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://myatthitkoko.com/projects/blogs/SEA2026.html</loc>
+    <lastmod>2026-07-02</lastmod>
+  </url>
+  <url>
+    <loc>https://myatthitkoko.com/projects/blogs/PouredMemories.html</loc>
+    <lastmod>2026-07-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://myatthitkoko.com/books/Ko_essay02_EngC1000.pdf</loc>
+  </url>
+  <url>
+    <loc>https://myatthitkoko.com/books/Ko_essay02_EngC1001.pdf</loc>
+  </url>
+  <url>
+    <loc>https://myatthitkoko.com/books/Ko_essay03_EngC1001.pdf</loc>
+  </url>
+  
+  <url>
+    <loc>https://myatthitkoko.com/projects/Ko_lab07_Physics101.pdf</loc>
+  </url>
+  <url>
+    <loc>https://myatthitkoko.com/projects/Ko_lab08_Physics101.pdf</loc>
+  </url>
+  <url>
+    <loc>https://myatthitkoko.com/projects/Ko_lab10_Physics101.pdf</loc>
+  </url>
+  <url>
+    <loc>https://myatthitkoko.com/projects/Ko_lab11_Physics101.pdf</loc>
+  </url>
+  <url>
+    <loc>https://myatthitkoko.com/projects/Ko_lab13_Physics101.pdf</loc>
   </url>
 </urlset>
