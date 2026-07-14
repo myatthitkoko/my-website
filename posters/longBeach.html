@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/images/sunny.svg"/>
+        <title>Long Beach Poster</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+            :root {
+                --color1: #AD8330;
+                --color2: #3E3D3D;
+            }
+
+            .accent {
+                color: var(--color1)
+            }
+            
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: "italiana", system-ui;
+                font-weight: bold;
+            }
+            
+            .hero {
+                background-image: linear-gradient(rgba(230, 100, 0, 0.15)), url('https://images.unsplash.com/photo-1562749348-ed9e37507658?q=80&w=1796&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                max-width: 100%;
+                height: 100vh;
+                background-size: cover;
+                background-position: 38% center;
+                background-repeat: no-repeat;
+                display: flex;
+            }
+
+            .content {
+                position: absolute;
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .content h2 {
+                color: white;
+                font-size: 48pt;
+                text-align: center;
+            }
+
+            .footer {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            video {
+                width: 100%;
+            }
+
+            .footer p {
+                margin: 0px auto;
+                font-size: 10pt;
+                color: var(--color1);
+            }
+
+            .navi {
+                padding: 30px;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                max-height: 100px;
+            }
+
+            .navi input {
+                display: none;
+            }
+
+            .navi label {
+                filter: invert(1);
+                z-index: 1000;
+            }
+
+            .navi input:checked ~ label {
+                filter: invert(0);
+            }
+
+            .navi input:checked ~ .mobile-droplist {
+                display: flex;
+            }
+
+            .navi input:checked ~ h1 {
+                color: black;
+            }
+            
+            .navi h1 {
+                margin: 0px;
+                color: white;
+                font-size: 16pt;
+                z-index: 1000;
+            }
+
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .text {
+                max-width: 700px;
+                font-size: 12pt;
+                margin: auto 30px;
+                color: var(--color2);
+            }
+
+            li {
+                text-align: left;
+                line-height: 2;
+            }
+
+            strong {
+                font-family:math;
+            }
+
+            .footer p {
+                margin: 5px auto;
+            }
+
+            @media (min-width: 800px) {
+                .navi {
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 0 30px;
+                }
+
+                .navi h1 {
+                    font-size: 24pt;
+                    min-width: 300px;
+                }
+                
+                .navi label {
+                    display: none;
+                }
+
+                .text {
+                    font-size: 16pt;
+                }
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hero">
+            <div class="navi">
+                <h1>07/16/2026</h1>
+            </div>
+            <div class="content">
+                <h2>Long Beach ITINERARY</h2>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="text">
+                <p class="accent">This plan spans the entire morning from 0700 to 1400</p>
+                <p class="accent">Join us whenever</p>
+                <ul>
+                  <li>
+                    <strong>7:00 AM – 8:00 AM</strong>
+                    <ul>
+                      <li>Enjoy Tamago Sando for breakfast</li>
+                      <li>Yoga and Meditation</li>
+                    </ul>
+                  </li>
+                
+                  <li>
+                    <strong>8:00 AM – 9:00 AM</strong>
+                    <ul>
+                      <li>Walk along Pine Avenue Pier</li>
+                      <li>Quiet morning views of the Harbor toward the lighthouse</li>
+                    </ul>
+                  </li>
+                
+                  <li>
+                    <strong>9:00 AM – 10:00 AM</strong>
+                    <ul>
+                      <li>Read a book at the Rainbow Lagoon Park</li>
+                      <li>Bird watching & music</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>10:00 AM – 11:00 AM</strong>
+                    <ul>
+                      <li>Explore Aquarium of the Pacific ($50 per person so only if everyone wants to go. That's $200 for a party of four xD)</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>11:00 AM – 11:30 AM</strong>
+                    <ul>
+                      <li>Spontaneous Lunch</li>
+                    </ul>
+                  </li>
+                
+                  <li>
+                    <strong>11:30 AM – 01:30 PM</strong>
+                    <ul>
+                      <li>Wander around Shoreline Village</li>
+                      <li>Browse antique shops down the block</li>
+                    </ul>
+                  </li>
+                
+                  <li>
+                    <strong>01:30 PM – 02:00 PM</strong>
+                    <ul>
+                      <li>Build sand castles</li>
+                      <li>Relax and tan on the grass or benches</li>
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+            <img src='flower.png' alt='flower tatto'>
+        </div>
+        <div class="footer">
+            <p>Long Beach | Santa Monica | Malibu </p>
+            <p>contact@myatthitkoko.com</p>
+            <p>© 2026 Myat Thit Ko Ko</p>
+            <video autoplay muted loop id="myVideo">
+              <source src="/images/IMG_2432.mp4" type="video/mp4">
+            </video>
+        </div>
+    </body>
+</html>
