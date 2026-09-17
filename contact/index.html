@@ -111,7 +111,7 @@
 				For business inquiries, please email me at <a href="mailto:contact@myatthitkoko.com">contact@myatthitkoko.com</a>
 			</p>
 			<div class="content">
-			<form action="https://formspree.io/f/xeepoppd" method="POST" id="feedback">
+			<form action="https://formspree.io/f/xeepoppd" method="POST" id="feedback" enctype="multipart/form-data">
 				<div class="form-section">
 				<h2>Design</h2>
 				<div class="checks glass">
@@ -178,6 +178,7 @@
 				<div class="form-selection">
 				<h2>Any other feedback?</h2>
 				<textarea class="glass" id="comments" name="comments" row="5" column="33" placeholder="Leave a comment!" style="padding: 30px"></textarea>
+				<label>Attachment<input type="file" name="attachment" accept=".pdf, .doc, .docx, .png, .jpg, .jpeg, .pptx, .xlxs"></label>
 				</div>
 				<br>
 				<h2>Your details</h2>
