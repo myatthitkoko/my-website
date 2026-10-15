@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ASU Vice President of South Gate</title>
+    <style>
+      :root {
+        --ELACgreen: #28712a;
+        --ELACwhite: #f6f2ec;
+        --ELACblack: #473f3d;
+      }
+
+      html {
+       font-size: clamp(1rem, calc(0.875rem + 0.8vw), 2rem); 
+      }
+      
+      .banner, header {
+        background: var(--ELACgreen);
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--ELACwhite);
+      }
+
+      header a{
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .foot-img-container img {
+        width: 100%;
+      }
+
+      .slideshow {
+        background: black;
+        height: 400px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .mySlides {
+        display: none;
+        width: 100%;
+        height: 100%;
+      }
+
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.7;
+        color: var(--ELACwhite);
+        background: var(--ELACblack);
+      }
+
+      .prev:hover, .next:hover {
+        color: var(--ELACgreen);
+        background: var(--ELACwhite);
+      }
+
+      .next {
+        right: 0;
+      }
+
+      .prev {
+        left: 0;
+      }
+
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {opacity: 0.4}
+        to {opacity: 1}
+      }
+
+      .slideshow img, .pdf-slide {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+
+      .slideshow p {
+        position: absolute;
+      }
+
+      .Text {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+      }
+      
+      .buttons {
+        display: flex;
+        gap: 15px;
+        margin: 30px;
+        justify-content: center;
+      }
+
+      button {
+        background: var(--ELACgreen);
+        color: var(--ELACwhite);
+        border-radius: 10px;
+        font-size: 0.8em;
+      }
+
+      .resource-buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 30px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header><a href="https://myatthitkoko.com">ASU VPSG Myat Thit Ko Ko</a></header>
+    <div class="slideshow">
+      <div class="mySlides fade">
+        <img src="/images/IMG_4934.jpeg">
+        <div class="Text">Skeleton Holding Poster</div>
+      </div>
+      <div class="mySlides fade">
+        <img src="/images/IMG_3773.jpeg" alt="Fall26 Opening Day"/>
+        <div class="Text">Fall26 Opening Day</div>
+      </div>
+      <div class="mySlides fade">
+        <img src="/images/IMG_4915.jpeg" alt="B23 Halloween"/>
+        <div class="Text">B23 Halloween</div>
+      </div>
+      <div class="mySlides fade">
+        <img src="/images/IMG_4467.jpeg" alt="Club Rush Photo Booth"/>
+        <div class="Text">Fall26 Club Rush</div>
+      </div>
+      <div class="mySlides fade">
+        <img src="/images/IMG_3807.JPG" alt="Opening Group Photo"/>
+        <div class="Text">Opening Group Photo</div>
+      </div>
+      <div class="mySlides fade">
+        <iframe
+          src="Halloween-Hangout-Poster.pdf"
+          class="pdf-slide">
+        </iframe>
+        <div class="Text">Opening Group Photo</div>
+      </div>
+      <a class="prev" onClick="plusSlides(-1)">&#10094</a>
+      <a class="next" onClick="plusSlides(1)">&#10095</a>
+    </div>
+    <div class="banner">Resources</div>
+      <div class="resource-buttons">
+        <button onClick="window.location.href='https://www.elac.edu/campus-life/asu';">ASU Resources</button>
+        <button onClick="window.location.href='https://www.elac.edu/student-services/basic-needs-center#food';">Food Pantry</button>
+        <button onClick="window.location.href='https://www.elac.edu/student-services/spr/student-health-center';">Health Department</button>
+        <button onClick="window.location.href='https://myatthitkoko.com/posters/Full-Term-Shuttle-Fall26.pdf';">Shuttle Schedule</button>
+        <button onClick="window.location.href='https://www.elac.edu/student-services/basic-needs-center#clothing';">Husky Closet</button>
+        <button onClick="window.location.href='https://studentlaccd-my.sharepoint.com/:x:/g/personal/morajr_laccd_edu/EUAAvI6fcUBJi5rGVguVy7UBI8KKr07EKJ5pLnk6dSJj-g?e=hIpLle';">Join Clubs</button>
+      </div>
+    <div class="banner">Meetings</div>
+      <div class="buttons">
+        <button onClick="window.location.href='https://www.elac.edu/campus-life/asu/agendas';">View Meeting History</button>
+        <button onClick="window.location.href='https://www.elac.edu/campus-life/asu/agendas';">View Meeting Agendas</button>
+        <button onClick="window.location.href='https://www.elac.edu/campus-life/asu/minutes';">View Meeting Minutes</button>
+      </div>
+    <div class="banner">Upcoming Blogs</div>
+        <ul>
+          <li>Fall 2026 Opening Day</li>
+          <li>Cal State LA Move In Day</li>
+          <li>80th ELAC President's Gala</li>
+          <li>Introducing ASU Resources - September 2026</li>
+          <li>CCCSAA Student Leadership Conference 2026</li>
+          <li>Halloween Hangout - October 2026</li>
+        </ul>
+    <div class="foot-img-container">
+      <img src="Associated Student Union.jpg" alt="Banner of ASU">
+    </div>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex+=n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+        
+      }
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n>slides.length) {slideIndex = 1}
+        if (n<1) {slideIndex = slides.length}
+        for (i=0;i  < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>
