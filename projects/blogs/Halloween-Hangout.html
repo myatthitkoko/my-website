@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<head>
+  <title>Halloween Hangout</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Myat Thit Ko Ko | he/him">
+  <style>
+        :root {
+          --ElacGreen: #28712a;
+          --ElacGreenSoft: #B4E4B5;
+          --ElacWhite: #f6f2ec;
+          --ElacBlack: #473f3d;
+        }
+
+        #early-ideas,
+        #selection-of-date-and-time,
+        #the-making-of-the-poster,
+        #promotion-campaign,
+        #vendors,
+        #challenges,
+        #timeline-and-task-list,
+        #halloween-hangout,
+        #the-afterglow {
+          scroll-margin-top: 50pt;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+
+        q {
+          font-style: italic;
+          display: inline;
+          margin: 30px auto;
+        }
+    
+        q + p {
+          display: inline;
+        }
+    
+        p + q {
+          display: block;
+        }
+
+        header {
+          position: sticky;
+          top: 0;
+          background: rgba(204,88,46,0.8);
+          backdrop-filter: blur(2px);
+          height: 50px;
+          color: #f6f2ec;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 999;
+        }
+        
+        footer {
+          height: 100px;
+          background: #437D29;
+        }
+
+        footer img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+
+        figcaption {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 50px;
+        }
+
+        .meeting-poster-container img,
+        .nametag-image-container img,
+        .opening-image-container img,
+        .goodnight-image-container img,
+        .workshop-image-container img,
+        .workshop2-image-container img,
+        .padding-image-container img,
+        .smaller-image-container img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .smaller-image-container {
+          max-width: 300px;
+          margin: 0 auto;
+        }
+
+        .padding-image-container img {
+          padding: 2vw;
+          background: white;
+          border-radius: 30px;
+        }
+
+        .nametag-image-container img,
+        .goodnight-image-container img {
+          max-height: 500px;
+          object-fit: contain;
+        }
+
+        .workshop2-image-container img {
+          max-height: 500px;
+          object-fit: cover;
+        }
+
+        main h2 {
+          width: 100%;
+          text-align: center;
+          background: var(--ElacWhite);
+          color: var(--ElacGreen);
+          position: sticky;
+          top: 50px;
+          
+        }
+
+        .blockquote-container {
+          display: flex;
+          justify-content: center;
+        }
+        
+        h1 {
+          margin: 0;
+          font-family: "italiana";
+          font-size: 1.5em;
+        }
+
+        ul > li {
+          margin: 20px auto;
+        }
+
+        main > article > ul > li > strong {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+        }
+
+        ul.b {
+          list-style-type: square;
+          padding: 0;
+          margin: 0;
+        }
+        
+        html {
+          font-size: clamp(1rem, calc(0.875rem + 0.5vw), 1.5rem); 
+        }
+        
+        body {
+          margin: 0;
+          padding: 0;
+          background: #ebdcc3 ;
+          
+        }
+        
+        .info {
+          display: flex;
+          justify-content: space-between;
+        }
+        
+        header a {
+          color: inherit;
+          text-decoration: none;
+        }
+        
+        img {
+          width: 30px;
+          height: 30px;
+          display: inline;
+        }
+        
+        hr {
+          height: 5px; background-color: #CC582E; border: none;
+        }
+        
+        main {
+          max-width: 768px;
+          margin: 30px auto;
+        }
+        
+        .heading {
+          margin: 30px;
+        }
+
+        .highlight {
+          background: #CC582E;
+          color: white;
+        }
+
+        .reel {
+          overflow: hidden;
+        }
+        
+        .polaroids-container {
+          width: 100%;
+        }
+        
+        .polaroids {
+          display: flex;
+          width: max-content;
+          animation: scroll 40s linear infinite;
+        }
+        
+        .polaroids img:hover {
+          transform: scale(2);
+        }
+        
+        .polaroids img {
+          transition: transform 0.5s ease;
+        }
+        
+        .polaroids img {
+          width: 200px;
+          height: 100%;
+          margin-right: 15px;
+        }
+        
+        .polaroids:hover {
+          animation-play-state: paused;
+        }
+        
+        @keyframes scroll {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-50%);
+          }
+        }
+        
+        .bar {
+          width: 100%;
+          position: sticky;
+          top: 50px;
+          height: 5px;
+          background: linear-gradient( to right, #28712a 0%, #3fa943 45%, #75e879 100% );
+          transform-origin: left;
+          animation: fill linear;
+          animation-timeline: scroll();
+        }
+        
+        @keyframes fill {
+          from {transform: scaleX(0);}
+          to {transform: scaleX(1);}
+        }
+        
+        
+        
+        .responsive-container {
+          display: flex;
+          align-items: center;
+        }
+        
+        .responsive-container ul {
+          flex: 1;
+          color: #CC582E;
+          margin-left: 75px;
+        }
+        
+        ul a {
+          color: inherit;
+        }
+        
+        .responsive-container div {
+          flex: 1;
+        }
+        
+        @media (max-width: 768px), (hover:none) {
+          main {
+            margin: 30px;
+          }
+
+          .responsive-container ul {
+            display: none;
+          }
+
+          .polaroids img:hover {
+            transform: none;
+          }
+
+          .polaroids:hover {
+            animation-play-state: running;
+          }
+
+          footer {
+            position: sticky;
+            bottom: 0;
+            height: 70px;
+          }
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="https://myatthitkoko.com/">Myat Thit Ko Ko</a></h1>
+  </header>
+  <div class="bar"></div>
+    <div class="heading">
+  	    <h2>Halloween Hangout | Southeast Campus 2026</h2>
+  	    <p>For Halloween 2026, the Vice President of South Gate (VPSG) of Associated Student Union (ASU) at East Los Angeles College (ELAC) hosted a campus event to encourage student engagement, strengthen the ASU presence on this satellite campus, and foster a sense of fun, community, and belonging among students. <a href="https://www.elac.edu/campus-life/events/2026/10/28/halloween-hangout-southeast-campus" target="_blank">View&nbsp;Official&nbsp;School&nbsp;Website&rarr;</a></p>
+  	    <div class="info">
+    		  <p class="date">Oct 30 2026</p>
+    		  <p>Reading: 5 mins</p>
+    		</div>
+  	    <hr/>
+  	</div>
+  <main>
+    <div class="responsive-container">
+      <div class="workshop-image-container">
+        <img src="https://myatthitkoko.com/images/Halloween-Hangout.png" alt="Event Poster"/>
+      </div>
+      <ul>
+        <li><a href="#early-ideas">Early Ideas</a></li>
+        <li><a href="#selection-of-date-and-time">Selection of Date & Time</a></li>
+        <li><a href="#the-making-of-the-poster">The Making of The Poster</a></li>
+        <li><a href="#promotion-campaign">Promotion Campaign</a></li>
+        <li><a href="#vendors">Vendors</a></li>
+        <li><a href="#challenges">Challenges</a></li>
+        <li><a href="#timeline-and-task-list">Timeline & Task List</a></li>
+        <li><a href="#halloween-hangout">Halloween Hangout</a></li>
+        <li><a href="#the-afterglow">The Afterglow</a></li>
+      </ul>
+    </div>
+    <article>
+      <h3 id="early-ideas">Early Ideas</h3>
+      <p>Since the beginning of the fall semester, I have been thinking of ideas for a Halloween-themed event. Initally, I was going for a <span class="highlight">pumpkin-carving competition</span>. As someone who is into art and design, I love to see students getting creative and producing art. However, after careful consideration, I realized that this idea presented several challenges.</p>
+      <p>The primary concern was student participation. A competition of this nature require a sufficient number of enthusiatic particpants to be successful. Given the low level of student engagement over the past year, relying on students to actively participate in the competition posed too much of a risk. </p>
+      <p>Another challenge arises from determining the prizes for first, second, and third place. These prizes need to be attractive enough to motivate students to put greater effort into their creations, while remaining within a reasonable budget. This part was tricky because there was no ideal prize for everyone. Honestly, wihtout budget constraints, I would have seriously considered an iPhone Duo as a first-place prize. </p>
+      <p>I scaled things back a little bit by going for a more laid back and chill event. The goal is to host an event where students could choose to hang out with peers, enjoy some food, and take photos in their costumes. <span class="highlight">"Halloween Hangout"</span> did exactly this. It does not require a minimum number of student participation or RSVP procedures. It serves as an option for students to choose to hang out, even at the last minute.</p>
+    </article>
+    <article>
+      <h3 id="selection-of-date-and-time">Selection of Date & Time</h3>
+      <p>It started with the class schedule. It was early October when I went through the <a href="https://mycollege-guest.laccd.edu/psc/classsearchguest/EMPLOYEE/HRMS/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL" target="_blank">Class Schedule Matrix of ELAC</a> to gather enough data about classes. With this information, I was able to produce a weekly calendar of all the in-person classes in Southeast Campus. <a href="https://myatthitkoko.com/elac-asu-vpsg/Fall2026-SGHS-Schedule.pdf" target="_blank">Access&nbsp;it&nbsp;here&nbsp;&rarr;</a></p>
+      <div class="padding-image-container">
+      <img src="https://myatthitkoko.com/images/Peak-Traffic.png" alt="Wednesday Evening In-Person Class Schedule"/>
+      <figcaption>Wednesday Evening In-Person Classes on Southeast Campus</figcaption>
+    </div>
+      <p>After examining the full weekly in-person enrollment schedule, the exact date-time of the event was a clear choice. Every Wednesday between 6 PM and 7 PM, there are about 92 students on campus with 21 students from two classes ending around 6:30 PM and 71 students from three classes starting at 6:50 PM. Therefore, 5 PM - 7 PM was chosen as the event run time due to its peak foot traffic. The final Late-start classes of the semester begin on Monday, Oct 26th. Hence, the date of the event was Wednesday, Oct 28th, which is the only Wednesday between 26th and 31st.</p>
+      <p>This method had its limitations. First, it assumes that all enrolled students will remain enrolled. However, students may choose to drop with a W for various reasons. Moreover, some of these classes accounted for are late-start classes. This means that even if a couple of students drop before the first day, there is a risk of their class being cancelled which could result in loss of more students on campus. Another concern is that some students may simply miss the class on that day due to an illness or personal matters. Therefore, I had to put more effort in promotion of the event to avoid such a circumstance.</p>
+    </article>
+    <article>
+      <h3 id="the-making-of-the-poster">The Making of the Poster</h3>
+      <p>
+        I looked for a fall aesthetic design template on Canva and remodeled the entire thing to fit my vision of how it should look like. The background texture, composition, and gradient text color was inspired by an album cover, Midnights - Taylor Swift and the lyrics video of the song titled "Dear Reader" on the album. No Generative AI was used in the making of the poster.</p>
+      <div class="smaller-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Midnights_-_Taylor_Swift.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Midnights Album"/>
+        <figcaption>Background Layout</figcaption>
+      </div>
+      <div class="smaller-image-container">
+        <img src="https://i.ytimg.com/vi/X0Jti9F-oQA/hqdefault.jpg" alt="Lyrics Video YouTube Thumbnail"/>
+        <figcaption>Texture</figcaption>
+      </div>
+      <div class="smaller-image-container">
+        <img src="https://myatthitkoko.com/images/Halloween-Hangout.png" alt="Event Poster"/>
+        <figcaption>Final Poster</figcaption>
+      </div>
+      <p>A coworker of mine also helped me make some minor adjustments. The final poster was presented at the monthly Southeast Campus Council on Oct 8th.</p>
+    </article>
+    <article>
+      <h3 id="promotion-campaign">Promotion Campaign</h3>
+      <p>As mentioned earlier, I wanted to make sure that every student on campus is aware of this event. Hence, on Wednesday, Oct 14th, two weeks prior to the day of the event, I printed out about 100 flyers in color and posted them around the entire Southeast Campus during my office hours there. In fact, it was beyond the campus since I got a chance of posting the event flyer on the shuttle bus as well.</p>
+      <div class="workshop2-image-container">
+        <img src="https://myatthitkoko.com/images/bus-photo-poster.jpg" alt="Poster on the bus"/>
+      </div>
+      <p>I also wanted something huge that would attract attention of students. So, I asked the Student Government Dean if I could spend about $30 on decorations. Upon her approval, I brought this 5 ft tall green skeleton from Target straight to Southeast Campus. I also worked with the ASU Vice President of Public Relation (VPPR) in uploading photos on social media on time. </p>
+      <div class='blockquote-container'>
+        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Dekep9SksF5/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/Dekep9SksF5/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/Dekep9SksF5/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by ELAC Associated Student Union (@elac.asu)</a></p></div></blockquote>
+      </div>
+<script async src="//www.instagram.com/embed.js"></script>
+      <p>Additionally, I drew about the event on one of the white boards in the Writing Center. I thought hand written effort could draw attention from students who are oblivious to the printed posters. It took me a while to get the spacing right.</p>
+      <div class="workshop2-image-container">
+        <img src="https://myatthitkoko.com/images/IMG_5467.jpeg" alt="Drawing on White Board"/>
+      </div>
+    </article>
+    <article>
+      <h3 id="vendors">Vendors</h3>
+      <p><strong>Starbucks</strong> was the first choice of vendor for providing pumpkin spiced latte at the event. Initial estimate cost was about $7 per cup and with 70 students expected, the total cost was going to be around $500. It felt like a significant expense as the total ASU budget for Southeast Campus for the entire academic year at the time was only $3000. </p>
+      <div class="workshop-image-container">
+        <img src="https://images.unsplash.com/photo-1577215451400-f207c63e30be?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Starbucks Logo"/>
+      </div>
+      <p>As I presented the plan to one of the Student Services Assitants, it turns out that she actually knew someone at Starbucks, so she gave them a call right in front of me.</p>
+      <q>There's a better option. Are you open to ideas?</q>
+      <q>I'm open to ideas,</q> <p>she replied with a glint of curiosity in her eyes.</p>
+      <q><span class='highlight'>Why don't you call one of the Starbucks stores nearby and ask if they'd be willing to donate coffee? It probably won't be pumpkin spiced lattees though. Just regular coffee.</span></q>
+      <q>That's a great idea. We could just buy those pumpkin creamers sepearately. Thanks for your suggestion.</q>
+    </article>
+      <p>Just like that, a single phone call saved us $500 budget to be spent elsewhere. Right afterwards, I looked up a phone number of a Starbucks store in South Gate. I reached to one of the employees working there. She said their manager was not on duty, and that they would return the call later.</p>
+      <p>Later that evening, in the middle of my Physics class, I received a call from the manager. She gave me her work email and asked me to provide the request in writing. By the following week, the coffee donation was confirmed via email.</p>
+    <article>
+      <h3 id="challenges">Challenges</h3>
+      <p>Vendors for pizza and photo booth were not confirmed until much later due to complications of various factors.</p>
+      <p>We wanted to order a pizza of quality and good taste. However, <strong>Lena Ardiendo Pizza Restaurant</strong> was not an approved vendor in the internal system, which means that payments need to be made out-of-pocket in advance before getting reimbursed by the financial department later.</p>
+      <p>The same goes for the photo booth as well. I had previously looked up photo booth services online and found <strong>Triumph Photobooth</strong>. Even though they had relatively inexpensive prices, we were unable to move forward with them. Instead, we had to reach out to <strong>XLA Photo Booth</strong> as they are an approved vendor. </p>
+      <p>Unexpectedly, the Student Services Assitant, that I had been working closely with, was on sick leave for the whole week. Despite being unfamiliar with the vendor procedures, I had to take matters into my own hands to keep the preparations moving forward. The show must go on. I spoke with the ASU Dean and under her permission, requested an invoice from XLA Photo Booth. I also requested paper coffee cups from Costco. In addition, I set aside some of my personal money to cover the cost of pizza if necessary. Fortunately, the Student Services Assistant returned to the office in time to place the pizza order herself. </p>
+    </article>
+    <article>
+      <h3 id="timeline-and-task-list">Timeline & Task List</h3>
+      <p>A week before the day of the event, I created an event in Outlook Calendar to send out an RSVP email to all ASU Board Members and faculty members regarding their availability to assit with the event in-person. After enough reponses, I created a task list to assign specific duties and responsibilities to each volunteer, ensuring that different aspects of the event would be covered.</p>
+      <div class="workshop-image-container">
+        <img src="https://myatthitkoko.com/images/Halloween-Hangout-Timeline.png" alt="Timeline of the event"/>
+        <figcaption>Timeline of the Event</figcaption>
+      </div>
+    </article>
+    <h3 id="halloween-hangout">Halloween Hangout</h3>
+  </main>
+        <div class="reel">
+    <div class="polaroids-container">
+      <div class="polaroids">
+        <img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_175200_851_1x.jpg" alt="Polaroid Picture"/>
+<img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_181018_932_1x.jpg" alt="Polaroid Picture"/>
+<img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_170022_376_1x.jpg" alt="Polaroid Picture"/>
+<img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_184256_077_1x.jpg" alt="Polaroid Picture"/>
+<img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_180137_398_1x.jpg" alt="Polaroid Picture"/>
+<img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_170940_723_1x.jpg" alt="Polaroid Picture"/>
+<img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_183916_847_1x.jpg" alt="Polaroid Picture"/>
+<img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_180420_247_1x.jpg" alt="Polaroid Picture"/>
+<img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_165832_416_1x.jpg" alt="Polaroid Picture"/>
+<img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_181254_052_1x.jpg" alt="Polaroid Picture"/>
+<img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_174414_732_1x.jpg" alt="Polaroid Picture"/>
+<img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_175744_806_1x.jpg" alt="Polaroid Picture"/>
+<img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_184420_605_1x.jpg" alt="Polaroid Picture"/>
+<img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_170806_110_1x.jpg" alt="Polaroid Picture"/>
+<img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_180009_749_1x.jpg" alt="Polaroid Picture"/>
+<img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_174148_178_1x.jpg" alt="Polaroid Picture"/>
+<img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_181126_813_1x.jpg" alt="Polaroid Picture"/>
+<img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_180835_260_1x.jpg" alt="Polaroid Picture"/>
+<img src="https://cdn-bz.fotoshare.co/b/13e88/pZpcfY4X_1lGUohKbtFM3zJRY/20261028_175200_851_1x.jpg" alt="Polaroid Picture"/>
+      </div>
+    </div>
+  </div>
+  <main>
+    <article>
+      <p>I am especially glad that the photo strip design matched closely to my event poster. Physical copies of these polaroids are now in the hands of the students who could look back at these memories they had on campus.</p>
+      <div class="workshop-image-container">
+        <img src="https://myatthitkoko.com/images/IMG_5589.jpeg" alt="Event On Campus"/>
+      </div>
+      <p>The turnout met the expectations. We had 8 boxes of pizza with two of each flavor. Each box contained 8 slices. Therefore, there were 64 total pizza slices. Since all slices ran out by the end of the event, about <span class='highlight'>60 students</span> must have been in attendance considering that some took two slices while some took none. </p>
+      <div class="workshop-image-container">
+        <img src="https://myatthitkoko.com/images/IMG_5614.jpeg" alt="Pizza and Pumpkin"/>
+      </div>
+      <div class="workshop2-image-container">
+        <img src="https://myatthitkoko.com/images/IMG_5631.jpeg" alt="White board with drawings"/>
+      </div>
+    </article>
+    <article>
+      <h3 id="the-afterglow">The Afterglow</h3>
+      <div class="workshop2-image-container">
+        <img src="https://myatthitkoko.com/images/IMG_5632.jpeg" alt="Four people holding cups together"/>
+        <figcaption>Celebration Before Event Breakdown</figcaption>
+      </div>
+      <p>The purpose of this event was to create a memorable and enjoyable Halloween experience for students on campus by providing an opportunity for them to celebrate, participate in festive activities, and make lasting memories. The event was a success for having achieved this goal. </p>
+      <p>Although most students did not dress up for the occasion, I do not regret having a photo booth as part of the event. I believe that even if only one student decides to dress up and take photos, it is still worth the time and effort put into organizing it. As long as there are students like them who are willing to participate and embrace these experiences, I will continue to organize more events for the campus community in the future.</p>
+      <div class="workshop2-image-container">
+        <img src="https://myatthitkoko.com/images/IMG_5578.jpeg" alt="Supergirl at the photo booth"/>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <img src="https://myatthitkoko.com/images/AssociatedStudentUnion.jpg" alt="banner of ASU"/>
+  </footer>
+</body>
