@@ -127,7 +127,7 @@ html, body {
 }
 
 .scroll1 p {
-  font-size: calc(0.7rem + 0.5vw);
+  font-size: calc(0.5rem + 0.6vw);
 }
 
 .scroll1 .info p {
@@ -334,7 +334,19 @@ nav label {
     opacity: 1;
   }
 
-  .caption:hover {
+  .hero1:hover ~ .caption1 {
+    text-decoration: underline;
+  }
+
+  .hero2:hover ~ .caption2 {
+    text-decoration: underline;
+  }
+
+  .hero3:hover ~ .caption3 {
+    text-decoration: underline;
+  }
+
+  .hero4:hover ~ .caption4 {
     text-decoration: underline;
   }
 
