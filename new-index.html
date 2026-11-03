@@ -4,6 +4,7 @@
     <title>Myat Thit Ko Ko</title>
     <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/libre-bodoni-regular" rel="stylesheet">
+	<link href="/styleSheets/new-Home.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <main>
@@ -101,4 +102,23 @@
     </div>
     -->
   </body>
+  <script>
+	  document.querySelectorAll(".hero video").forEach(video => {
+	  const source = video.querySelector("source");
+	
+	  video.parentElement.addEventListener("mouseenter", () => {
+	    if (!source.src) {
+	      source.src = source.dataset.src;
+	      video.load();
+	    }
+	
+	    video.play();
+	  });
+	
+	  video.parentElement.addEventListener("mouseleave", () => {
+	    video.pause();
+	    video.currentTime = 0;
+	  });
+	});
+  </script>
 </html>
