@@ -126,6 +126,10 @@ html, body {
   align-self: flex-start;
 }
 
+.scroll1 p {
+  font-size: calc(0.7rem + 0.5vw);
+}
+
 .scroll1 .info p {
   margin: 0;
   display: flex;
@@ -164,6 +168,8 @@ nav {
   left: 0;
   z-index: 1000;
   background: white;
+  height: 100vh;
+  width: 100vw;
 }
 
 header div label {
@@ -261,8 +267,6 @@ main {
 
 .nav-toggle:checked ~ nav {
   display: flex;
-  height: 100vh;
-  width: 100%;
 }
 
 nav label {
