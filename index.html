@@ -129,14 +129,33 @@
       <h3>Myat Thit Ko Ko<span class="smaller">Los Angeles, CA</span></h3>
       <hr/>
       <div class="socials">
-					<a href="https://www.linkedin.com/in/myatthitkoko"><img src="https://myatthitkoko.com/images/linkedin.png" alt="LinkedIn icon"></a>
-					<a href="https://github.com/myatthitkoko"><img src="https://myatthitkoko.com/images/github.png" alt="GitHub icon"></a>
-					<a href="https://www.youtube.com/@myatthitkoko"><img src="https://myatthitkoko.com/images/youtube.png" alt="YouTube icon"></a>
+		<a href="https://www.linkedin.com/in/myatthitkoko"><img src="https://myatthitkoko.com/images/linkedin.png" alt="LinkedIn icon"></a>
+		<a href="https://github.com/myatthitkoko"><img src="https://myatthitkoko.com/images/github.png" alt="GitHub icon"></a>
+		<a href="https://www.youtube.com/@myatthitkoko"><img src="https://myatthitkoko.com/images/youtube.png" alt="YouTube icon"></a>
         <a href="https://www.facebook.com/myatthitkoko"><img src="https://myatthitkoko.com/images/facebook-svgrepo-com.svg" alt="Facebook icon"></a>
         <a href="https://www.instagram.com/not_ur_myat_thit/"><img src="https://myatthitkoko.com/images/instagram-svgrepo-com.svg" alt="Instagram icon"></a>
         <a href="https://www.duolingo.com/profile/myatthitkoko"><img src="https://myatthitkoko.com/images/duolingo-svgrepo-com.svg" alt="Duolingo icon"></a>
-				</div>
+	  </div>
     </footer>
   </body>
+  <script>
+	  document.querySelectorAll(".hero video").forEach(video => {
+	    const source = video.querySelector("source");
+	  
+	    video.parentElement.addEventListener("mouseenter", () => {
+		  if (!source.src) {
+		    source.src = source.dataset.src;
+		    video.load();
+		  }
+	  
+		  video.play();
+	    });
+	  
+	    video.parentElement.addEventListener("mouseleave", () => {
+		  video.pause();
+		  video.currentTime = 0;
+	    });
+	  });
+  </script>
   
 </html>
