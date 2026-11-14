@@ -4,27 +4,417 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flannels For Fall</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="/images/flannel.svg"/>
+  <meta name="author" content="Myat Thit Ko Ko | he/him">
   <style>
-    body {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    main {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+    
+        :root {
+          --ElacGreen: #28712a;
+          --ElacGreenSoft: #B4E4B5;
+          --ElacWhite: #f6f2ec;
+          --ElacBlack: #473f3d;
+        }
+
+        #early-ideas,
+        #selection-of-date-and-time,
+        #the-making-of-the-poster,
+        #promotion-campaign,
+        #vendors,
+        #challenges,
+        #timeline-and-task-list,
+        #halloween-hangout,
+        #the-afterglow {
+          scroll-margin-top: 50pt;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+
+        q {
+          font-style: italic;
+          display: inline;
+          margin: 30px auto;
+        }
+    
+        q + p {
+          display: inline;
+        }
+    
+        p + q {
+          display: block;
+        }
+
+        p {
+          text-align: justify;
+        }
+
+        header {
+          position: sticky;
+          top: 0;
+          background: rgba(89,51,05,0.8);
+          backdrop-filter: blur(2px);
+          height: 50px;
+          color: #f6f2ec;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 999;
+        }
+        
+        footer {
+          height: 100px;
+          background: #437D29;
+        }
+
+        footer img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+
+        figcaption {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 50px;
+        }
+
+        .meeting-poster-container img,
+        .nametag-image-container img,
+        .opening-image-container img,
+        .goodnight-image-container img,
+        .workshop-image-container img,
+        .workshop2-image-container img,
+        .padding-image-container img,
+        .smaller-image-container img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .flex-display {
+          display: none;
+        }
+
+        .smaller-image-container {
+          max-width: 100px;
+          margin: 0 auto;
+        }
+
+        .padding-image-container img {
+          padding: 2vw;
+          background: white;
+          border-radius: 30px;
+        }
+
+        .nametag-image-container img,
+        .goodnight-image-container img {
+          max-height: 500px;
+          object-fit: contain;
+        }
+
+        .workshop2-image-container img {
+          max-height: 500px;
+          object-fit: cover;
+        }
+
+        main h2 {
+          width: 100%;
+          text-align: center;
+          background: var(--ElacWhite);
+          color: var(--ElacGreen);
+          position: sticky;
+          top: 50px;
+          
+        }
+
+        .blockquote-container {
+          display: flex;
+          justify-content: center;
+        }
+        
+        h1 {
+          margin: 0;
+          font-family: "italiana";
+          font-size: 1.5em;
+          color: #f3dca8;
+        }
+
+        .event-info {
+          background: ghostwhite;
+          border-radius: 30px;
+          padding: 15px 30px;
+          display: flex;
+          justify-content: center;
+          max-width: 768px;
+          margin: 0 auto;
+        }
+
+        ul > li {
+          margin: 20px auto;
+        }
+
+        main > article > ul > li > strong {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+        }
+
+        ul.b {
+          list-style-type: square;
+          padding: 0;
+          margin: 0;
+        }
+        
+        html {
+          font-size: clamp(1rem, calc(0.875rem + 0.5vw), 1.5rem); 
+        }
+        
+        body {
+          margin: 0;
+          padding: 0;
+          background: #f3dca8 ;
+          color: #593305;          
+        }
+        
+        .info {
+          display: flex;
+          justify-content: space-between;
+        }
+        
+        header a {
+          color: inherit;
+          text-decoration: none;
+        }
+        
+        img {
+          width: 30px;
+          height: 30px;
+          display: inline;
+        }
+        
+        hr {
+          height: 5px; background-color: #593305; border: none;
+        }
+        
+        main {
+          max-width: 768px;
+          margin: 30px auto;
+        }
+        
+        .heading {
+          margin: 30px;
+        }
+
+        .highlight {
+          background: #f49e3b;
+          color: white;
+        }
+
+        .reel {
+          overflow: hidden;
+        }
+        
+        .polaroids-container {
+          width: 100%;
+        }
+        
+        .polaroids {
+          display: flex;
+          width: max-content;
+          animation: scroll 300s linear infinite;
+        }
+        
+        .polaroids img:hover {
+          transform: scale(2);
+        }
+        
+        .polaroids img {
+          transition: transform 0.5s ease;
+        }
+        
+        .polaroids img {
+          width: 200px;
+          height: 100%;
+          margin-right: 15px;
+        }
+        
+        .polaroids:hover {
+          animation-play-state: paused;
+        }
+        
+        @keyframes scroll {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-50%);
+          }
+        }
+        
+        .bar {
+          width: 100%;
+          position: sticky;
+          top: 50px;
+          z-index: 999;
+          background: #593305;
+          color: #f3dca8;
+        }
+
+        .bar p {
+          margin: 0;
+        }
+        
+        
+        
+        
+        .responsive-container {
+          display: flex;
+          align-items: center;
+        }
+        
+        .responsive-container ul {
+          flex: 1;
+          color: #CC582E;
+          margin-left: 75px;
+        }
+        
+        ul a {
+          color: inherit;
+        }
+        
+        .responsive-container div {
+          flex: 1;
+        }
+        
+        @media (max-width: 768px), (hover:none) {
+          main {
+            margin: 30px;
+          }
+
+          .responsive-container ul {
+            display: none;
+          }
+
+          .polaroids img:hover {
+            transform: none;
+          }
+
+          .polaroids:hover {
+            animation-play-state: running;
+          }
+        }
   </style>
 </head>
 <body>
+    <header>
+      <h1><a href="https://myatthitkoko.com/">Myat Thit Ko Ko</a></h1>
+    </header>
+  <div class='bar'>
+    <div class="reel">
+    <div class="polaroids-container">
+      <div class="polaroids">
+        <p>ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | ELAC Foundation | Associated Student Union | </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="heading">
+  	    <h2>Flannels For Fall | Southeast Campus</h2>
+  	    <p>Happy Holidays! My name is Myat Thit Ko Ko. I serve as the Vice President of South Gate (VPSG) of Associated Student Union (ASU) of East Los Angeles College (ELAC) for 2026-2027 academic year. For Thanksgiving this year, I am providing <span class='highlight'>giveaway flannels</span> for students at Southeast Campus. I am also taking this opportunity to collaborate with ELAC Foundation and promote the <span class="highlight">Husky Closet</span> program resources for students.</p>
+    
+    <div class="flex-display">
+      <div class="smaller-image-container">
+        <img src="https://www.elac.edu/sites/elac.edu/files/2022-08/ASU-Logo_0.png" alt="ASU logo"/>
+      </div>
+    <div class="smaller-image-container">
+        <img src="https://elacfoundation.com/wp-content/uploads/2016/12/elac-logo@2x.png" alt="ASU logo"/>
+      </div>
+    </div>
+        <div class="event-info">
+          <div>
+            <div class="info">
+        		  <p class="date"><strong>Event Date:</strong> Tuesday, Nov 24 2026</p>
+        		  <p></p>
+        		</div>
+            <div class="info">
+        		  <p class="date"><strong>Event Time:</strong> 4 pm - 7 pm</p>
+        		  <p></p>
+        		</div>
+            <div class="info">
+        		  <p class="date">Event starts <span id="countdown"></span> from now.</p>
+        		  <p></p>
+        		</div>
+          </div>
+        </div>
+  	    <hr/>
+  	</div>
   <main>
-    <h1>This page is currently being developed.</h1>
-    <h2>Check back again soon.</h2>
+    <div class="responsive-container">
+      <div class="workshop-image-container">
+        <img src="https://myatthitkoko.com/images/Flannels-For-Fall-Final.png" alt="Event Poster"/>
+      </div>
+      <ul>
+        <li><a href="#early-ideas">Early Ideas</a></li>
+        <li><a href="#selection-of-date-and-time">Selection of Date & Time</a></li>
+        <li><a href="#the-making-of-the-poster">The Making of The Poster</a></li>
+        <li><a href="#promotion-campaign">Promotion Campaign</a></li>
+        <li><a href="#vendors">Vendors</a></li>
+        <li><a href="#challenges">Challenges</a></li>
+        <li><a href="#timeline-and-task-list">Timeline & Task List</a></li>
+        <li><a href="#halloween-hangout">Halloween Hangout</a></li>
+        <li><a href="#the-afterglow">The Afterglow</a></li>
+      </ul>
+    </div>
+    <article>
+      <h3>How do I get a flannel?</h3>
+      <p>Just show up with the event poster. Don't forget to bring your Student ID to check in at the table.</p>
+    </article>
+    <article>
+      <h3>How many flannels will be provided?</h3>
+      <p>An order of <span class="highlight">30</span> flannels in total has been placed. Since the giveaway items are limited, we encourage all students to show up as early as 4 o'clock to bring a flannel home.</p>
+    </article>
+    <article>
+      <h3>What sizes and colors are available?</h3>
+      <p>We've got green plaid shirts and brown plaid shirts. There are 15 of each color. Each color has 5 medium, 5 large, and 5 extra-large sizes.</p>
+    </article>
+    <article>
+      <h3>What is Husky Closet Program?</h3>
+      <p>Husky Closet provides a variety of clothing items such as hats, footwear, and suits for students at free of charge to help you feel confident and prepared for school, job interviews, internships, career fairs, and professional opportunities. Just like a shopping experience, students could bring their selections at the check-out counter for up to  5 items per week. It is open daily from 11 am to 1 pm at E3-255 at East Campus.</p>
+      <div class="workshop-image-container">
+        <img src="https://myatthitkoko.com/images/IMG_5940.jpeg" alt="Closet Snapshot"/>
+        <figcaption>Inside the Husky Closet</figcaption>
+      </div>
+    </article>
+    <article>
+      <h3>I am a student at Southeast Campus. How can I access resources from the Husky Closet?</h3>
+      <div class="workshop2-image-container">
+        <img src="https://myatthitkoko.com/images/IMG_5871.jpeg" alt="Shuttle Service Sign"/>
+        <figcaption>Shuttle Service</figcaption>
+      </div>
+      <p>You could take the shuttle to the East Campus. Campus map has been provided below for your convenience.</p>
+      <div class="workshop-image-container">
+        <img src="https://www.elac.edu/sites/elac.edu/files/styles/inline_image_1100w_/public/2026-09/Map.png?itok=Vgc9SEux" alt="Shuttle Service Sign"/>
+        <figcaption>East Campus Map</figcaption>
+      </div>
+    </article>
   </main>
-  <script src="./script.js"></script>
+  <footer>
+    <img src="https://myatthitkoko.com/images/AssociatedStudentUnion.jpg" alt="banner of ASU"/>
+  </footer>
 </body>
+  <script>
+    function updateTime() {
+      let startDate = new Date();
+      let endDate = new Date(2026,10,24,16,00,00);
+      let timeDiff =  endDate - startDate;
+      let dayDiff = Math.floor(timeDiff / (1000 * 3600 * 24)) ;
+      let hourDiff = Math.floor((timeDiff - (dayDiff * 1000 * 3600 * 24 ))/ (1000 * 3600));
+      let minuteDiff = Math.floor((timeDiff - (dayDiff * 1000 * 3600 * 24 ) - (hourDiff * 1000 * 3600))/ (1000 * 60));
+      
+          document.getElementById("countdown").innerHTML = dayDiff + " days " + hourDiff + " hours " +  minuteDiff + " minutes";
+    }
+    updateTime();
+    setInterval(updateTime, 60000);
+  </script>
 </html>
