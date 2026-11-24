@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Myat Thit Ko Ko | he/him">
+    <title>Parking Info | Temporary Southeast Campus</title>
+    <style>
+      .map-container {
+  width: 400px;
+  height: 400px;
+  cursor: crosshair;
+  line-height: 0;
+}
+
+.map-container img {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.point {
+  position: relative;
+  transform: translate(-50%, -50%);
+
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 3px solid white;
+
+  background: green;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  z-index: 2;
+}
+
+.entrance {
+  position: relative;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+
+  width: 28px;
+  height: 30px;
+  border-radius: 50% 50% 70% 70%;
+  border: 3px solid white;
+
+  background: #ef4444;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  z-index: 2;
+}
+
+figcaption {
+  text-align: center;
+}
+
+.info {
+  display: none;
+  flex-direction: column;
+}
+
+.left-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-right img {
+  width: 200px;
+  height: 300px;
+}
+
+.point:hover,
+.point.active {
+  background: #2563eb;
+  scale: 1.2;
+}
+
+h3 {
+  text-align: center;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background: green;
+  color: white;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .left-right {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  main {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+    </style>
+  </head>
+  <body>
+      <h1>Street Parking Info</h1>
+      <h3>Temporary Southeast Campus</h3>
+    <main>
+      <div>
+        <p>Click on each point to view parking information posted on the street signs.</p>
+      <div class="map-container">
+        <img src="https://myatthitkoko.com/images/Parking-Info-Southeast-Temp.png" alt="Map of Southeast Campus Streets"/>
+        <button class="point one" style="left: 15%; top: -200px;"
+          data-title="Dearbon Ave"
+          data-description2="Dearbon-right-facing-North.png"
+          data-description1="Dearbon-left-facing-North.png">
+          1
+        </button>
+        <button class="point two" style="left: 80%; top: -360px;"
+          data-title="Ardmore Ave"
+          data-description1=""
+          data-description2="Ardmore-right-facing-East.png">
+          2
+        </button>
+        <button class="point three" style="left: 95%; top: -100px;"
+          data-title="Virginia Ave"
+          data-description1="Virginia-left-facing-North.png"
+          data-description2="Virginia-right-facing-North.png">
+          3
+        </button>
+        <button class="entrance" style="left: 20%; top: -200px;"
+          data-title="Entrance">
+          O
+        </button>
+      </div>
+      <p>Red pin indicates the Temporary Southeast Campus Location. Entrance Gate is next to it on Dearbon Ave.</p>
+      </div>
+      <div class="info" id="info"></div>
+    </main>
+    <script>
+      const points = document.querySelectorAll('.point');
+      const info = document.getElementById('info');
+      
+      points.forEach(point => {
+        point.addEventListener('click', () => {
+      
+          // Remove previous selection
+          points.forEach(p => p.classList.remove('active'));
+      
+          // Highlight selected point
+          point.classList.add('active');
+      
+          // Display information
+          info.style.display = "flex";
+          info.innerHTML = `
+            <h3>${point.dataset.title}</h3>
+            <div class="left-right">
+              <div>
+                <img src="https://myatthitkoko.com/images/${point.dataset.description1}"/>
+                <figcaption>Left</figcaption>
+              </div>
+              <div>
+                <img src="https://myatthitkoko.com/images/${point.dataset.description2}"/>
+                <figcaption>Right</figcaption>
+              </div>
+            </div>
+          `;
+        });
+      });
+    </script>
+  </body>
+</html>
