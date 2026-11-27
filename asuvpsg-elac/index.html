@@ -7,200 +7,367 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="author" content="Myat Thit Ko Ko | he/him">
 		<meta name="description" content="My role as the Vice President of South Gate, Associated Student Union, East Los Angeles College">
-    <title>ASU Vice President of South Gate</title>
+    <title>ELAC ASU Vice President of South Gate Ko</title>
     <style>
       :root {
-        --ELACgreen: #28712a;
-        --ELACwhite: #f6f2ec;
-        --ELACblack: #473f3d;
-      }
-
-      html {
-       font-size: clamp(1rem, calc(0.875rem + 0.8vw), 2rem); 
-      }
-      
-      .banner, header {
-        background: var(--ELACgreen);
-        height: 100px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: var(--ELACwhite);
-      }
-
-      header a{
-        color: inherit;
-        text-decoration: none;
-      }
-
-	  header {
-        position: sticky;
-        top: 0;
-        z-index: 999;
-        opacity: 0.9;
-      }
-
-      .foot-img-container img {
-        width: 100%;
-      }
-
-      .slideshow {
-        background: black;
-        height: 400px;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-		max-width: 700px;
-		margin: 0 auto;
-      }
-
-      .mySlides {
-        display: none;
-        max-width: 600px;
+		  --ELACgreen: #28712a;
+		  --ELACwhite: #f6f2ec;
+		  --ELACblack: #473f3d;
+		}
+		
+		html, body {
+		  margin: 0;
+		  padding: 0;
+		  background: var(--ELACwhite);
+		  color: var(--ELACblack);
+		  font-size: calc(1rem + 0.1vw);
+		}
+		
+		header {
+		  background: var(--ELACgreen);
+		  height: 60px;
+		  width: 100%;
+		  display: flex;
+		  align-items: center;
+		  color: var(--ELACwhite);
+		  position: sticky;
+		  top: 0;
+		  z-index: 999;
+		  opacity: 0.9;
+		}
+		
+		h2, h3 {
+		  color: var(--ELACgreen);
+		}
+		
+		.bar {
+		  width: 100%;
+		  position: sticky;
+		  top: 50px;
+		  z-index: 999;
+		  background: linear-gradient( to right, #28712a 0%, #3fa943 45%, #75e879 100% );
+		}
+		
+		header a{
+		  color: inherit;
+		  text-decoration: none;
+		  width: 100%;
+		  max-width: 700px;
+		  margin: 0 auto;
+		  padding: 20px;
+		}
+		
+		.foot-img-container {
+		  max-width: 700px;
+		  margin: 0 auto;
+		  height: 100px;
+		}
+		
+		.foot-img-container img {
+		  width: 100%;
+		  height: 100%;
+		  object-fit: cover;
+		}
+		
+		.slideshow {
+		  background: black;
+		  height: 400px;
+		  position: relative;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  max-width: 700px;
+		  margin: 0 auto;
+		}
+		
+		.mySlides {
+		  display: none;
+		  max-width: 600px;
 		width: 100%;
-        height: 100%;
-      }
-
-      .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 0.7;
-        color: var(--ELACwhite);
-        background: var(--ELACblack);
-      }
-
-      .prev:hover, .next:hover {
-        color: var(--ELACgreen);
-        background: var(--ELACwhite);
-      }
-
-      .next {
-        right: 0;
-      }
-
-      .prev {
-        left: 0;
-      }
-
-      .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-      }
-
-      @keyframes fade {
-        from {opacity: 0.4}
-        to {opacity: 1}
-      }
-
-      .slideshow img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-      }
-
-      .slideshow p {
-        position: absolute;
-      }
-
-      .Text {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        background: var(--ELACblack);
-        color: var(--ELACwhite);
-        padding: 5px;
-        border-radius: 5px;
-      }
-      
-      .buttons {
-        display: flex;
-        gap: 15px;
-        margin: 30px;
-        justify-content: center;
-      }
-
-      button {
-        background: var(--ELACgreen);
-        color: var(--ELACwhite);
-        border-radius: 10px;
-        font-size: 0.8em;
-      }
-
-      .resource-buttons {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin: 30px;
-      }
-      
+		  height: 100%;
+		}
+		
+		.prev, .next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: 30px;
+		  height: 30px;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  opacity: 0.7;
+		  color: var(--ELACwhite);
+		  background: var(--ELACblack);
+		}
+		
+		.prev:hover, .next:hover {
+		  color: var(--ELACgreen);
+		  background: var(--ELACwhite);
+		}
+		
+		.next {
+		  right: 0;
+		}
+		
+		.prev {
+		  left: 0;
+		}
+		
+		.fade {
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+		
+		@keyframes fade {
+		  from {opacity: 0.4}
+		  to {opacity: 1}
+		}
+		
+		.slideshow img {
+		  object-fit: cover;
+		  width: 100%;
+		  height: 100%;
+		}
+		
+		.slideshow p {
+		  position: absolute;
+		}
+		
+		a {
+		  color: inherit;
+		}
+		
+		.responsive-links {
+		  display: grid;
+		  grid-template-columns: repeat(2, 1fr);
+		  grid-template-rows: repeat(3, 1fr);
+		  gap: 5px;
+		}
+		
+		
+		.Text {
+		  position: absolute;
+		  bottom: 0;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  text-align: center;
+		  background: var(--ELACblack);
+		  color: var(--ELACwhite);
+		  padding: 5px;
+		  border-radius: 5px;
+		}
+		
+		.grid3columns {
+		  display: grid;
+		  grid-template-columns: repeat(3, 1fr);
+		  gap: 5px;
+		  padding: 5px;
+		  background: var(--ELACwhite);
+		  max-width: 700px;
+		  margin: 0 auto;
+		}
+		
+		.grid3columns div {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  height: 50px;
+		  background: var(--ELACgreen);
+		  color: var(--ELACwhite);
+		}
+		
+		.grid3columns a {
+		  color: inherit;
+		  text-decoration: none;
+		}
+		
+		.profile-img-container {
+		  width: 300px;
+		  margin: 0 auto;
+		}
+		
+		.profile-img-container img {
+		  width: 100%;
+		  border-radius: 10px;
+		}
+		
+		.bio p {
+		  text-align: justify;
+		}
+		
+		main {
+		  padding: 20px;
+		}
+		
+		footer {
+		  background: #437D29;
+		  color: var(--ELACwhite);
+		  padding: 20px;
+		  padding-top: 0;
+		}
+		
+		.footer-wrapper {
+		  max-width: 700px;
+		  display: flex;
+		  justify-content: space-between;
+		  margin: 0 auto;
+		  padding-top: 20px;
+		}
+		
+		.footerCol1 div {
+		  display: flex;
+		  align-items: center;
+		}
+		
+		.footerCol1 img {
+		  width: 30px;
+		  filter: invert(1);
+		}
+		
+		.footerCol2 {
+		  border-left: white solid 1px;
+		  padding-left: 20px;
+		}
+		
+		.footerCol3 {
+		  width: 200px;
+		}
+		
+		.footerCol3 img {
+		  width: 100%;
+		}
+		
+		.footerCol3 {
+		  display: none;
+		}
+		
+		@media (min-width: 768px) {
+		  .footerCol3 {
+		    display: block;
+		  }
+		
+		  .responsive-links {
+		    gap: 15px;
+		  }
+		  
+		  .responsive-bio {
+		    display: grid;
+		    grid-template-columns: repeat(2, 1fr);
+		    gap: 30px;
+		    
+		  }
+		
+		  .profile-img-container {
+		    width: 100%;
+		  }
+		
+		  main {
+		    max-width: 700px;
+		    margin: 0 auto;
+		  }
+		}
     </style>
   </head>
   <body>
-    <header><a href="https://myatthitkoko.com">ASU VPSG Myat Thit Ko Ko</a></header>
+    <header><a href="https://myatthitkoko.com"><h1>Myat Thit Ko Ko</h1></a></header>
+    <div class="bar"></div>
     <div class="slideshow">
       <div class="mySlides fade">
-        <img src="/images/IMG_4934.jpeg">
+        <img src="https://myatthitkoko.com/images/IMG_4934.jpeg">
         <div class="Text">Skeleton Holding Poster</div>
       </div>
       <div class="mySlides fade">
-        <img src="/images/IMG_3773.jpeg" alt="Fall26 Opening Day"/>
+        <img src="https://myatthitkoko.com/images/IMG_3773.jpeg" alt="Fall26 Opening Day"/>
         <div class="Text">Fall26 Opening Day</div>
       </div>
       <div class="mySlides fade">
-        <img src="/images/IMG_4915.jpeg" alt="B23 Halloween"/>
+        <img src="https://myatthitkoko.com/images/IMG_4915.jpeg" alt="B23 Halloween"/>
         <div class="Text">B23 Halloween</div>
       </div>
       <div class="mySlides fade">
-        <img src="/images/IMG_4467.jpeg" alt="Club Rush Photo Booth"/>
+        <img src="https://myatthitkoko.com/images/IMG_4467.jpeg" alt="Club Rush Photo Booth"/>
         <div class="Text">Fall26 Club Rush</div>
       </div>
       <div class="mySlides fade">
-        <img src="/images/IMG_3807.JPG" alt="Opening Group Photo"/>
+        <img src="https://myatthitkoko.com/images/IMG_3807.JPG" alt="Opening Group Photo"/>
         <div class="Text">Opening Group Photo</div>
       </div>
       <div class="mySlides fade">
-        <img src="/images/ada2.png" alt="Zoom Meeting Screenshot"/>
+        <img src="https://myatthitkoko.com/images/ada2.png" alt="Zoom Meeting Screenshot"/>
         <div class="Text">ADA Online Training</div>
       </div>
       <a class="prev" onClick="plusSlides(-1)">&#10094</a>
       <a class="next" onClick="plusSlides(1)">&#10095</a>
     </div>
-    <div class="banner">Resources</div>
-      <div class="resource-buttons">
-        <button onClick="window.location.href='https://www.elac.edu/campus-life/asu';">ASU Resources</button>
-        <button onClick="window.location.href='https://www.elac.edu/student-services/basic-needs-center#food';">Food Pantry</button>
-        <button onClick="window.location.href='https://www.elac.edu/student-services/spr/student-health-center';">Health Department</button>
-        <button onClick="window.location.href='https://myatthitkoko.com/posters/Full-Term-Shuttle-Fall26.pdf';">Shuttle Schedule</button>
-        <button onClick="window.location.href='https://www.elac.edu/student-services/basic-needs-center#clothing';">Husky Closet</button>
-        <button onClick="window.location.href='https://studentlaccd-my.sharepoint.com/:x:/g/personal/morajr_laccd_edu/EUAAvI6fcUBJi5rGVguVy7UBI8KKr07EKJ5pLnk6dSJj-g?e=hIpLle';">Join Clubs</button>
+      <div class="grid3columns">
+      <div>
+        <a href="https://myatthitkoko.com/asuvpsg-elac/resources/" target="_blank">Resources</a>
       </div>
-    <div class="banner">Meetings</div>
-      <div class="buttons">
-        <button onClick="window.location.href='https://www.elac.edu/campus-life/asu/agendas';">View Meeting History</button>
-        <button onClick="window.location.href='https://www.elac.edu/campus-life/asu/agendas';">View Meeting Agendas</button>
-        <button onClick="window.location.href='https://www.elac.edu/campus-life/asu/minutes';">View Meeting Minutes</button>
+      <div>
+        <a href="https://myatthitkoko.com/asuvpsg-elac/agendas/" target="_blank">Agendas</a>
       </div>
-    <div class="banner">Upcoming Blogs</div>
-        <ul>
-          <li>Fall 2026 Opening Day</li>
-          <li>Cal State LA Move In Day</li>
-          <li>80th ELAC President's Gala</li>
-          <li>Introducing ASU Resources - September 2026</li>
-          <li>CCCSAA Student Leadership Conference 2026</li>
-          <li>Halloween Hangout - October 2026</li>
-        </ul>
-    <div class="foot-img-container">
-      <img src="/images/AssociatedStudentUnion.jpg" alt="Banner of ASU">
+      <div>
+        <a href="https://myatthitkoko.com/asuvpsg-elac/minutes/" target="_blank">Minutes</a>
+      </div>
     </div>
+  <main>
+    <div class="intro">
+      <h2>Associated Student Union</h2>
+      <p>"The Associated Student Union (ASU) is the official Student Government of East Los Angeles College (ELAC). The ASU board is made up of Executive officers, and Senators which seek to represent its' constituents. ASU advocates the needs of the student body at the College, District, and State levels."<a href="https://www.elac.edu/campus-life/asu" target="_blank">Learn&nbsp;More&rarr;</a></p>
+    </div>
+    <hr/>
+    <div class="bio">
+      <h2>Meet the Vice President of South Gate (VPSG)</h2>
+      <hr/>
+      <h2>Myat Thit Ko Ko</h2>
+      <div class="responsive-bio">
+        <div>
+          <p>Myat Thit Ko Ko is a student leader majoring in Computer Science at East Los Angeles College. He has worked toward his goal of transferring to a four-year university while balancing rigorous coursework, student leadership, and professional responsibilities.</p>
+        <h3>Leadership and Career</h3>
+        <p>Beyond the classroom, Ko serves as Vice President of South Gate in ELAC's ASU for 2026-2027 academic year. In this capacity, he represents student interests, brings campus concerns to student government discussions, participates in organizational decisions, and coordinates with campus personnel and community partners to support student engagement. His responsibilities have provided opportunities to develop leadership, advocate for fellow students, and contribute to the broader campus community.</p>
+        </div>
+        <div class="profile-img-container">
+          <img src="https://myatthitkoko.com/images/IMG_3804.jpeg" alt="profile picture of Ko"/>
+        </div>
+      </div>
+      
+      <p>His interest in technology extends beyond academic instruction. Through independent software development, Ko has built and maintained his personal website to have a digital presence. He has also developed practial webpages such as Temporary Southeast Campus Parking Info to meet the immediate needs of the organization. These projects reflect his interest in developing practical solutions that address real-world needs.</p>
+      <h3>Academic Background</h3>
+      <p>Throughout 2026, Ko achieved a 4.0 GPA across his academic terms and earned recognition on the Dean's List. His coursework has focused on developing a strong foundation in computer science, including data structures, object-oriented programming, mathematics, and physics. For Fall 2027, he recently applied as a transfer student to four University of California (UC) campuses: UCLA, UC Berkeley, UC Irvine, and UC San Diego.</p>
+      <h3>Hospitality</h3>
+      <p>Alongside his academic and technical pursuits, Ko maintains professional experience through employment at Kura Sushi and 24 Carrots. At Kura Sushi, he assists guests in navigating technology-assisted dining systems, troubleshooting ordering difficulties, and resolving technical issues. His experience at 24 Carrots has involved coordinating with catering teams, executing Banquet Event Orders, and adapting to the demands of diverse events and venues. Together, these roles have strengthened his communication, adaptability, and ability to work collaboratively in fast-paced environments.</p>
+      <p>Ko represents the intersection of academic discipline, practical experience, and student leadership. As he prepares for the next stage of his education, he hopes to continue building solutions that connect technical innovation with everyday needs.</p>
+    </div>
+    </main>
+    <footer>
+        <div class="foot-img-container">
+        <img src="https://myatthitkoko.com/images/AssociatedStudentUnion.jpg" alt="banner of ASU"/>
+      </div>
+      <div class="footer-wrapper">
+        <div class="footerCol1">
+          <h4>Myat Thit Ko Ko</h4>
+          <p>Vice President of South Gate</p>
+          <hr/>
+          <div>
+            <img src="https://myatthitkoko.com/images/email-envelope-mail-svgrepo-com.svg"><a href="mailto:asuvpsg@elac.edu">asuvpsg@elac.edu</a>
+          </div>
+        </div>
+        <div class="footerCol2">
+          <h4>Site Links</h4>
+          <div class="responsive-links">
+            <a href="https://myatthitkoko.com/asuvpsg-elac/resources/" target="_blank">Resources</a>
+            <a href="https://myatthitkoko.com/asuvpsg-elac/minutes/" target="_blank">Minutes</a>
+            <a href="https://myatthitkoko.com/asuvpsg-elac/agendas/" target="_blank">Agendas</a>
+            <a href="https://myatthitkoko.com/asuvpsg-elac/Parking-Info.html" target="_blank">Parking Info</a>
+            <a href="https://myatthitkoko.com/asuvpsg-elac/Fall2026-SGHS-Schedule.pdf" target="_blank">Fall26 Classes</a>
+          </div>
+        </div>
+        <div class="footerCol3">
+          <img src="https://myatthitkoko.com/images/Southeast-Logo.png" alt="ELAC Southeast Logo" style="background: white; border-radius: 50%" />
+        </div>
+      </div>
+    </footer>
     <script>
       let slideIndex = 1;
       showSlides(slideIndex);
