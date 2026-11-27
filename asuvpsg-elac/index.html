@@ -273,6 +273,10 @@
     <header><a href="https://myatthitkoko.com"><h1>Myat Thit Ko Ko</h1></a></header>
     <div class="bar"></div>
     <div class="slideshow">
+	  <div class="mySlides fade">
+        <img src="https://myatthitkoko.com/images/IMG_6104.jpeg">
+        <div class="Text">Christmas at Southeast Campus</div>
+      </div>
       <div class="mySlides fade">
         <img src="https://myatthitkoko.com/images/IMG_4934.jpeg">
         <div class="Text">Skeleton Holding Poster</div>
@@ -294,8 +298,12 @@
         <div class="Text">Opening Group Photo</div>
       </div>
       <div class="mySlides fade">
-        <img src="https://myatthitkoko.com/images/ada2.png" alt="Zoom Meeting Screenshot"/>
-        <div class="Text">ADA Online Training</div>
+        <img src="https://myatthitkoko.com/images/IMG_6120.jpeg" alt="Zoom Meeting Screenshot"/>
+        <div class="Text">B23 Christmas</div>
+      </div>
+	  <div class="mySlides fade">
+        <img src="https://myatthitkoko.com/images/IMG_6090.jpeg" alt="Zoom Meeting Screenshot"/>
+        <div class="Text">Merry Christmas</div>
       </div>
       <a class="prev" onClick="plusSlides(-1)">&#10094</a>
       <a class="next" onClick="plusSlides(1)">&#10095</a>
@@ -371,9 +379,11 @@
     <script>
       let slideIndex = 1;
       showSlides(slideIndex);
+		
       function plusSlides(n) {
         showSlides(slideIndex+=n);
       }
+		
       function currentSlide(n) {
         showSlides(slideIndex = n);
         
