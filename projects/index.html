@@ -1,308 +1,115 @@
-
 <!DOCTYPE html>
-
-<html lang="en">
-	<head>
-		<link rel="canonical" href="https://myatthitkoko.com/projects/">
-		<link rel="icon" type="image/x-icon" href="/images/favicon.svg"/>
-		<link href="/styleSheets/header.css" rel="stylesheet" type="text/css">
-		<link href="/styleSheets/projects.css" rel="stylesheet" type="text/css">
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Explore Projects of Myat Thit Ko Ko, a Computer Science student in Los Angeles.">
-		<title>
-			Projects | Myat Thit Ko Ko
-		</title>
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap');
-			@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-			@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
-		</style>
-		<script type="application/ld+json">
-			{
-				"@context": "https://schema.org",
-				"@graph": 
-				[
-					{
-						"@type": "CollectionPage",
-						"name": "Projects",
-						"url": "https://myatthitkoko.com/projects/",
-						"description": "A collection of blogs, web apps, and creative builds by Myat Thit Ko Ko."
-					},
-					{
-						"@type": "BreadcrumbList",
-						"itemListElement": 
-						[
-							{
-								"@type": "ListItem",
-								"position": 1,
-								"name": "Home",
-								"item": "https://myatthitkoko.com"
-							},
-							{
-								"@type": "ListItem",
-								"position": 2,
-								"name": "Projects",
-								"item": "https://myatthitkoko.com/projects/"
-							}
-						]
-					}
-				]
-			}
-		</script>
-
-	</head>
-	<body>
-		<div class="header-wrapper">
-		<header>
-		<div class="container">
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-				<nav data-nosnippet>
-					<ul>
-						<li>
-							<a href="/">
-								Home
-							</a>
-						</li>
-						<li>
-							<a href="/books/">
-								Books
-							</a>
-						</li>
-						<li>
-							<a href="/projects/">
-								Projects
-							</a>
-						</li>
-						<li>
-							<a href="/about/">
-								About
-							</a>
-						</li>
-						<li>
-							<a href="/contact/">
-								Contact
-							</a>
-						</li>
-					</ul>
-				</nav>
-        <label for="nav-toggle" class="nav-toggle-label">
-          <span>☰</span>
-        </label>
-			</div>
-			<a href="/" class="logo"><h1>Myat Thit Ko Ko</h1></a>
-			<div class="jump">
-				<h4><a href="#featured">Featured Projects</a></h4>
-				<h4><a href="#blogs">Blogs</a></h4>
-				<h4><a href="#labs">Labs</a></h4>
-		  	</div>
-		</header>
-		</div>
-		<main>
-			<div class="content">
-						<h2 id="featured">Featured Projects</h2>
-		<section class="cards">
-						<div class="project glass enlarge">
-							<a href="https://spider-man-bnd.vercel.app">
-								<img src="https://images.unsplash.com/photo-1635805737707-575885ab0820?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A stock image of spider-man figure">
-								<figcaption>Spider-Man: Brand New Day</figcaption>
-								<p>Movie night ticket reservation powered with Stripe</p>
-								<div class="languages">
-									<p class="glass">JSX</p><p class="glass">API</p><p class="glass">SQL</p>
-								</div>
-							</a>
-						</div>
-						<div class="project glass enlarge">
-							<a href="/posters/Summer-2026-Product-Launch-compressed.pdf">
-								<img src="/images/cute-nails.jpg" alt="Photo of Nails">
-								<figcaption>Nails By Jess</figcaption>
-								<p>First Full Stack App made with React and deployed on Vercel and Railway</p>
-								<div class="languages">
-									<p class="glass">JSX</p><p class="glass">API</p><p class="glass">SQL</p>
-								</div>
-							</a>
-						</div>
-						<div class="project glass enlarge">
-							<a href="https://myatthitkoko.github.io/lvllc/">
-								<img src="https://images.squarespace-cdn.com/content/v1/6698834996b6057e16d61abc/1730774861151-V8RPEPNI7WUVCXAIQGT3/unsplash-image-IRzq8sDxb7w.jpg" alt="A stock image of champagne being poured">
-								<figcaption>Poured Memories, LLC</figcaption>
-								<p>I rebuilt my coworker’s entire business website from scratch to help her stop paying annual Squarespace subscription fees</p>
-								<div class="languages">
-									<p class="glass">HTML</p><p class="glass">CSS</p>
-								</div>
-							</a>
-						</div>
-		</section>
-						<h2 id="recent">Recent Projects</h2>
-		<section class="cards">
-						<div class="project glass enlarge">
-							<a href="https://calendar-mtkk.vercel.app">
-								<img src="/images/WandaVision.png" alt="An image featuring a calendar from the TV show wandavision">
-								<figcaption>Calendar</figcaption>
-								<p>Stylized Calendar of package provided by <a href="https://github.com/wojtekmaj/react-calendar">Wojciech Maj</a></p>
-								<div class="languages">
-									<p class="glass">REACT</p><p class="glass">JSX</p><p class="glass">CSS</p>
-								</div>
-							</a>
-						</div>
-						<div class="project glass enlarge">
-							<a href="https://weather-mtkk.vercel.app">
-								<img src="/images/IMG_0009.jpeg" alt="An image featuring LA weather on Apple Watch">
-								<figcaption>Weather Data (Revamped)</figcaption>
-								<p>Real-time weather data made with React</p>
-								<div class="languages">
-									<p class="glass">REACT</p><p class="glass">JSX</p><p class="glass">JAVASCRIPT</p>
-								</div>
-							</a>
-						</div>
-						<div class="project glass enlarge">
-							<a href="https://tic-tac-toe-mtkk.vercel.app">
-								<img src="/images/tic-tac-toe.png" alt="An image featuring tic-tac-toe game">
-								<figcaption>Tic Tac Toe</figcaption>
-								<p>3x3 Classic Tic Tac Toe made with React</p>
-								<div class="languages">
-									<p class="glass">REACT</p><p class="glass">JSX</p><p class="glass">JAVASCRIPT</p>
-								</div>
-							</a>
-						</div>
-						<div class="project glass enlarge">
-							<a href="https://myatthitkoko.github.io/React/weather.html">
-								<img src="/images/clouds.jpg" alt="An image of a few clouds">
-								<figcaption>Weather Data</figcaption>
-								<p>Real-time weather data delivered with API</p>
-								<div class="languages">
-									<p class="glass">HTML</p><p class="glass">CSS</p><p class="glass">JAVASCRIPT</p>
-								</div>
-							</a>
-						</div>
-						<div class="project glass enlarge">
-							<a href="https://myatthitkoko.github.io/React/joke.html">
-								<img src="https://images.unsplash.com/photo-1641903806973-17eaf2d2634f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A stock image of a stage set up for a stand up comedian">
-								<figcaption>Random Jokes</figcaption>
-								<p>Refresh page to see jokes retrieved with API</p>
-								<div class="languages">
-									<p class="glass">HTML</p><p class="glass">JAVASCRIPT</p>
-								</div>
-							</a>
-						</div>
-						<div class="project glass enlarge">
-							<a href="https://myatthitkoko.github.io/React/toDo.html">
-								<img src="https://images.unsplash.com/photo-1598791318878-10e76d178023?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A stock image of a list to make coffee">
-								<figcaption>To-Do list</figcaption>
-								<p>A simple list for reminder</p>
-								<div class="languages">
-									<p class="glass">HTML</p><p class="glass">CSS</p><p class="glass">JAVASCRIPT</p>
-								</div>
-							</a>
-						</div>
-						<div class="project glass enlarge">
-							<a href="https://myatthitkoko.github.io/React/calculator.html">
-								<img src="https://images.unsplash.com/photo-1668930185267-1f3c19851b5b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="calculator with an orange background">
-								<figcaption>Basic Calculator</figcaption>
-								<p>Simple functions for a quick answer</p>
-								<div class="languages">
-									<p class="glass">HTML</p><p class="glass">CSS</p><p class="glass">JAVASCRIPT</p>
-								</div>
-							</a>
-						</div>
-						<div class="project glass enlarge">
-							<a href="https://github.com/myatthitkoko/linux">
-								<img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A stock image of linux terminal">
-								<figcaption>Linux System Monitoring</figcaption>
-								<p>A system report of performance and memory usage</p>
-								<div class="languages">
-									<p class="glass">Bash</p>
-								</div>
-							</a>
-						</div>
-						<div class="project glass enlarge">
-							<a href="https://github.com/myatthitkoko/robotics-club">
-								<img src="/images/arduino.jpeg" alt="Arduino Uno Circuit">
-								<figcaption>Stair-Climbing Robot</figcaption>
-								<p>The latest project of Robotics Club in college</p>
-								<div class="languages">
-									<p class="glass">C++</p>
-								</div>
-							</a>
-						</div>
-						<div class="project glass enlarge">
-							<a href="/projects/blogs/SEA2026.html">
-								<img src="/images/snap-blog-preview.png" alt="A text saying Blogs">
-								<figcaption>Blogs</figcaption>
-								<p>Read my first blog about Snap Academies</p>
-								<div class="languages">
-									<p class="glass">HTML</p><p class="glass">CSS</p>
-								</div>
-							</a>
-						</div>
-						<div class="project glass enlarge">
-							<a href="https://myatthitkoko.github.io/beyondProject/">
-								<img src="/images/kura-web-preview.png" alt="A screenshot of website">
-								<figcaption>Kura Menu</figcaption>
-								<p>Project Assessment for an internship application</p>
-								<div class="languages">
-									<p class="glass">HTML</p><p class="glass">CSS</p><p class="glass">JAVASCRIPT</p>
-								</div>
-							</a>
-						</div>
-						<div class="project glass enlarge">
-							<a href="https://scratch.mit.edu/projects/1172813195/fullscreen/">
-								<img src="https://images.unsplash.com/photo-1647427017067-8f33ccbae493?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A stock photo of POS">
-								<figcaption>Happy Lemon | POS</figcaption>
-								<p>A Point-of-Sale interface of Happy Lemon Boba Shop</p>
-								<div class="languages">
-									<p class="glass">Scratch</p>
-								</div>
-							</a>
-						</div>
-						<div class="project glass enlarge">
-							<a href="https://colab.research.google.com/drive/1tv0glxjDXIsSf5cnjKkE93P4HdB1HUBi#scrollTo=l85A3b3S-4PM">
-								<img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Math Equation">
-								<figcaption>Numerical Integration</figcaption>
-								<p>Try out Simpson's Rule calculator!</p>
-								<div class="languages">
-									<p class="glass">Python</p>
-								</div>
-							</a>
-						</div>
-						<div class="project glass enlarge">
-							<a href="/projects/midnights/">
-								<img src="/images/midnights-preview.png" alt="A clock">
-								<figcaption>Midnights | A Clock</figcaption>
-								<p>Taylor Swift themed clock made from Scratch</p>
-								<div class="languages">
-									<p class="glass">Scratch</p>
-								</div>
-							</a>
-						</div>
-		</section>
-			<section id="blogs" class="glass">
-				<h3 style="margin-left: 20px">Blogs</h3>
-				<ul class="nullifyList" style="margin-bottom: 30px;">
-						<li class="glass enlarge shine item"><a href="/projects/blogs/SEA2026.html">Snap Engineering Academy Applicant</a></li>
-						<li class="glass enlarge shine item"><a href="/projects/blogs/PouredMemories.html">The Making of Poured Memories</a></li>
-						<li class="glass enlarge shine item"><a href="/projects/blogs/Everyone-Is-Selfish.html">Everyone Is Selfish</a></li>
-						<li class="glass enlarge shine item"><a href="/projects/blogs/CCCSAA-SLC-2026.html">CCCSAA Conference 2026</a></li>
-						<li class="glass enlarge shine item"><a href="/projects/blogs/Halloween-Hangout.html">Halloween Hangout 2026</a></li>
-						<br>
-						<li class="item" style="grid-template-columns: 1fr">More Blogs Coming Soon</li>
-				</ul>
-			</section>
-				<section id="labs" class="glass">
-			<h3 style="margin-left: 20px">Remarkable Physics labs</h3>
-				<ul class="nullifyList" style="margin-bottom: 30px;">
-						<li class="glass enlarge shine item"><a href="Ko_lab07_Physics101.pdf"><span>Conservation of Energy</span></a><span>Physics 101</span></li>
-					<li class="glass enlarge shine item"><a href="Ko_lab08_Physics101.pdf"><span>Conservation of Momentum</span></a><span>Physics 101</span></li>
-					<li class="glass enlarge shine item"><a href="Ko_lab10_Physics101.pdf"><span>Equilibrium</span></a><span>Physics 101</span></li>
-					<li class="glass enlarge shine item"><a href="Ko_lab11_Physics101.pdf"><span>Archimedes' principle</span></a><span>Physics 101</span></li>
-					<li class="glass enlarge shine item"><a href="Ko_lab13_Physics101.pdf"><span>Hooke's Law</span></a><span>Physics 101</span></li>
-					<li class="glass enlarge shine item"><a href="Ko_lab03_Physics102.pdf"><span>Four Fundamental Gas Laws</span></a><span>Physics 102</span></li>
-					<br>
-					<li class="item" style="grid-template-columns: 1fr">Progress comes from correcting assumptions. These labs were not always straightforward. See an example below.</li>
-					<li class="glass enlarge shine item"><a href="https://www.loom.com/share/2660a2779bd54824a976c4c4d83e8b07"><span>Team Communication - Angle Correction in Lab 10</span></a></li>
-				</ul>
-			</section>
-			</div>
-		</main>
-</body>
+<html>
+  <head>
+    <link rel="canonical" href="https://myatthitkoko.com/projects/">
+	<link rel="icon" type="image/x-icon" href="/images/favicon.svg"/>
+	<link href="/styleSheets/header.css" rel="stylesheet" type="text/css">
+	<link href="/styleSheets/projects.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Explore Projects of Myat Thit Ko Ko, a Computer Science student in Los Angeles.">
+	<title>
+		Projects | Myat Thit Ko Ko
+	</title>
+  </head>
+  <body>
+    <main>
+    <header>
+      <div class="directory">
+        <a href="https://myatthitkoko.com">Home</a>
+        <a href="https://myatthitkoko.com">Leadership</a>
+        <a href="https://myatthitkoko.com">Hobbies</a>
+        <a href="https://myatthitkoko.com">Blogs</a>
+        <a href="https://myatthitkoko.com">Contact</a>
+      </div>
+      <p id="time"></p>
+      <div class="icons">
+        <img src="https://myatthitkoko.com/images/signal-svgrepo-com.svg" alt="vector icon of network signal"/>
+        <img src="https://myatthitkoko.com/images/wifi-high-bold-svgrepo-com.svg" alt="vector icon of wifi signal"/>
+        <img src="https://myatthitkoko.com/images/battery-twotone-50-svgrepo-com.svg" alt="vector icon of battery percentage"/>
+      </div>
+    </header>
+    <div class="clock-container">
+      <iframe class="clock" src="https://myatthitkoko.com/projects/midnights/" title="W3Schools Free Online Web Tutorials"></iframe>
+      <iframe class="calendar" src="https://calendar-mtkk.vercel.app/" title="W3Schools Free Online Web Tutorials"></iframe>
+    </div>
+      <div class="desktop-control">
+        <div class="deskapps">
+          <div class="apps">
+          <a href="https://myatthitkoko.com/projects/midnights/">
+            <div class="img-container">
+              <img src="https://myatthitkoko.com/images/clock-watch-svgrepo-com.svg" alt="clock app"/>
+              <figcaption>Clock</figcaption>
+            </div>
+          </a>
+          <a href="https://myatthitkoko.github.io/React/weather.html">
+            <div class="img-container">
+              <img src="https://myatthitkoko.com/images/weather-svgrepo-com.svg" alt="weather app"/>
+              <figcaption>Weather</figcaption>
+            </div>
+          </a>
+  
+          <a href="https://myatthitkoko.github.io/React/toDo.html">
+            <div class="img-container">
+              <img src="https://myatthitkoko.com/images/task-svgrepo-com.svg" alt="reminder app"/>
+              <figcaption>Reminders</figcaption>
+            </div>
+          </a>
+  
+          <a href="https://myatthitkoko.github.io/React/calculator.html">
+            <div class="img-container">
+              <img src="https://myatthitkoko.com/images/calculator-svgrepo-com.svg" alt="calculator app"/>
+              <figcaption>Calculator</figcaption>
+            </div>
+          </a>
+          
+        </div> <!-- apps -->
+        <div class="apps">
+          <a href="https://calendar-mtkk.vercel.app/">
+            <div class="img-container">
+              <img src="https://myatthitkoko.com/images/calendar-svgrepo-com.svg" alt="calendar app"/>
+              <figcaption>Calendar</figcaption>
+            </div>
+          </a>
+  
+          <a href="https://tic-tac-toe-mtkk.vercel.app/">
+            <div class="img-container">
+              <img src="https://myatthitkoko.com/images/tic-tac-toe-svgrepo-com.svg" alt="tic-tac-toe game"/>
+              <figcaption>TicTacToe</figcaption>
+            </div>
+          </a>
+  
+          <div class="img-container">
+            <div class="folder">
+              <a href="https://myatthitkoko.com/projects/featured/">&rarr;</a>
+            </div>
+            <figcaption>Favorites</figcaption>
+          </div>
+          
+          <div class="img-container"></div>
+          
+        </div> <!-- apps -->
+        </div>
+        
+        <div class="note-widget">
+          <h1>Projects by Myat Thit Ko Ko</h1>
+          <hr/>
+          <p>Hi. Click on each app icon to see my live demo of my small web projects.</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="https://myatthitkoko.com">Main Page&rarr;</a>
+      <a href="https://myatthitkoko.com/projects/featured/">View Featured Projects&rarr;</a>
+    </footer>
+	<script>
+		function updateTime() {
+		  let time = document.getElementById("time");
+		  time.innerHTML = new Date().toLocaleTimeString([], {hour: "2-digit", minute: "2-digit", hour12: false});
+		}
+		
+		updateTime();
+		setInterval(updateTime, 60000);
+	</script>
+  </body>
 </html>
